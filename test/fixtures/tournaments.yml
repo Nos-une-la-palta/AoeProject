@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  map: MyString
+  modality: MyString
+  content: MyString
+
+two:
+  title: MyString
+  map: MyString
+  modality: MyString
+  content: MyString
