@@ -15,7 +15,7 @@
   <% end %>
 
   <div class="form-group">
-    <%= f.label :forum_category_id, t('choose_a_category') %>
+    <%= f.label :forum_category_id, t('Escoge una categoria') %>
     <%= f.collection_select :forum_category_id, ForumCategory.sorted, :id, :name, {include_blank: t('pick_a_category')}, {autofocus: true, class: "form-control"} %>
   </div>
 
