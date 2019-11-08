@@ -10,7 +10,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_07_195848) do
+ActiveRecord::Schema.define(version: 2019_11_08_140618) do
+
+  create_table "forum_categories", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "slug", null: false
+    t.string "color", default: "000000"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "forum_posts", force: :cascade do |t|
+    t.integer "forum_thread_id"
+    t.integer "user_id"
+    t.text "body"
+    t.boolean "solved", default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "forum_subscriptions", force: :cascade do |t|
+    t.integer "forum_thread_id"
+    t.integer "user_id"
+    t.string "subscription_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "forum_threads", force: :cascade do |t|
+    t.integer "forum_category_id"
+    t.integer "user_id"
+    t.string "title", null: false
+    t.string "slug", null: false
+    t.integer "forum_posts_count", default: 0
+    t.boolean "pinned", default: false
+    t.boolean "solved", default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "news", force: :cascade do |t|
     t.string "title"
@@ -40,4 +77,10 @@ ActiveRecord::Schema.define(version: 2019_11_07_195848) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "forum_posts", "forum_threads"
+  add_foreign_key "forum_posts", "users"
+  add_foreign_key "forum_subscriptions", "forum_threads"
+  add_foreign_key "forum_subscriptions", "users"
+  add_foreign_key "forum_threads", "forum_categories"
+  add_foreign_key "forum_threads", "users"
 end

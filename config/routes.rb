@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   resources :news
   resources :tournaments
+
+  mount SimpleDiscussion::Engine => "/forum"
+
   get 'home/index'
 
   root "home#index"
