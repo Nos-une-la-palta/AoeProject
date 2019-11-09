@@ -14,7 +14,7 @@
     <% end %>
 
     <div>
-      <%= avatar_tag(forum_post.user.email) %>
+      <%= image_tag(forum_post.user.image, size: '40')%>
 
       <strong class="forum-post-user">
         <%= forum_post.user.name %> <%= forum_user_badge(forum_post.user) %>
