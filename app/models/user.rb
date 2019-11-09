@@ -6,6 +6,8 @@ class User < ApplicationRecord
          
   include SimpleDiscussion::ForumUser
 
+  has_one_attached :image
+
   def name
     "#{email}"
   end
