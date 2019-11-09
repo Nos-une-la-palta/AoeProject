@@ -13,8 +13,11 @@
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
+    <%= render 'shared/jumbo' %>
     <%= render 'shared/flash_messages' %>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
