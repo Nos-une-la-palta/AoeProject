@@ -9,7 +9,7 @@ class User < ApplicationRecord
   has_one_attached :image
 
   def name
-    "#{email}"
+    "#{nick}"
   end
   
 end
