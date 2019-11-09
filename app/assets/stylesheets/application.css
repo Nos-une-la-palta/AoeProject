@@ -13,3 +13,113 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+   background-image: url("https://i.imgur.com/0cG2Lxv.png");
+ }
+ /* jumbotron image */
+
+ .heading-jumbo {
+   background-image: url("https://i.imgur.com/ISJxXLJ.png");
+   background-size: cover;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   border-radius: 0.1px;
+ }
+
+ /* jumbotron image */
+
+ /* navbar  */
+
+ .navbar {
+   background: transparent;
+ }
+
+ .nav-link {
+   font-family: 'Raleway',sans-serif;
+   font-weight: 400;
+   color: #ffffff !important;
+   text-shadow: 0 3px 3px rgba(0,0,0,0.25);
+ }
+
+ .navbar-brand {
+   color: white !important;
+   font-family:'Roboto Slab',serif;
+   font-weight: 700;
+ }
+
+ /* navbar */
+ /* navbar login and signup buttons*/
+
+.gbtn {
+  margin-left: 10px;
+}
+
+.btn-login {
+  border: 2px solid #F89032;
+  color: white;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 500;
+  background: #F89032;
+}
+
+.btn-register {
+  border: 2px solid #F89032;
+  color: white;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 500;
+  background: #F89032;
+}
+.gbtn {
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.gbtn:focus {
+  color: white;
+}
+
+.gbtn:hover {
+  background: #E36A33;
+  border: 2px solid #E36A33;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/* navbar login and signup buttons*/
+
+/* heading text */
+
+.heading-text-container {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 540px;
+}
+
+.main-heading-text {
+  font-family: 'Roboto Slab',sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 50px;
+  text-shadow: 0 3px 3px rgba(0,0,0,0.25);
+}
+
+.main-bio {
+  font-family: 'Raleway',sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 16px;
+  width: 60%;
+  padding-right: 100px;
+  text-shadow: 0 3px 3px rgba(0,0,0,0.25);
+}
+
+/* heading text */
+
+/* heading social buttons */
+
+.button-group {
+  margin-left: -10px;
+}
+
+/* heading social buttons */
