@@ -35,16 +35,17 @@
  }
 
  .nav-link {
-   font-family: 'Raleway',sans-serif;
-   font-weight: 400;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 600;
    color: #ffffff !important;
    text-shadow: 0 3px 3px rgba(0,0,0,0.25);
  }
 
  .navbar-brand {
    color: white !important;
-   font-family:'Roboto Slab',serif;
-   font-weight: 700;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 600;
+   text-shadow: 0 3px 3px rgba(0,0,0,0.25);
  }
 
  /* navbar */
@@ -57,16 +58,16 @@
 .btn-login {
   border: 2px solid #F89032;
   color: white;
-  font-family: 'Raleway',sans-serif;
-  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   background: #F89032;
 }
 
 .btn-register {
   border: 2px solid #F89032;
   color: white;
-  font-family: 'Raleway',sans-serif;
-  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   background: #F89032;
 }
 .gbtn {
@@ -97,7 +98,7 @@
 }
 
 .main-heading-text {
-  font-family: 'Roboto Slab',sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   color: white;
   font-size: 50px;
@@ -105,8 +106,8 @@
 }
 
 .main-bio {
-  font-family: 'Raleway',sans-serif;
-  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   color: white;
   font-size: 16px;
   width: 60%;
