@@ -19,6 +19,14 @@
    background-image: url("https://i.imgur.com/0cG2Lxv.png");
    background-repeat: no-repeat;
    background-size: cover;
+   background-position: center;
+   max-width: 100%;
+   height: auto;
+  }
+
+  .body-container{
+   padding: 1rem 4rem 0rem 4rem;
+
   }
  /* jumbotron image */
 
@@ -26,9 +34,12 @@
  .heading-jumbo {
    background-image: url("https://i.imgur.com/xq8o0il.png");
    background-size: cover;
-   max-width: 1900px;
+   background-repeat: no-repeat;
+   background-position: center;
    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
    border-radius: 0.1px;
+   max-width: 100%;
+   height: auto;
  }
 
  /* jumbotron image */
@@ -40,7 +51,8 @@
    font-family: 'Open Sans', sans-serif;
    font-weight: 600;
    color: #ffffff !important;
-   text-shadow: 0 3px 3px rgba(0,0,0,0.25);
+   background-color: orange;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
  }
 
  .navbar-brand {
@@ -51,44 +63,6 @@
  }
 
  /* navbar */
- /* navbar login and signup buttons*/
-
-.gbtn {
-  margin-left: 10px;
-}
-
-.btn-login {
-  border: 2px solid #F89032;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  background: #F89032;
-}
-
-.btn-register {
-  border: 2px solid #F89032;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  background: #F89032;
-}
-.gbtn {
-  border-radius: 2px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-.gbtn:focus {
-  color: white;
-}
-
-.gbtn:hover {
-  background: #E36A33;
-  border: 2px solid #E36A33;
-  transition: 0.3s ease-in-out;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
-/* navbar login and signup buttons*/
 
 /* heading text */
 
@@ -96,7 +70,7 @@
   position: relative;
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-left: 540px;
+  margin-left: 60rem;
 }
 
 .main-heading-text {
