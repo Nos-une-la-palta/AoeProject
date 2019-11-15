@@ -7,3 +7,17 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.twitch-card{
+    background-color: #222222;
+    color: #CCCCCC;
+    border-style: solid;
+    border-color: #000000;
+    border-width: thin;
+    box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+    box-sizing: border-box;
+}
+
+.twitch-card-head{
+    background-color: #000000;
+}
