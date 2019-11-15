@@ -125,3 +125,45 @@
 }
 
 /* heading social buttons */
+
+/* formulario registro */
+.registrations {
+  background-color: #222222;
+  color: #cccccc;
+  padding: 2rem 3rem 2rem 3rem;
+  margin: 2rem 2rem 3rem 2rem;
+  border-style: solid;
+  border-color: #000000;
+  border-width: thin;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  box-sizing: border-box;
+  }
+/* formulario registro */
+.registrations h2{
+    padding: 0rem 0rem 1rem 0rem;
+ }
+
+
+input[type=imput] {
+  box-sizing: border-box;
+  border: solid #000000;
+  border-width: thin;
+  background-color: #333333;
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+input[type=password] {
+  box-sizing: border-box;
+  border: solid #000000;
+  border-width: thin;
+  background-color: #333333;
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+.head{
+ background-color: black;
+}
