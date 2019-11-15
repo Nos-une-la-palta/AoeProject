@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-3">
-        <div class="card mt-3" style="width: 10rem;">
+        <div class="card mt-3 ml-5" style="width: 10rem;">
             <div class="card-header">
                 Foros
             </div>
@@ -41,5 +41,24 @@
         <% end %>
     </div>
     <div class="col-3">
+        <div class="card mt-3 mr-5" style="width: 17rem;">
+            <div class="card-header text-center" style="font-size: 1.4rem;">
+                <i class="fab fa-twitch"></i> Twitch
+            </div>
+              <div class="card-body">
+                <% @twitches.each do |twitch| %>
+                    <div class="row ml-4 mb-4 mt-2" style="position: relative">
+					    <a href="<%= twitch.url %>" target="_blank">
+							<img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_jungtaejune-1280x720.jpg" style="width: 80%">
+						</a>
+                        <div style="position: absolute; top: -10px; left: 20px; width: 60%; text-align: center;">
+                            <span style=" border-radius: 3px; background-color: #3D4148; padding: 3px 6px; border: 1px solid white; color: #E7A70F; font-size: 1.2rem;">
+                                <%= twitch.owner %>
+                            </span>
+                        </div>
+                    </div>
+                <% end %>
+            </div>
+        </div>
     </div>
 </div>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @twitch.owner %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @twitch.url %>
+</p>
+
+<%= link_to 'Edit', edit_twitch_path(@twitch) %> |
+<%= link_to 'Back', twitches_path %>
