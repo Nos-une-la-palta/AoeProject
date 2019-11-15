@@ -3,5 +3,6 @@ class HomeController < ApplicationController
     @tournaments = Tournament.all
     @news = News.all
     @twitches = Twitch.all
+    @clans= Clan.all
   end
 end

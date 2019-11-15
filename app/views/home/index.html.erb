@@ -1,8 +1,9 @@
 <div class="row">
     <div class="col-3">
-        <div class="card mt-3 ml-5" style="width: 10rem;">
-            <div class="card-header">
-                Foros
+        <%#------------- Foros --------------------------------%>
+        <div class="card mt-3 mr-5 twitch-card" style="width: 17rem;">
+            <div class="card-header text-center twitch-card-head" style="font-size: 1.4rem;">
+                <i class="fas fa-comments"></i> Foros
             </div>
               <div class="card-body">
                 <a href="/forum/threads"><i class="fa fa-circle"></i> All</a><br>
@@ -11,7 +12,20 @@
                 <a href="/forum/threads/category/tutoriales"><i style="color: #14f532" class="fa fa-circle"></i>Tutoriales</a>
             </div>
         </div>
+        <%#------------- Clans --------------------------------%>
+        <div class="card mt-3 mr-5 twitch-card" style="width: 17rem;">
+            <div class="card-header text-center twitch-card-head" style="font-size: 1.4rem;">
+                <i class="fas fa-fist-raised"></i> Clanes Asociados
+            </div>
+            <% @clans.each do |clans| %>
+                <a href="<%= clans.link %>" class="ml-3 mb-2 mt-2" >
+                    <%= image_tag(clans.avatar, size:'25', style:'border-radius: 50%')%>
+                    <%= clans.name %>
+				</a>   
+            <% end %>
+        </div>
     </div>
+    
     <div class="col-6">
         <%#------------- Tournaments --------------------------------%>
         <% @tournaments.each do |tournament| %>

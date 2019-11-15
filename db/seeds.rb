@@ -5,3 +5,30 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# Clan.create(
+#     avatar: 'https://i.imgur.com/M0IStVp.jpg',
+#     name: 'Chilenos Old School',
+#     link: 'https://chilenosoldschool.voobly.com/'
+# )
+
+
+# Clan.create(
+#     avatar: 'https://i.imgur.com/ADrFkRG.jpg',
+#     name: 'Clan Chileno',
+#     link: 'https://cl.voobly.com/'
+
+# )
+
+# Clan.create(
+#     avatar: 'https://i.imgur.com/aMYGSA6.jpg',
+#     name: 'Clan CHI',
+#     link: 'https://clanchileaoe.voobly.com/'
+# )
+
+
+# Clan.create(
+#     avatar: 'https://i.imgur.com/Efj88W3.jpg',
+#     name: 'Hueones Zolidoz',
+#     link: 'https://hz.voobly.com/'
+# )
