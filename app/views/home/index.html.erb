@@ -6,10 +6,10 @@
                 <i class="fas fa-comments"></i> Foros
             </div>
               <div class="card-body">
-                <a href="/forum/threads"><i class="fa fa-circle"></i> All</a><br>
-                <a href="/forum/threads/category/general"><i style="color: #4ea1d3" class="fa fa-circle"></i>General</a><br>
-                <a href="/forum/threads/category/torneos"><i style="color: #eaf514" class="fa fa-circle"></i>Torneos</a><br>
-                <a href="/forum/threads/category/tutoriales"><i style="color: #14f532" class="fa fa-circle"></i>Tutoriales</a>
+                <a href="/forum/threads" style="color: white"><i class="fa fa-circle"></i> All</a><br>
+                <a href="/forum/threads/category/general" style="color: white"><i style="color: #4ea1d3" class="fa fa-circle"></i>General</a><br>
+                <a href="/forum/threads/category/torneos" style="color: white"><i style="color: #eaf514" class="fa fa-circle"></i>Torneos</a><br>
+                <a href="/forum/threads/category/tutoriales" style="color: white"><i style="color: #14f532" class="fa fa-circle"></i>Tutoriales</a>
             </div>
         </div>
         <%#------------- Clans --------------------------------%>
@@ -18,7 +18,7 @@
                 <i class="fas fa-fist-raised"></i> Clanes Asociados
             </div>
             <% @clans.each do |clans| %>
-                <a href="<%= clans.link %>" class="ml-3 mb-2 mt-2" >
+                <a href="<%= clans.link %>" class="ml-3 mb-2 mt-2" style="color: white">
                     <%= image_tag(clans.avatar, size:'25', style:'border-radius: 50%')%>
                     <%= clans.name %>
 				</a>   

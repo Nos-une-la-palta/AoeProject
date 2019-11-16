@@ -6,29 +6,46 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# Clan.create(
-#     avatar: 'https://i.imgur.com/M0IStVp.jpg',
-#     name: 'Chilenos Old School',
-#     link: 'https://chilenosoldschool.voobly.com/'
-# )
+Clan.destroy_all
+Twitch.destroy_all
+
+Clan.create(
+    avatar: 'https://i.imgur.com/ADrFkRG.jpg',
+    name: 'Clan CL',
+    link: 'https://cl.voobly.com/'
+
+)
+
+Clan.create(
+    avatar: 'https://i.imgur.com/aMYGSA6.jpg',
+    name: 'Clan CHI',
+    link: 'https://clanchileaoe.voobly.com/'
+)
 
 
-# Clan.create(
-#     avatar: 'https://i.imgur.com/ADrFkRG.jpg',
-#     name: 'Clan Chileno',
-#     link: 'https://cl.voobly.com/'
+Clan.create(
+    avatar: 'https://i.imgur.com/Efj88W3.jpg',
+    name: 'Hueones Zolidoz',
+    link: 'https://hz.voobly.com/'
+)
 
-# )
+Clan.create(
+    avatar: 'https://i.imgur.com/5BYRgzp.jpg',
+    name: 'Chilean Masters',
+    link: 'https://chileanmasters.voobly.com/'
+)
 
-# Clan.create(
-#     avatar: 'https://i.imgur.com/aMYGSA6.jpg',
-#     name: 'Clan CHI',
-#     link: 'https://clanchileaoe.voobly.com/'
-# )
+Twitch.create(
+    owner:'karelok0',
+    url: 'https://www.twitch.tv/karelok0'
+)
 
+Twitch.create(
+    owner:'wakkoaoc',
+    url: 'https://www.twitch.tv/wakkoaoc'
+)
 
-# Clan.create(
-#     avatar: 'https://i.imgur.com/Efj88W3.jpg',
-#     name: 'Hueones Zolidoz',
-#     link: 'https://hz.voobly.com/'
-# )
+Twitch.create(
+    owner:'chileaoe',
+    url: 'https://www.twitch.tv/chileaoe'
+)
