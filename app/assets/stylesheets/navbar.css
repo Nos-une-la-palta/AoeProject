@@ -1,0 +1,26 @@
+/* navbar  */
+
+
+.nav1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #ffffff !important;
+  background-color: orange;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.navfull{
+  background-color: orange;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin :-4rem 0rem 0rem 0rem;
+}
+.link1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #ffffff !important;
+    font-size: 1.1rem;
+    margin :0rem 1rem 0rem 1rem;
+}
+
+
+/* navbar */
