@@ -29,28 +29,25 @@
     <div class="col-6">
         <%#------------- Tournaments --------------------------------%>
         <% @tournaments.each do |tournament| %>
-            <div class="card mt-3" style="width: 50rem;">
+            <div class="card mb-3">
+            <img src="https://i.imgur.com/MfCsLsw.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title"><%= tournament.title %></h5>
-                    <h5 class="card-title">Mapa: <%= tournament.map %></h5>
-                    <h5 class="card-title">Modalidad: <%= tournament.modality %></h5>
+                    <h5 class="card-title"><%= tournament.title %>, <%= tournament.modality%> </h5>
                     <p class="card-text"><%= tournament.content%></p>
-                    <%# <div class="card-footer text-muted"> %>
-                        <%# <%= time_ago_in_words(tournament.created_at) %> 
-                    <%# </div> %>
-                </div>
+                    <p class="card-text"><small class="text-muted float-right"><%= tournament.created_at.to_date%></small></p>
+                 </div>
             </div>
         <% end %>
+
         <%#------------- News --------------------------------%>
         <% @news.each do |news| %>
-            <div class="card mt-3" style="width: 50rem;">
+            <div class="card mb-3">
+            <%# <img src="..." class="card-img-top" alt="..."> %>
                 <div class="card-body">
                     <h5 class="card-title"><%= news.title %></h5>
                     <p class="card-text"><%= news.content%></p>
-                    <%# <div class="card-footer text-muted"> %>
-                        <%# <%= time_ago_in_words(news.created_at) %>
-                    <%# </div> %>
-                </div>
+                    <p class="card-text"><small class="text-muted float-right"><%= news.created_at.to_date%></small></p>
+                 </div>
             </div>
         <% end %>
     </div>
