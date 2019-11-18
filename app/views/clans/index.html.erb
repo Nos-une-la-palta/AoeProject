@@ -2,6 +2,7 @@
 
 <%= link_to 'New Clan', new_clan_path, class:"btn btn-info float-right mb-3" %>
 
+
 <table class="table table-dark">
   <thead>
     <tr>
@@ -17,7 +18,6 @@
           <td><%= clan.avatar %></td>
           <td><%= clan.name %></td>
           <td><%= clan.link %></td>
-          <td><%= link_to 'Show', clan %></td>
           <td><%= link_to 'Edit', edit_clan_path(clan) %></td>
           <td><%= link_to 'Destroy', clan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
