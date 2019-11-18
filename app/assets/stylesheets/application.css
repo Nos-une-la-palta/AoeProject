@@ -27,3 +27,8 @@
   .body-container{
    padding: 1rem 4rem 0rem 4rem;
   }
+
+  .card-body{
+    background-color: #222222;
+    color: white
+  }
