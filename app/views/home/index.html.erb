@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row mt-5">
     <div class="col-3">
         <%#------------- Foros --------------------------------%>
         <div class="card mt-3 twitch-card" style="width: 17rem;">
@@ -29,8 +29,8 @@
     <div class="col-6">
         <%#------------- Tournaments --------------------------------%>
         <% @tournaments.each do |tournament| %>
-            <div class="card mb-3">
-            <img src="https://i.imgur.com/MfCsLsw.png" class="card-img-top" alt="...">
+            <div class="card mb-4 tournament-card">
+            <img src="https://i.imgur.com/yIJJo7v.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title"><%= tournament.title %>, <%= tournament.modality%> </h5>
                     <p class="card-text"><%= tournament.content%></p>
@@ -41,8 +41,8 @@
 
         <%#------------- News --------------------------------%>
         <% @news.each do |news| %>
-            <div class="card mb-3">
-            <%# <img src="..." class="card-img-top" alt="..."> %>
+            <div class="card mb-4 news-card">
+            <img src="https://i.imgur.com/4XRFJ8e.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title"><%= news.title %></h5>
                     <p class="card-text"><%= news.content%></p>
