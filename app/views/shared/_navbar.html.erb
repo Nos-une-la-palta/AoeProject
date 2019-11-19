@@ -19,9 +19,11 @@
       <li class="nav-item">
         <%= link_to "Twitch", twitches_path, class:"nav-link link1" %>
       </li>
-      <li class="nav-item">
-        <%= link_to "Clanes", clans_path, class:"nav-link link1" %>
-      </li>
+      <% if can? :create, Clan %>
+        <li class="nav-item">
+          <%= link_to "Clanes", clans_path, class:"nav-link link1" %>
+        </li>
+      <% end %>
     </ul>
   </div>
 </nav>

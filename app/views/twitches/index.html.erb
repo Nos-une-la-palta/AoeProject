@@ -11,17 +11,20 @@
             <%= twitch.owner %>
           </span>
         </div>
+        <% if can? :create, Twitch %>
           <div class="col-2">
-          <p><%= link_to 'Show', twitch, class:"btn btn-warning mb-2" %><br>
-          <%= link_to 'Edit', edit_twitch_path(twitch), class:"btn btn-success mb-2"  %><br>
-          <%= link_to 'Destroy', twitch, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger"  %></p>
+            <p><%= link_to 'Show', twitch, class:"btn btn-warning mb-2" %><br>
+            <%= link_to 'Edit', edit_twitch_path(twitch), class:"btn btn-success mb-2"  %><br>
+            <%= link_to 'Destroy', twitch, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger"  %></p>
           </div>
+        <% end %>
       </div>
     <% end %>
-
   </div>
   <div class="col-3">
-  <%= link_to 'Agregar canal', new_twitch_path, class:"btn btn-info float-right mb-3"%>
+  <% if can? :create, Twitch %>
+    <%= link_to 'Agregar canal', new_twitch_path, class:"btn btn-info float-right mb-3"%>
+  <% end %>
   </div>
 </div>
 

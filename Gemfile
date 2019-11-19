@@ -23,8 +23,10 @@ gem 'jbuilder', '~> 2.7'
 gem 'image_processing', '~> 1.2'
 # gem devise
 gem 'devise'
-#simple discussion
+#foro simple discussion
 gem 'simple_discussion'
+#simple discussion
+gem 'cancancan'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
@@ -40,11 +42,13 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'sqlite3', '~> 1.4'
 end
 
 group :production do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '~> 1.4'
+  gem 'pg'
+  gem "aws-sdk-s3", require: false
 end
 
 group :test do

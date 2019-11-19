@@ -12,14 +12,17 @@
               <p class="card-text"><small class="text-muted float-right"><%= news.created_at.to_date%></small></p>
             </div>
         </div>
-        <p><%= link_to 'Show', news, class:"btn btn-warning" %>
-        <%= link_to 'Edit', edit_news_path(news) , class:"btn btn-success"  %>
-        <%= link_to 'Destroy', news, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger"  %></p>
+        <% if can? :create, News %>
+          <p><%= link_to 'Show', news, class:"btn btn-warning" %>
+          <%= link_to 'Edit', edit_news_path(news) , class:"btn btn-success"  %>
+          <%= link_to 'Destroy', news, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger"  %></p>
+        <% end %>
     <% end %>
-
   </div>
   <div class="col-3">
-  <%= link_to 'New News', new_news_path, class:"btn btn-info float-right mb-3"%>
+  <% if can? :create, News %>
+    <%= link_to 'New News', new_news_path, class:"btn btn-info float-right mb-3"%>
+  <% end %>
   </div>
 </div>
 
