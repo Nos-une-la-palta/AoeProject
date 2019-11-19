@@ -1,0 +1,67 @@
+/* formulario login */
+.login {
+  background-color: #222222;
+  color: #cccccc;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 3rem 0rem 2rem 36rem;
+  border-style: solid;
+  border-color: orange;
+  border-width: thin;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  box-sizing: border-box;
+  width: 30%;
+  }
+
+ .login h2{
+   padding: 0rem 0rem 1rem 0rem;
+   font-weight: 600;
+  }
+
+  input[type=imput1] {
+    color: #ffffff;
+    box-sizing: border-box;
+    border: solid #000000;
+    border-width: thin;
+    background-color: #333333;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .login input[type=password] {
+    color: #ffffff;
+    box-sizing: border-box;
+    border: solid #000000;
+    border-width: thin;
+    background-color: #333333;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .btn-log {
+    box-sizing: border-box;
+    background-color: orange;
+    width: 70%;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 1rem 0rem 1rem 4.5rem;
+  }
+  .btn-log:hover {
+    box-sizing: border-box;
+    background-color: #dd7d00;
+    width: 70%;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 1rem 0rem 1rem 4.5rem;
+  }
+  .forgot{
+    color: #bbbbbb !important;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0rem 0rem 0rem 7.5rem;
+  }

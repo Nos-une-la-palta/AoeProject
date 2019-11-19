@@ -10,38 +10,38 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :map %>
-    <%= form.text_field :map %>
-  </div>
-
-  <div class="field">
-    <%= form.label :value %>
-    <%= form.text_field :value %>
-  </div>
-
-  <div class="field">
-    <%= form.label :price %>
-    <%= form.text_field :price %>
-  </div>
+<div class="row">
+  <div class="col">
+    <div class="field">
+      <%= form.text_field :title, type:"imput", placeholder:"Titulo"%>
+    </div>
 
     <div class="field">
-    <%= form.label :modality %>
-    <%= form.text_field :modality %>
-  </div>
+      <%= form.text_field :map, type:"imput", placeholder:"Mapa"%>
+    </div>
 
+    <div class="field">
+      <%= form.text_field :value, type:"imput", placeholder:"Valor" %>
+    </div>
+  </div>
+  <div class="col">
+    <div class="field">
+      <%= form.text_field :price, type:"imput", placeholder:"Premio" %>
+    </div>
+
+    <div class="field">
+      <%= form.text_field :modality, type:"imput", placeholder:"Modalidad" %>
+    </div>
+  </div>
+ </div>
   <div class="field">
-    <%= form.label :content %>
-    <%= form.text_area :content %>
+    <%= form.text_area :content, placeholder:"Escribe el texto aquí" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Publicar", class:"btn btn-tournament" %>
   </div>
 <% end %>
+<div class="links1">
+  <%= link_to 'Back', news_index_path,  class: "linknew" %>
+</div>
