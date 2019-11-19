@@ -1,3 +1,51 @@
 // Place all the styles related to the tournaments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.tournament-new {
+  background-color: #222222;
+  color: #cccccc;
+  font-family: 'Open Sans', sans-serif;
+  padding: 2rem 3rem 2rem 3rem;
+  margin: 3rem 0rem 2rem 16rem;
+  border-style: solid;
+  border-color: orange;
+  border-width: thin;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  box-sizing: border-box;
+  }
+  .tournament-new h2{
+      padding: 0rem 0rem 1rem 0rem;
+      font-weight: 600;
+      text-align: center;
+   }
+  .tournament-new input[type=imput] {
+     color: #ffffff;
+     box-sizing: border-box;
+     border: solid #000000;
+     border-width: thin;
+     background-color: #333333;
+     width: 100%;
+     padding: 1rem;
+     margin: 0.5rem 0;
+   }
+   .btn-tournament {
+     box-sizing: border-box;
+     background-color: orange;
+     width: 40%;
+     border-radius: 0.3rem;
+     font-size: 1.5rem;
+     padding: 0.5rem;
+     margin: 0rem 0rem 0rem 19rem;
+   }
+   .btn-tournament:hover {
+     box-sizing: border-box;
+     background-color: #dd7d00;
+     width: 40%;
+     border-radius: 0.3rem;
+     font-size: 1.5rem;
+     padding: 0.5rem;
+     margin: 0rem 0rem 0rem 10rem;
+   }
+   .links1 {
+     margin: 1.2rem 0rem 0rem 31rem;
+   }
