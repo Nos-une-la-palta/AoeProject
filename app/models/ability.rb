@@ -7,7 +7,7 @@ class Ability
     # Define abilities for the passed in user here. For example:
     #
     user ||= User.new # guest user (not logged in)
-    if user.moderator == true
+    if user.moderator?
       can :manage, [Clan, News, Tournament, Twitch]
     else
       can :read, [News, Tournament, Twitch]
