@@ -27,6 +27,8 @@ gem 'devise'
 gem 'simple_discussion'
 #simple discussion
 gem 'cancancan'
+#omniauth-facebook
+gem 'omniauth-facebook'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
