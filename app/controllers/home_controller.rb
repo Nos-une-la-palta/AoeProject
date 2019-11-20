@@ -4,5 +4,6 @@ class HomeController < ApplicationController
     @news = News.all
     @twitches = Twitch.all
     @clans= Clan.all
+    @user = current_user
   end
 end

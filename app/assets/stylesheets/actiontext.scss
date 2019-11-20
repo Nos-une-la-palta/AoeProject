@@ -1,0 +1,82 @@
+//
+// Provides a drop-in pointer for the default Trix stylesheet that will format the toolbar and
+// the trix-editor content (whether displayed or under editing). Feel free to incorporate this
+// inclusion directly in any other asset bundle and remove this file.
+//
+//= require trix/dist/trix
+
+// We need to override trix.css’s image gallery styles to accommodate the
+// <action-text-attachment> element we wrap around attachments. Otherwise,
+// images in galleries will be squished by the max-width: 33%; rule.
+.trix-content {
+  .attachment-gallery {
+    > action-text-attachment,
+    > .attachment {
+      flex: 1 0 33%;
+      padding: 0 0.5em;
+      max-width: 33%;
+    }
+
+    &.attachment-gallery--2,
+    &.attachment-gallery--4 {
+      > action-text-attachment,
+      > .attachment {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+    }
+  }
+
+  action-text-attachment {
+    .attachment {
+      padding: 0 !important;
+      max-width: 100% !important;
+    }
+  }
+}
+
+trix-toolbar {
+  margin: 2rem 0rem 0em 0rem;
+  background-color: orange;
+  border: solid #000000;
+  border-width: thin;
+  padding: 1rem 1rem 1rem 1rem;
+  }
+
+trix-toolbar .trix-button {
+  border: none;
+  margin: -0.6rem -0.2rem -1em -0.1rem;
+  }
+
+
+trix-toolbar .trix-button-group--text-tools {
+  border: none;
+  margin-left: -0.5rem;
+  }
+
+trix-toolbar .trix-button-group--file-tools {
+  border: none;
+  margin-right: -1rem;
+  }
+
+trix-toolbar .trix-button-group--block-tools {
+  border: none;
+  }
+
+trix-toolbar .trix-button-group--history-tools {
+  border: none
+  }
+
+
+trix-editor {
+  color: #ffffff;
+  box-sizing: border-box;
+  border: solid #000000;
+  border-width: thin;
+  background-color: #333333;
+  width: 100%;
+  height:10em;
+  margin: 0em 0 1em;
+  padding:1em;
+  overflow-y: auto;
+}

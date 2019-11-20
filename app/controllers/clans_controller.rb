@@ -1,5 +1,6 @@
 class ClansController < ApplicationController
-  before_action :set_clan, only: [:show, :edit, :update, :destroy]
+  # before_action :set_clan, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource
 
   # GET /clans
   # GET /clans.json

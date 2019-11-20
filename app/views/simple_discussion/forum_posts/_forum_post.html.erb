@@ -13,8 +13,13 @@
       </div>
     <% end %>
 
-    <div>
-      <%= image_tag(forum_post.user.image, size: '50')%>
+  <div>
+
+      <% if forum_post.user.image.attached?  %>
+       <%= image_tag(forum_post.user.image, size: '50') %>
+      <% else %>
+        <%= image_tag(forum_post.user.image_url, size:'50')%>
+      <% end %>
 
       <strong class="forum-post-user">
         <%= forum_post.user.name %> <%= forum_user_badge(forum_post.user) %>

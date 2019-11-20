@@ -1,3 +1,52 @@
 // Place all the styles related to the Clans controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.clans {
+  background-color: #222222;
+  color: #cccccc;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 3rem 0rem 2rem 36rem;
+  border-style: solid;
+  border-color: orange;
+  border-width: thin;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  box-sizing: border-box;
+  width: 30%;
+  }
+  .clans h2{
+    padding: 0.5rem 0rem 0.5rem 7.5rem;
+    font-weight: 600;
+   }
+   input[type=imput3] {
+     color: #ffffff;
+     box-sizing: border-box;
+     border: solid #000000;
+     border-width: thin;
+     background-color: #333333;
+     width: 100%;
+     padding: 1rem;
+     margin: 0.5rem 0;
+   }
+
+   .btn-clans {
+     box-sizing: border-box;
+     background-color: orange;
+     width: 70%;
+     border-radius: 0.3rem;
+     font-size: 1.5rem;
+     padding: 0.5rem;
+     margin: 1rem 0rem 1rem 4.3rem;
+   }
+   .btn-clans:hover {
+     box-sizing: border-box;
+     background-color: #dd7d00;
+     width: 70%;
+     border-radius: 0.3rem;
+     font-size: 1.5rem;
+     padding: 0.5rem;
+     margin: 1rem 0rem 1rem 4.3rem;
+   }
+   .links2 {
+     margin: 0rem 0rem 0rem 12.5rem;
+   }

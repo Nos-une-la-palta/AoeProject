@@ -12,16 +12,17 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :owner %>
-    <%= form.text_field :owner %>
+    <%= form.text_field :owner, type:"imput4", placeholder:"Nombre del canal" %>
   </div>
 
   <div class="field">
-    <%= form.label :url %>
-    <%= form.text_field :url %>
+    <%= form.text_field :url, type:"imput4", placeholder:"Link del canal" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Agregar", class:"btn btn-twitches" %>
+  </div>
+  <div class="links4">
+    <%= link_to 'Back', twitches_path,  class: "linknew" %>
   </div>
 <% end %>

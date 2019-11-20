@@ -12,16 +12,17 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, type:"imput2", placeholder:"Titulo" %>
   </div>
 
   <div class="field">
-    <%= form.label :content %>
-    <%= form.text_area :content %>
+    <%= form.rich_text_area :content, placeholder:"Contenido"%>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Publicar", class:"btn btn-news" %>
   </div>
 <% end %>
+<div class="links">
+  <%= link_to 'Back', news_index_path,  class: "linknew" %>
+</div>

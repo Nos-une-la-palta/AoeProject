@@ -23,8 +23,12 @@ gem 'jbuilder', '~> 2.7'
 gem 'image_processing', '~> 1.2'
 # gem devise
 gem 'devise'
-#simple discussion
+#foro simple discussion
 gem 'simple_discussion'
+#simple discussion
+gem 'cancancan'
+#omniauth-facebook
+gem 'omniauth-facebook'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 

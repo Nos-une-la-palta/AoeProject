@@ -1,6 +1,6 @@
 class TwitchesController < ApplicationController
   before_action :set_twitch, only: [:show, :edit, :update, :destroy]
-
+  load_and_authorize_resource
   # GET /twitches
   # GET /twitches.json
   def index

@@ -12,21 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :avatar %>
-    <%= form.text_field :avatar %>
+    <%= form.text_field :avatar, type:"imput3", placeholder:"Inserta el link de la imagen" %>
   </div>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, type:"imput3", placeholder:"Nombre del Clan"%>
   </div>
 
   <div class="field">
-    <%= form.label :link %>
-    <%= form.text_field :link %>
+    <%= form.text_field :link, type:"imput3", placeholder:"Sitio web" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Agregar", class:"btn btn-clans" %>
   </div>
+  <div class="links2">
+    <%= link_to 'Back', clans_path,  class: "linknew" %>
+  </div>
+
 <% end %>
