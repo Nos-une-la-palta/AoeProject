@@ -13,8 +13,7 @@
             </div>
         </div>
         <% if can? :create, News %>
-          <p><%= link_to 'Show', news, class:"btn btn-warning" %>
-          <%= link_to 'Edit', edit_news_path(news) , class:"btn btn-success"  %>
+          <%= link_to 'Edit', edit_news_path(news) , class:"btn btn-warning"  %>
           <%= link_to 'Destroy', news, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger"  %></p>
         <% end %>
     <% end %>
@@ -25,4 +24,3 @@
   <% end %>
   </div>
 </div>
-

@@ -13,8 +13,7 @@
         </div>
         <% if can? :create, Twitch %>
           <div class="col-2">
-            <p><%= link_to 'Show', twitch, class:"btn btn-warning mb-2" %><br>
-            <%= link_to 'Edit', edit_twitch_path(twitch), class:"btn btn-success mb-2"  %><br>
+            <%= link_to 'Edit', edit_twitch_path(twitch), class:"btn btn-warning mb-2"  %><br>
             <%= link_to 'Destroy', twitch, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger"  %></p>
           </div>
         <% end %>
@@ -27,4 +26,3 @@
   <% end %>
   </div>
 </div>
-
