@@ -28,7 +28,7 @@ class TwitchesController < ApplicationController
 
     respond_to do |format|
       if @twitch.save
-        format.html { redirect_to @twitch, notice: 'Twitch was successfully created.' }
+        format.html { redirect_to twitches_path, notice: 'Twitch was successfully created.' }
         format.json { render :show, status: :created, location: @twitch }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class TwitchesController < ApplicationController
   def update
     respond_to do |format|
       if @twitch.update(twitch_params)
-        format.html { redirect_to @twitch, notice: 'Twitch was successfully updated.' }
+        format.html { redirect_to twitches_path, notice: 'Twitch was successfully updated.' }
         format.json { render :show, status: :ok, location: @twitch }
       else
         format.html { render :edit }
