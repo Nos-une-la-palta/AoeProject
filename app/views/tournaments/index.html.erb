@@ -21,8 +21,7 @@
             </div>
         </div>
         <% if can? :create, Tournament %>
-          <p><%= link_to 'Show', tournament, class:"btn btn-warning mt-2" %>
-          <%= link_to 'Edit', edit_tournament_path(tournament) , class:"btn btn-success mt-2"  %>
+          <p><%= link_to 'Edit', edit_tournament_path(tournament) , class:"btn btn-warning mt-2"  %>
           <%= link_to 'Destroy', tournament, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger mt-2"  %></p>
          <% end %>
    <% end %>
@@ -33,4 +32,3 @@
     <% end %>
   </div>
 </div>
-

@@ -34,3 +34,49 @@
     }
   }
 }
+
+trix-toolbar {
+  margin: 2rem 0rem 0em 0rem;
+  background-color: orange;
+  border: solid #000000;
+  border-width: thin;
+  padding: 1rem 1rem 1rem 1rem;
+  }
+
+trix-toolbar .trix-button {
+  border: none;
+  margin: -0.6rem -0.2rem -1em -0.1rem;
+  }
+
+
+trix-toolbar .trix-button-group--text-tools {
+  border: none;
+  margin-left: -0.5rem;
+  }
+
+trix-toolbar .trix-button-group--file-tools {
+  border: none;
+  margin-right: -1rem;
+  }
+
+trix-toolbar .trix-button-group--block-tools {
+  border: none;
+  }
+
+trix-toolbar .trix-button-group--history-tools {
+  border: none
+  }
+
+
+trix-editor {
+  color: #ffffff;
+  box-sizing: border-box;
+  border: solid #000000;
+  border-width: thin;
+  background-color: #333333;
+  width: 100%;
+  height:10em;
+  margin: 0em 0 1em;
+  padding:1em;
+  overflow-y: auto;
+}

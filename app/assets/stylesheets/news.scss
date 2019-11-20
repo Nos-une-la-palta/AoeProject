@@ -6,14 +6,14 @@
   background-color: #222222;
   color: #cccccc;
   font-family: 'Open Sans', sans-serif;
-  padding: 1rem 2rem 1rem 2rem;
-  margin: 3rem 0rem 2rem 36rem;
+  padding: 1.5rem 2rem 1rem 2rem;
+  margin: 2rem 0rem 2rem 33rem;
   border-style: solid;
   border-color: orange;
   border-width: thin;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
   box-sizing: border-box;
-  width: 30%;
+  width: 40%;
   }
   .news h2{
     padding: 0.5rem 0rem 0.5rem 0rem;
@@ -29,21 +29,9 @@
      background-color: #333333;
      width: 100%;
      padding: 1rem;
-     margin: 0.5rem 0;
+     margin: 1rem 0;
    }
 
-   textarea {
-     color: #ffffff;
-     box-sizing: border-box;
-     border: solid #000000;
-     border-width: thin;
-     background-color: #333333;
-     width: 100%;
-     height:10em;
-     margin:.5em 0 1em;
-     padding:1em;
-   }
-   
    .btn-news {
      box-sizing: border-box;
      background-color: orange;
@@ -51,7 +39,7 @@
      border-radius: 0.3rem;
      font-size: 1.5rem;
      padding: 0.5rem;
-     margin: 0.4rem 0rem 1rem 4rem;
+     margin: 2rem 0rem 1rem 5.1rem;
    }
    .btn-news:hover {
      box-sizing: border-box;
@@ -60,11 +48,11 @@
      border-radius: 0.3rem;
      font-size: 1.5rem;
      padding: 0.5rem;
-     margin: 0.4rem 0rem 1rem 4rem;
+     margin: 2rem 0rem 1rem 5.1rem;
    }
 
    .links {
-     margin: 0rem 0rem 0rem 12.5rem;
+     margin: 0rem 0rem 0rem 17rem;
    }
    .linknew {
     color: #bbbbbb !important;
