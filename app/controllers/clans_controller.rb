@@ -29,7 +29,7 @@ class ClansController < ApplicationController
 
     respond_to do |format|
       if @clan.save
-        format.html { redirect_to @clan, notice: 'Clan was successfully created.' }
+        format.html { redirect_to clans_path, notice: 'Clan was successfully created.' }
         format.json { render :show, status: :created, location: @clan }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class ClansController < ApplicationController
   def update
     respond_to do |format|
       if @clan.update(clan_params)
-        format.html { redirect_to @clan, notice: 'Clan was successfully updated.' }
+        format.html { redirect_to clans_path, notice: 'Clan was successfully updated.' }
         format.json { render :show, status: :ok, location: @clan }
       else
         format.html { render :edit }
