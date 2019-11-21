@@ -8,6 +8,7 @@
 
 Clan.destroy_all
 Twitch.destroy_all
+User.destroy_all
 
 Clan.create(
     avatar: 'https://i.imgur.com/ADrFkRG.jpg',
@@ -48,4 +49,18 @@ Twitch.create(
 Twitch.create(
     owner:'chileaoe',
     url: 'https://www.twitch.tv/chileaoe'
+)
+
+User.create(
+    nick: 'Don Admin',
+    email: 'don@admin.cl',
+    password: '123123',
+    moderator: 'true'
+    
+)
+
+User.first.image.attach(
+    io: File.open('app/assets/images/caca.jpg'),
+    filename: 'caca.jpg',
+    content_type: 'image/jpg'
 )
