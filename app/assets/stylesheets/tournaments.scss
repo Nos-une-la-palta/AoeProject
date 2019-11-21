@@ -16,6 +16,7 @@
   box-sizing: border-box;
   }
   .tournament-new h2{
+      font-family: 'Open Sans', sans-serif;
       padding: 0.5rem 0rem 1rem 0rem;
       font-weight: 600;
       text-align: center;
@@ -55,15 +56,39 @@
 
 /* new tournaments button*/
 .btn-new{
-   background-image: linear-gradient(to right, orange 0%, yellow 51%, orange 100%);
+  box-sizing: border-box;
+  background-color: orange;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: .7rem 5rem 0rem 0rem;
+  text-align: center;
+  color: #222222;
+  font-weight: 400;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
   }
-.btn-new:hover{
-   background-position: right center;
-   background-image: linear-gradient(to right, yellow 0%, orange 51%, yellow 100%);
-  }
+
+  .btn-new:hover{
+    box-sizing: border-box;
+    background-color: #dd7d00;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: .7rem 5rem 0rem 0rem;
+    text-align: center;
+    color: #222222;
+    font-weight: 400;
+    box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+    }
+
 /* new tournaments button*/
 
 /* index tournaments card*/
+   .tournament-card {
+     margin: -1rem 0rem 0rem 0rem;
+     box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+   }
+
    .body{
      background-color: #111111 !important;
     }
@@ -114,3 +139,68 @@
    margin: 0rem 6rem 0rem 6rem;
  }
 /* index tournaments card*/
+
+
+/* index tournaments button*/
+
+.btn-edit-tournament {
+  box-sizing: border-box;
+  background-color: orange;
+  border-radius: 0rem;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  font-size: 1.4rem;
+  padding: 0.3rem 0.8rem 0.4rem 0.8rem;
+  margin: 0rem 0rem 0.5rem 35.5rem;
+  text-align: center;
+  color: #222222;
+  font-weight: 400;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+}
+
+.btn-edit-tournament:hover {
+  box-sizing: border-box;
+  background-color: #dd7d00;
+  border-radius: 0rem;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  font-size: 1.4rem;
+  padding: 0.3rem 0.8rem 0.4rem 0.8rem;
+  margin: 0rem 0rem 0.5rem 35.5rem;
+  text-align: center;
+  color: #eeeeee;
+  font-weight: 400;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+}
+
+.btn-destroy-tournament {
+  box-sizing: border-box;
+  background-color: orange;
+  border-radius: 0rem;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  font-size: 1.4rem;
+  padding: 0.3rem 0.8rem 0.4rem 0.8rem;
+  margin: 0rem 0rem 0.5rem 0rem;
+  text-align: center;
+  color: #222222;
+  font-weight: 400;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+}
+
+.btn-destroy-tournament:hover {
+  box-sizing: border-box;
+  background-color: #ad0600;
+  border-radius: 0rem;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  font-size: 1.4rem;
+  padding: 0.3rem 0.8rem 0.4rem 0.8rem;
+  margin: 0rem 0rem 0.5rem 0rem;
+  text-align: center;
+  color: #eeeeee;
+  font-weight: 400;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+}
+
+/* index tournaments button*/

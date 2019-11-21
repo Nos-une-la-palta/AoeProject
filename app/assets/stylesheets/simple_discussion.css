@@ -1,0 +1,87 @@
+/* title forum*/
+.titulo h1{
+  font-weight: 600;
+  font-size: 3.3rem;
+  color: #dddddd;
+}
+/* title forum*/
+
+
+
+/* new post forum*/
+
+ forum-body .card-body{
+  background-color: #222222;
+  color: #cccccc;
+  font-family: 'Open Sans', sans-serif;
+  border-style: solid;
+  border-color: orange;
+  border-width: thin;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  box-sizing: border-box;
+  }
+
+  .new-post-forum h2{
+    padding: 0.5rem 0rem 1rem 0.5rem;
+    font-weight: 600;
+    text-align: center;
+   }
+
+/* new post forum*/
+
+/* new post form*/
+input[type=imput-simple] {
+  color: #ffffff;
+  box-sizing: border-box;
+  border: solid #000000;
+  border-width: thin;
+  background-color: #333333;
+  width: 100%;
+  padding: 1rem;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+select{
+    color: #ffffff;
+    box-sizing: border-box;
+    border: solid #000000;
+    border-width: thin;
+    background-color: #333333;
+    width: 100%;
+    padding: 1rem;
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+.btn-post{
+  box-sizing: border-box;
+  background-color: orange;
+  border-radius: 0.2rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  margin: 0rem .3rem -0.5rem 0rem;
+  text-align: center;
+}
+
+.btn-post:hover{
+  box-sizing: border-box;
+  background-color: #dd7d00;
+  border-radius: 0.2rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  margin: 0rem .3rem -0.5rem 0rem;
+  text-align: center;
+}
+/* new post form*/
+
+/* post  style*/
+.card-header {
+  background-color: black;
+  border-bottom: orange solid;
+  border-width: thin;
+}
+.card-footer{
+  background-color: #111111;
+}
+/* post  style*/
