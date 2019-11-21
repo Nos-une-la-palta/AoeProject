@@ -23,7 +23,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <% if user_signed_in? %>
-               <%= link_to "Mi Perfil", root_path, class:"dropdown-item" %>
+               <%= link_to "Mi Perfil",  edit_user_registration_path, class:"dropdown-item" %>
                 <%= link_to "Salir", destroy_user_session_path, method: :delete, class:"dropdown-item" %>
               <% else %>
                 <%= link_to "Ingreso", new_user_session_path, class:"dropdown-item" %>
