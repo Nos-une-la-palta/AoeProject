@@ -84,4 +84,9 @@ select{
 .card-footer{
   background-color: #111111;
 }
+
+.forum-post{
+  border: orange solid;
+  border-width: thin;
+}
 /* post  style*/
