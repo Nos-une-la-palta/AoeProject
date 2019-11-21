@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-<div class="row mt-5">
+<div class="row mt-5 ">
   <div class="col-3">
   </div>
   <div class="col-6">
@@ -30,15 +30,17 @@
               <p class="card-text"><small class="text-muted float-right"><%= tournament.created_at.to_date%></small></p>
             </div>
         </div>
-        <% if can? :create, Tournament %>
-          <p><%= link_to 'Edit', edit_tournament_path(tournament) , class:"btn btn-warning mt-2"  %>
-          <%= link_to 'Destroy', tournament, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger mt-2"  %></p>
-         <% end %>
-   <% end %>
+        <div class="">
+          <% if can? :create, Tournament %>
+            <p><%= link_to 'Editar', edit_tournament_path(tournament) , class:"btn btn-edit-tournament"  %>
+            <%= link_to 'Eliminar', tournament, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-destroy-tournament"  %></p>
+          <% end %>
+        </div>
+     <% end %>
   </div>
   <div class="col-3">
     <% if can? :create, Tournament %>
-      <%= link_to 'New Tournament', new_tournament_path, class:"btn btn-new float-right mb-3 "%>
+      <%= link_to 'Nuevo Torneo', new_tournament_path, class:"btn btn-new float-right mb-3 "%>
     <% end %>
   </div>
 </div>
