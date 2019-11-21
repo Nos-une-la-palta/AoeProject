@@ -1,6 +1,8 @@
 // Place all the styles related to the tournaments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+/* new tournaments form*/
 .tournament-new {
   background-color: #222222;
   color: #cccccc;
@@ -49,3 +51,66 @@
    .links1 {
      margin: 1.2rem 0rem 0rem 31rem;
    }
+/* new tournaments form*/
+
+/* new tournaments button*/
+.btn-new{
+   background-image: linear-gradient(to right, orange 0%, yellow 51%, orange 100%);
+  }
+.btn-new:hover{
+   background-position: right center;
+   background-image: linear-gradient(to right, yellow 0%, orange 51%, yellow 100%);
+  }
+/* new tournaments button*/
+
+/* index tournaments card*/
+   .body{
+     background-color: #111111 !important;
+    }
+
+    .body h2{
+      font-weight: 600;
+      font-size: 2.5rem;
+      text-align: center;
+      color: #eeeeee;
+      margin: 0.5rem 0rem 1.5rem 0.5rem;
+    }
+
+    .body h5{
+      font-weight: 400;
+      text-align: center;
+      font-size: 1.5rem;
+      color: #eeeeee;
+      margin: 1rem 0rem 0rem 0.5rem;
+    }
+   .orange{
+      color: orange;
+    }
+
+  .price {
+    margin: 0.5rem 1rem 1.5rem 0rem;
+  }
+  .content {
+    max-width: 70%;
+    margin: 1rem 0rem 0rem 7.5rem;
+  }
+ .price{
+   font-weight: 600;
+   font-size: 3.2rem;
+   text-align: center;
+   margin: -1rem 0rem 0rem 0rem;
+ }
+ .text-block1 {
+     margin: 0rem 0rem 0rem 7.9rem;
+ }
+ .text-block2 {
+     margin: 0rem 4rem 0rem 0rem;
+ }
+ .all-numbers{
+    margin: 2rem 0rem 0rem 0rem;
+ }
+ hr {
+   border: 1px solid #444444;
+   margin: 0rem 6rem 0rem 6rem;
+ }
+/* index tournaments card*/
