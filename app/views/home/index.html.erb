@@ -6,10 +6,14 @@
                 <i class="fas fa-comments"></i> Foros
             </div>
               <div class="card-body">
-                <a href="/forum/threads" style="color: white"><i class="fa fa-circle"></i> All</a><br>
-                <a href="/forum/threads/category/general" style="color: white"><i style="color: #4ea1d3" class="fa fa-circle"></i>General</a><br>
-                <a href="/forum/threads/category/torneos" style="color: white"><i style="color: #eaf514" class="fa fa-circle"></i>Torneos</a><br>
-                <a href="/forum/threads/category/tutoriales" style="color: white"><i style="color: #14f532" class="fa fa-circle"></i>Tutoriales</a>
+                <% ForumCategory.order("created_at").each do |category| %>
+                    <div>
+                        <%= forum_link_to simple_discussion.forum_category_forum_threads_path(category) do %>
+                            <%= icon "circle", style: "color: #{category.color}" %>
+                            <%= category.name %>
+                        <% end %>
+                    </div>
+                <% end %>
             </div>
         </div>
         <%#------------- Clans --------------------------------%>

@@ -13,12 +13,37 @@ class CreateForumCategories < ActiveRecord::Migration[4.2]
 
     ForumCategory.create(
       name: "General",
-      color: "#4ea1d3",
+      color: "#FF4754",
     )
 
     ForumCategory.create(
-      name: "Feedback",
-      color: "#16bc9c",
-    )
+      name: 'Estrategias',
+      color: '#6041E8'
+  )
+  
+  ForumCategory.create(
+      name: 'Torneos',
+      color: '#54FFEE'
+  )
+  
+  ForumCategory.create(
+      name: 'Downloads',
+      color: '#A2E841'
+  )
+  
+  ForumCategory.create(
+      name: 'Torneos antiguos',
+      color: 'FFB840'
+  )
+  
+  ForumCategory.create(
+      name: 'Vods',
+      color: '#FF8D47'
+  )
+  ForumCategory.create(
+      name: 'Partidas grabadas',
+      color: '#c8ed32'
+  )
+
   end
 end

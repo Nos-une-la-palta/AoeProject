@@ -57,7 +57,7 @@
           </strong>
         </h6>
         <div><%= forum_link_to simple_discussion.forum_threads_path, exact: true do %><%= icon "circle" %> All<% end %></div>
-        <% ForumCategory.sorted.each do |category| %>
+        <% ForumCategory.order("created_at").each do |category| %>
           <div>
             <%= forum_link_to simple_discussion.forum_category_forum_threads_path(category) do %>
               <%= icon "circle", style: "color: #{category.color}" %>
