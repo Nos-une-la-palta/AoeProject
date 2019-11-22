@@ -9,7 +9,7 @@
 Clan.destroy_all
 Twitch.destroy_all
 User.destroy_all
-
+ForumCategory.destroy_all
 
 Clan.create(
     avatar: 'https://i.imgur.com/ADrFkRG.jpg',
@@ -67,30 +67,35 @@ User.first.image.attach(
 )
 
 ForumCategory.create(
-    name: 'Downloads',
-    color: '#16bc16'
-)
+    name: "General",
+    color: "#FF4754",
+  )
 
-ForumCategory.create(
-    name: 'Partidas grabadas',
-    color: '#a9bc16'
+  ForumCategory.create(
+    name: 'Estrategias',
+    color: '#6041E8'
 )
 
 ForumCategory.create(
     name: 'Torneos',
-    color: '#bc162f'
+    color: '#54FFEE'
+)
+
+ForumCategory.create(
+    name: 'Downloads',
+    color: '#A2E841'
 )
 
 ForumCategory.create(
     name: 'Torneos antiguos',
-    color: '#ad6a83'
+    color: 'FFB840'
 )
 
 ForumCategory.create(
     name: 'Vods',
-    color: '#91e6e6'
+    color: '#FF8D47'
 )
 ForumCategory.create(
-    name: 'Estrategias',
-    color: '#c4e691'
+    name: 'Partidas grabadas',
+    color: '#c8ed32'
 )

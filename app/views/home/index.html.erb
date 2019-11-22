@@ -6,7 +6,7 @@
                 <i class="fas fa-comments"></i> Foros
             </div>
               <div class="card-body">
-                <% ForumCategory.sorted.each do |category| %>
+                <% ForumCategory.order("created_at").each do |category| %>
                     <div>
                         <%= forum_link_to simple_discussion.forum_category_forum_threads_path(category) do %>
                             <%= icon "circle", style: "color: #{category.color}" %>
