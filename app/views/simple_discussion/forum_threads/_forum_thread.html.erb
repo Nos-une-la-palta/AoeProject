@@ -3,36 +3,38 @@
     <div class="row">
 
       <div class="col-sm-1 text-center">
-        <% if forum_thread.user.image.attached?  %>
-          <%= image_tag(forum_thread.user.image, size: '50') %>
-        <% else %>
-          <%= image_tag(forum_thread.user.image_url, size:'50')%>
-        <% end %>
+        <div class="image-forum-posts2">
+          <% if forum_thread.user.image.attached?  %>
+            <%= image_tag(forum_thread.user.image, size: '85') %>
+          <% else %>
+            <%= image_tag(forum_thread.user.image_url, size:'85')%>
+          <% end %>
+        </div>
       </div>
-
       <div class="col">
-        <h4>
+
           <% if forum_thread.solved? %>
             <span class="text-success"><%= icon "check-circle" %></span>
           <% end %>
-
+        <h4 class="title-forum-post">
           <%= link_to simple_discussion.forum_thread_path(forum_thread) do %>
-            <%= icon "thumb-tack", class: "text-muted" if forum_thread.pinned? %> <%= forum_thread.title %>
+            <%= icon "thumb-tack", class: "text-muted" if forum_thread.pinned? %> <span class="forum-title"><%= forum_thread.title %></span>
           <% end %>
         </h4>
 
         <div class="thread-details">
           <strong><%= category_link(forum_thread.forum_category) %></strong>
-          • <%= t('asked_time_ago', time: time_ago_in_words(forum_thread.created_at), author: forum_thread.user.name) %>
+          <span class="bullet">•</span>
+          <span class="time-ago"> <%= forum_thread.created_at.strftime("Publicado el %m/%d/%Y") %> por <%= forum_thread.user.name%></span>
         </div>
 
-        <p class="text-muted"><%= truncate(strip_tags(forum_thread.forum_posts.first.body.to_s),length: 200)  %></p>
+        <p class="text-muted"><%= truncate(strip_tags(forum_thread.forum_posts.first.body.to_s),length: 101)  %></p>
       </div>
 
-      <div class="col-sm-2 text-center">
+      <div class="col-sm-2 text-center count-posts">
         <%= link_to simple_discussion.forum_thread_path(forum_thread), class: "thread-posts-count" do %>
-          <span class="count"><%= forum_thread.forum_posts_count %></span>
-          <small><%= t("post", count: forum_thread.forum_posts_count) %></small>
+          <span class="count-color"><%= forum_thread.forum_posts_count %></span>
+          <small class="count-color"><%= t("post", count: forum_thread.forum_posts_count) %></small>
         <% end %>
       </div>
 

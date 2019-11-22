@@ -34,7 +34,7 @@
         <% @tournaments.each do |tournament| %>
             <div class="card mb-4 tournament-card">
             <img src="https://i.imgur.com/ORoxMvn.png" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="card-body body">
                     <h5 class="card-title"><%= tournament.title %>, <%= tournament.modality%> </h5>
                     <p class="card-text"><%= tournament.content%></p>
                     <p class="card-text"><small class="text-muted float-right"><%= tournament.created_at.to_date%></small></p>
@@ -46,7 +46,7 @@
         <% @news.each do |news| %>
             <div class="card mb-4 news-card">
             <img src="https://i.imgur.com/7OO5p0O.png" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="card-body body">
                     <h5 class="card-title"><%= news.title %></h5>
                     <p class="card-text"><%= news.content%></p>
                     <p class="card-text"><small class="text-muted float-right"><%= news.created_at.to_date%></small></p>
