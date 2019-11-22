@@ -1,7 +1,7 @@
 class SimpleDiscussion::ForumPostsController < SimpleDiscussion::ApplicationController
   before_action :authenticate_user!
   before_action :set_forum_thread
-  before_action :set_forum_post, only: [:edit, :update]
+  before_action :set_forum_post, only: [:edit, :update, :show]
   before_action :require_mod_or_author_for_post!, only: [:edit, :update]
   before_action :require_mod_or_author_for_thread!, only: [:solved, :unsolved]
 
@@ -22,6 +22,7 @@ class SimpleDiscussion::ForumPostsController < SimpleDiscussion::ApplicationCont
 
   def update
     if @forum_post.update(forum_post_params)
+      
       redirect_to simple_discussion.forum_thread_path(@forum_thread)
     else
       render action: :edit

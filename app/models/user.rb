@@ -8,7 +8,7 @@ class User < ApplicationRecord
   include SimpleDiscussion::ForumUser
 
   has_one_attached :image
-  has_rich_text :body
+  
 
   def name #required by simple discussion forums
     "#{nick}"
