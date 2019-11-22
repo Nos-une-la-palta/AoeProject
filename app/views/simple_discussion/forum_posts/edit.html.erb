@@ -13,11 +13,13 @@
 <%= content_tag :div, id: dom_id(@forum_post), class: forum_post_classes(@forum_post) do %>
   <div class="card-header">
     <div>
+
       <% if @forum_post.user.image.attached?  %>
        <%= image_tag(@forum_post.user.image, size: '50') %>
       <% else %>
         <%= image_tag(@forum_post.user.image_url, size:'50')%>
       <% end %>
+      
       <strong class="forum-post-user"><%= @forum_post.user.name %></strong>
       <small>
         <%= t('commented_on')%>
@@ -27,6 +29,6 @@
   </div>
 
   <div class="card-body">
-    <%= render "form" %>
+    <%= render "formedit" %>
   </div>
 <% end %>
