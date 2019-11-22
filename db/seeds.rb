@@ -10,6 +10,7 @@ Clan.destroy_all
 Twitch.destroy_all
 User.destroy_all
 
+
 Clan.create(
     avatar: 'https://i.imgur.com/ADrFkRG.jpg',
     name: 'Clan CL',
@@ -63,4 +64,33 @@ User.first.image.attach(
     io: File.open('app/assets/images/caca.jpg'),
     filename: 'caca.jpg',
     content_type: 'image/jpg'
+)
+
+ForumCategory.create(
+    name: 'Downloads',
+    color: '#16bc16'
+)
+
+ForumCategory.create(
+    name: 'Partidas grabadas',
+    color: '#a9bc16'
+)
+
+ForumCategory.create(
+    name: 'Torneos',
+    color: '#bc162f'
+)
+
+ForumCategory.create(
+    name: 'Torneos antiguos',
+    color: '#ad6a83'
+)
+
+ForumCategory.create(
+    name: 'Vods',
+    color: '#91e6e6'
+)
+ForumCategory.create(
+    name: 'Estrategias',
+    color: '#c4e691'
 )
