@@ -1,54 +1,42 @@
 <div class="row col-md-12 titulo">
   <h1>Foro AOE</h1>
 </div>
-
 <div class="row simple_discussion">
   <div class="col-md-3 mb-3">
-
-    <div class="card card-body ">
-      <%= link_to t('Nuevo Post'), simple_discussion.new_forum_thread_path, class: "btn btn-outline-primary btn-block" %>
-      <hr />
+    <div class="card card-body card-side ">
+      <%= link_to t('Nuevo Post'), simple_discussion.new_forum_thread_path, class: "btn btn-block" %>
 
       <div class="forum-thread-filters">
         <h5>
           <strong>
-            <%= t('filters') %>
+            <%= t('Filtrar por') %>
           </strong>
         </h5>
-        <div>
-          <%= forum_link_to simple_discussion.forum_threads_path, exact: true do %>
-            <%= icon "bars" %>
-            <%= t('.all_threads') %>
-          <% end %>
-        </div>
         <% if user_signed_in? %>
-          <div>
-            <%= forum_link_to simple_discussion.mine_forum_threads_path do %><%= icon "user-circle-o" %>
-              <%= t('.my_questions') %>
+          <div class="menu-items">
+           <%= forum_link_to simple_discussion.mine_forum_threads_path do %>
+              <p><%= icon "user-circle-o" %> <%= t('.my_questions') %></p>
             <% end %>
           </div>
-          <div>
+          <div class="menu-items">
             <%= forum_link_to simple_discussion.participating_forum_threads_path do %>
-              <%= icon "comments-o" %>
-              <%= t('.participating') %>
+              <p><%= icon "comments-o" %> <%= t('.participating') %></p>
             <% end %>
           </div>
         <% end %>
-        <div>
+        <div class="menu-items">
           <%= forum_link_to simple_discussion.answered_forum_threads_path do %>
-            <%= icon "check" %>
-            <%= t('.answered') %>
+            <p><%= icon "check" %> <%= t('.answered') %></p>
           <% end %>
         </div>
-        <div>
+        <div class="menu-items">
           <%= forum_link_to simple_discussion.unanswered_forum_threads_path do %>
-            <%= icon "question" %>
-            <%= t('.unanswered') %>
+            <p><%= icon "question" %> <%= t('.unanswered') %></p>
           <% end %>
         </div>
       </div>
 
-      <hr />
+      <hr class="hr-side-menu"/>
 
       <div class="forum-thread-filters">
         <h6>
@@ -56,19 +44,20 @@
             <%= t('.by_category') %>
           </strong>
         </h6>
-        <div><%= forum_link_to simple_discussion.forum_threads_path, exact: true do %><%= icon "circle" %> All<% end %></div>
+
+        <div class="menu-items2"><%= forum_link_to simple_discussion.forum_threads_path, exact: true do %><%= icon "circle" %> <span class="category">All</span><% end %></div>
         <% ForumCategory.order("created_at").each do |category| %>
-          <div>
+          <div class="menu-items3">
             <%= forum_link_to simple_discussion.forum_category_forum_threads_path(category) do %>
               <%= icon "circle", style: "color: #{category.color}" %>
-              <%= category.name %>
+              <span class="category"><%= category.name%></span>
             <% end %>
           </div>
         <% end %>
       </div>
 
       <% if @forum_thread.present? && @forum_thread.persisted? %>
-        <hr />
+        <hr class="hr-side-menu"/>
 
         <%# User has not posted in the thread or subscribed %>
         <h5><%= t('.notifications') %></h5>
