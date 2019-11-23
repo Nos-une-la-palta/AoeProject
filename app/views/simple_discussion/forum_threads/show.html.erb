@@ -6,7 +6,7 @@
   <% if is_moderator_or_owner?(@forum_thread) %>
     <div class="col-md-1">
       <%= link_to icon("pencil"), simple_discussion.edit_forum_thread_path(@forum_thread),
-        class: "text-muted",
+        class: "text-muted edit-pencil",
         data: { toggle: "tooltip", placement: "left" },
         title: t('edit_this_thread') %>
     </div>
@@ -14,7 +14,7 @@
 
 </div>
 
-<p class="thread-details">
+<p class="thread-details-show">
   <strong><%= category_link(@forum_thread.forum_category) %></strong>
    <%= t('asked_time_ago', time: time_ago_in_words(@forum_thread.created_at), author: @forum_thread.user.name) %>
 </p>

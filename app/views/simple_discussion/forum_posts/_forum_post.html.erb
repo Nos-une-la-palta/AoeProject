@@ -6,7 +6,7 @@
     <% if is_moderator_or_owner?(forum_post) %>
       <div class="pull-right">
         <%= link_to icon("pencil"), simple_discussion.edit_forum_thread_forum_post_path(@forum_thread, forum_post),
-          class: "text-muted",
+          class: "text-muted pencil-edit-post",
           data: { toggle: "tooltip", placement: "left" },
           title: t('edit_this_post')
         %>
@@ -14,21 +14,24 @@
     <% end %>
 
   <div>
+    <div class="avatar-post">
+        <% if forum_post.user.image.attached?  %>
+        <%= image_tag(forum_post.user.image, size: '65') %>
+        <% else %>
+          <%= image_tag(forum_post.user.image_url, size:'65')%>
+        <% end %>
+    </div>
 
-      <% if forum_post.user.image.attached?  %>
-       <%= image_tag(forum_post.user.image, size: '50') %>
-      <% else %>
-        <%= image_tag(forum_post.user.image_url, size:'50')%>
-      <% end %>
-
+    <div class="user-post">
       <strong class="forum-post-user">
         <%= forum_post.user.name %> <%= forum_user_badge(forum_post.user) %>
       </strong>
-      <small>
+      <small class="colour-date">
         <%= t('commented_on') %>
-        <%= link_to forum_post.created_at.strftime("%b %d, %Y"), simple_discussion.forum_thread_path(@forum_thread, anchor: "forum_post_#{forum_post.id}") %>:
+        <%= link_to forum_post.created_at.strftime("%b %d, %Y"), simple_discussion.forum_thread_path(@forum_thread, anchor: "forum_post_#{forum_post.id}"), class: "colour-date" %>:
       </small>
     </div>
+  </div>
   </div>
 
   <div class="card-body">

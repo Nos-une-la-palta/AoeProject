@@ -5,9 +5,9 @@
       <div class="col-sm-1 text-center">
         <div class="image-forum-posts2">
           <% if forum_thread.user.image.attached?  %>
-            <%= image_tag(forum_thread.user.image, size: '85') %>
+            <%= image_tag(forum_thread.user.image, size: '75') %>
           <% else %>
-            <%= image_tag(forum_thread.user.image_url, size:'85')%>
+            <%= image_tag(forum_thread.user.image_url, size:'75')%>
           <% end %>
         </div>
       </div>
@@ -37,7 +37,7 @@
           <small class="count-color"><%= t("post", count: forum_thread.forum_posts_count) %></small>
         <% end %>
       </div>
-
     </div>
   </div>
 <% end %>
+<hr>
