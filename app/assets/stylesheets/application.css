@@ -28,7 +28,12 @@
    padding: 1.5rem 5rem 0rem 5rem;
   }
 
+
   .card-body{
     background-color: #222222;
-    color: white
+    color: white;
+    border: orange solid;
+    border-width: thin;
+    box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+    box-sizing: border-box;
   }
