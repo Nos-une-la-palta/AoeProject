@@ -22,5 +22,9 @@
     <%= link_to "¿Olvidaste tu contraseña?", new_password_path(resource_name), class:"forgot" %>
   </div>
 <% end %>
+<hr class="hr-fb">
+<div class="fb-log">
+  <%= link_to "Ingresar con Facebook", user_facebook_omniauth_authorize_path, method: :post, class:"btn log-fb" %>
+</div>
 
 </div>

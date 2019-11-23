@@ -47,22 +47,30 @@
     width: 70%;
     border-radius: 0.3rem;
     font-size: 1.5rem;
-    padding: 0.5rem;
     margin: 1rem 0rem 1rem 4.5rem;
   }
   .btn-log:hover {
-    box-sizing: border-box;
     background-color: #dd7d00;
-    width: 70%;
-    border-radius: 0.3rem;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    margin: 1rem 0rem 1rem 4.5rem;
   }
   .forgot{
     color: #bbbbbb !important;
     border-radius: 0.3rem;
     font-size: 1rem;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 0.5rem 1rem 1rem 0.6rem;
     margin: 0rem 0rem 0rem 7.5rem;
   }
+.fb-log {
+  margin: 2.2rem 0rem 0.5rem 7.8rem;
+}
+.hr-fb {
+  margin: 1rem 0rem -1rem 0rem;
+}
+.log-fb {
+  color: #ddd;
+  font-size: 1rem;
+  background-color: #3b5998;
+}
+.log-fb:hover {
+  color: #777;
+  background-color: #2a3c7c;
+}
