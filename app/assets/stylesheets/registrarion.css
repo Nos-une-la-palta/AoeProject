@@ -81,3 +81,19 @@ input[type=password] {
   padding: 0.6rem;
   margin: -0.8rem 0rem 0rem 0rem;
 }
+
+.hr-fb-reg {
+  margin: 1.5rem 0rem -1rem 0rem;
+}
+.fb-reg {
+  margin: 2rem 0rem -0.7rem 25rem;
+}
+.reg-fb {
+  color: #ddd;
+  font-size: 1rem;
+  background-color: #3b5998;
+}
+.reg-fb:hover {
+  color: #777;
+  background-color: #2a3c7c;
+}

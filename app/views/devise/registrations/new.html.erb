@@ -35,5 +35,8 @@
     <%= f.submit "Registrarse", class:"btn btn-sign" %>
   </div>
   <% end %>
-  <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, method: :post %>
+  <hr class="hr-fb-reg">
+  <div class="fb-reg">
+      <%= link_to "Regístrate con Facebook", user_facebook_omniauth_authorize_path, method: :post, class:"btn reg-fb" %>
+  </div>
 </div>
