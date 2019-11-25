@@ -85,23 +85,29 @@
 
 /* index tournaments card*/
    .tournament-card {
-     margin: -1.5rem 1rem 4.5rem 0rem;
+     margin: -1.5rem 0rem 4.5rem 0rem;
      box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+     border: thin solid orange;
    }
 
-   .body{
-     background-color: #111111 !important;
+   .tournament-body{
+     background-color:#111;
+     box-sizing: border-box;
+     padding: 1rem 3rem 2rem 3rem;
+     text-align: center;
+     border-radius: 0rem;
+     color: white;
     }
 
-    .body h2{
+    .tournament-body h2{
       font-weight: 600;
       font-size: 2.5rem;
       text-align: center;
       color: #eeeeee;
-      margin: 0.5rem 0rem 1.5rem 0.5rem;
+      margin: 0.5rem 0rem 1.5rem 1rem;
     }
 
-    .body h5{
+    .tournament-body h5{
       font-weight: 400;
       text-align: center;
       font-size: 1.5rem;
@@ -122,6 +128,7 @@
    font-size: 2.5rem;
    text-align: center;
    margin: -1rem 0rem 0rem 0rem;
+   color: #ddd;
  }
  .value{
    font-weight: 600;
@@ -130,18 +137,20 @@
    margin: -1.1rem 0rem 0rem 0rem;
  }
  .text-block1 {
-     margin: 0rem 0rem 0rem 7.9rem;
+     margin: 0rem 0rem 0rem 5rem;
  }
  .text-block2 {
-     margin: 0rem 4rem 0rem 0rem;
+     margin: 0rem 0rem 0rem 0rem;
+     padding: 0rem 5rem 0rem 0rem;
  }
  .all-numbers{
     margin: 2rem 0rem 0rem 0rem;
  }
  hr {
    border: 1px solid #444444;
-   margin: 0rem 6rem 0rem 6rem;
+   margin: 0rem 4.3rem 0rem 6rem;
  }
+
 /* index tournaments card*/
 
 

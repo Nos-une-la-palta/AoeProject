@@ -2,24 +2,135 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+/* twitch-card home*/
 .twitch-card{
-    background-color: #222222;
     color: #CCCCCC;
-    border-style: solid;
-    border-color: #000000;
+    border: black solid;
     border-width: thin;
     box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
     box-sizing: border-box;
+    margin: 0rem 5rem 0rem 0rem;
 }
 
 .twitch-card-head{
     background-color: #000000;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
 }
 
-.tournament-card{
-    border: 2px solid orange;
+.card-twitch-home{
+  background: repeating-linear-gradient(
+  45deg,
+  #222,
+  #222 0.3rem,
+  #000 0.3rem,
+  #000 0.6rem
+);
+  box-sizing: border-box;
+  border-radius: 0rem;
+  padding: 1rem 0rem 0.3rem 0.7rem;
 }
 
-.news-card{
-    border: 2px solid orange;
+.image-twitch-index {
+  border: orange solid;
+  border-width: thin;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  box-sizing: border-box;
 }
+
+.twitch-up {
+  margin: -2rem 0rem 0rem 0rem;
+}
+/* twitch-card home*/
+
+/* forum-card home*/
+
+.forum-card{
+    color: #CCCCCC;
+    border: black solid;
+    border-width: thin;
+    box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+    box-sizing: border-box;
+    margin: 0rem 0rem 0rem 5rem;
+    width: 70%;
+}
+
+.card-forum-home {
+  background: repeating-linear-gradient(
+  45deg,
+  #222,
+  #222 0.3rem,
+  #000 0.3rem,
+  #000 0.6rem
+);
+  box-sizing: border-box;
+  border-radius: 0rem;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.home-forum-categories {
+  margin: 0rem 0rem 0.5rem 0rem;
+}
+
+.forum-name-category {
+  color: #ccc;
+  font-weight: 600;
+  margin: 0rem 0rem 0rem 0.8rem;
+}
+/* forum-card home*/
+
+/* clans-card home*/
+.clans-card{
+    color: #CCCCCC;
+    border: black solid;
+    border-width: thin;
+    box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+    box-sizing: border-box;
+    margin: 4rem 0rem 0rem 5rem;
+    width: 70%
+}
+
+.card-clans-home{
+  background: repeating-linear-gradient(
+  45deg,
+  #222,
+  #222 0.3rem,
+  #000 0.3rem,
+  #000 0.6rem
+);
+  box-sizing: border-box;
+  border-radius: 0rem;
+  padding: 1rem 0rem 0.3rem 0.7rem;
+}
+
+.image-twitch-index {
+  border: orange solid;
+  border-width: thin;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  box-sizing: border-box;
+}
+
+.clans-card-head{
+    background-color: #000000;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.down {
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.image-clans-home{
+  margin: 0.6rem 0rem 0.6rem 1rem;
+}
+
+.name-clans-home{
+  margin: 0rem 0rem 0rem 0.5rem;
+}
+
+.link-clans-home{
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+
+/* clans-card home*/
