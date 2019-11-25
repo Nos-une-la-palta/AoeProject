@@ -80,3 +80,8 @@ trix-editor {
   padding:1em;
   overflow-y: auto;
 }
+.trix-button-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
