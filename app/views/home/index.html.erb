@@ -1,56 +1,62 @@
 <div class="row mt-5">
-    <div class="col-3">
+    <div class="col-3 twitch-up">
         <%#------------- Foros --------------------------------%>
-        <div class="card mt-3 twitch-card" style="width: 17rem;">
+        <div class="card mt-3 forum-card">
             <div class="card-header text-center twitch-card-head" style="font-size: 1.4rem;">
                 <i class="fas fa-comments"></i> Foros
             </div>
-              <div class="card-body">
+              <div class="card card-forum-home">
                 <% ForumCategory.order("created_at").each do |category| %>
-                    <div>
+                    <div class="home-forum-categories">
                         <%= forum_link_to simple_discussion.forum_category_forum_threads_path(category) do %>
                             <%= icon "circle", style: "color: #{category.color}" %>
-                            <%= category.name %>
+                            <span class="forum-name-category"><%= category.name %></span>
                         <% end %>
                     </div>
                 <% end %>
             </div>
         </div>
         <%#------------- Clans --------------------------------%>
-        <div class="card mt-3 twitch-card" style="width: 17rem;">
-            <div class="card-header text-center twitch-card-head" style="font-size: 1.4rem;">
-                <i class="fas fa-fist-raised"></i> Clanes Asociados
-            </div>
-            <% @clans.each do |clans| %>
-                <a href="<%= clans.link %>" class="ml-3 mb-2 mt-2" style="color: white">
-                    <%= image_tag(clans.avatar, size:'25', style:'border-radius: 50%')%>
-                    <%= clans.name %>
-				</a>
-            <% end %>
+        <div class="down">
+          <div class="card mt-3 clans-card">
+              <div class="card-header text-center clans-card-head" style="font-size: 1.4rem;">
+                  <i class="fas fa-fist-raised"></i> Clanes Asociados
+              </div>
+              <div class="card-clans-home">
+                <% @clans.each do |clans| %>
+                    <a href="<%= clans.link %>" class="ml-3 mb-2 mt-2 link-clans-home" style="color: white">
+                        <%= image_tag(clans.avatar, size:'40', style:'border-radius: 50%', class:'image-clans-home')%>
+                        <span class="name-clans-home"><%= clans.name %></span>
+                    </a>
+                    <br>
+                <% end %>
+              </div>
+          </div>
         </div>
+
     </div>
     <div class="col-6">
         <%#------------- Tournaments --------------------------------%>
     <% @tournaments.each do |tournament| %>
         <div class="card tournament-card">
           <img src="https://i.imgur.com/ORoxMvn.png" class="card-img-top" alt="...">
-            <div class="card-body body">
+            <div class="card tournament-body">
                 <h2 class="card-title"> <%= tournament.title %>: <span class="orange"><%= tournament.modality%></span></h2>
-                <hr>
+                <hr style="width: 76%; margin-left: 6rem">
                 <div class="all-numbers">
                   <div class="row price">
-                    <div class="col-4 text-block1">
+                    <div class="col-5 text-block1">
                       <h4 class="card-text"><span class="orange"><i class="fas fa-wallet"></i> Precio entrada </span></h4>
                        <p class="price"><%= number_to_currency(tournament.value , precision: 0)%></p>
                     </div>
-                    <div class="col-4 text-block2">
+                    <div class="col-5 text-block2">
                       <h4 class="card-text"><span class="orange"><i class="fas fa-trophy"></i> Premio a repartir </span></h4>
                       <p class="price"><%= number_to_currency(tournament.price , precision: 0)%></p>
                     </div>
                   </div>
                   <hr>
                   <div class="content">
-                    <p class="card-text mt-3"><%= tournament.content%></p>
+                    <p class="card-text mt-3 tournent-content-color"><%= tournament.content%></p>
                   </div>
                   <hr>
                   <h5 class="card-text"> Mapa :  <span class="orange"><%= tournament.map %></span> </h5>
@@ -68,29 +74,36 @@
 
         <%#------------- News --------------------------------%>
         <% @news.each do |news| %>
-            <div class="card mb-4 news-card">
-            <img src="https://i.imgur.com/7OO5p0O.png" class="card-img-top" alt="...">
-                <div class="card-body body">
-                    <h5 class="card-title"><%= news.title %></h5>
-                    <p class="card-text"><%= news.content%></p>
-                    <p class="card-text"><small class="text-muted float-right"><%= news.created_at.to_date%></small></p>
-                 </div>
+            <div class="card news-card">
+              <img src="https://i.imgur.com/7OO5p0O.png" class="card-img-top" alt="...">
+                <div class="card card-news">
+                  <h4 class="card-title title-h4"><%= news.title %></h4>
+                  <hr class="hr-news-cards">
+                  <p class="card-text-1"><%= news.content%></p>
+                  <hr class="hr-news-cards">
+                  <p class="card-text"><small class="text-muted float-right"><%= news.created_at.to_date%></small></p>
+                </div>
             </div>
+            <% if can? :create, News %>
+              <%= link_to 'Editar', edit_news_path(news) , class:"btn btn-edit-news"  %>
+              <%= link_to 'Eliminar', news, method: :delete, data: { confirm: '¿Estas seguro?' }, class:"btn btn-destroy-news"  %>
+            <% end %>
         <% end %>
     </div>
-    <div class="col-3">
+    <div class="col-3 twitch-up">
+      <%#------------- Twitch --------------------------------%>
         <div class="card mt-3 twitch-card float-right" style="width: 17rem;">
             <div class="card-header text-center twitch-card-head" style="font-size: 1.4rem;">
                 <i class="fab fa-twitch"></i> Twitch
             </div>
-            <div class="card-body">
+            <div class="card card-twitch-home">
                 <% @twitches.each do |twitch| %>
                     <div class="row ml-4 mb-4 mt-2" style="position: relative">
 					    <a href="<%= twitch.url %>" target="_blank">
-							<img src="https://i.imgur.com/1jDJelo.jpg" style="width: 80%">
+							<img class="image-twitch-index" src="https://i.imgur.com/1jDJelo.jpg" style="width: 80%">
 						</a>
                         <div style="position: absolute; top: -10px; left: 20px; width: 60%; text-align: center;">
-                            <span style=" border-radius: 3px; background-color: #3D4148; padding: 3px 6px; border: 1px solid white; color: #E7A70F; font-size: 1.2rem;">
+                            <span style=" border-radius: 3px; background-color: #3D4148; padding: 3px 6px; border: medium solid #111; color: #E7A70F; font-size: 1.2rem;">
                                 <%= twitch.owner %>
                             </span>
                         </div>
