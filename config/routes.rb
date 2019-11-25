@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   resources :news
   resources :tournaments
+  match '*all', controller: 'application', action: 'cors_preflight_check', via: [:options]
 
   mount SimpleDiscussion::Engine => "/forum"
 
