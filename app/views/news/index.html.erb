@@ -6,21 +6,23 @@
     <% @news.each do |news| %>
         <div class="card news-card">
           <img src="https://i.imgur.com/7OO5p0O.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"><%= news.title %></h5>
-              <p class="card-text"><%= news.content%></p>
+            <div class="card card-news">
+              <h4 class="card-title title-h4"><%= news.title %></h4>
+              <hr class="hr-news-cards">
+              <p class="card-text-1"><%= news.content%></p>
+              <hr class="hr-news-cards">
               <p class="card-text"><small class="text-muted float-right"><%= news.created_at.to_date%></small></p>
             </div>
         </div>
         <% if can? :create, News %>
-          <%= link_to 'Edit', edit_news_path(news) , class:"btn btn-warning"  %>
-          <%= link_to 'Destroy', news, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger"  %></p>
+          <%= link_to 'Edit', edit_news_path(news) , class:"btn btn-edit-news"  %>
+          <%= link_to 'Destroy', news, method: :delete, data: { confirm: '¿Estas seguro?' }, class:"btn btn-destroy-news"  %>
         <% end %>
     <% end %>
   </div>
   <div class="col-3">
   <% if can? :create, News %>
-    <%= link_to 'New News', new_news_path, class:"btn btn-info float-right mb-3"%>
+    <%= link_to 'New News', new_news_path, class:"btn btn-new-news float-right mb-3"%>
   <% end %>
   </div>
 </div>
