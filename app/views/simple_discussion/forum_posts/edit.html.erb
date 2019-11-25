@@ -13,11 +13,12 @@
 <%= content_tag :div, id: dom_id(@forum_post), class: forum_post_classes(@forum_post) do %>
   <div class="card-header">
     <div>
-
-      <% if @forum_post.user.image.attached?  %>
-       <%= image_tag(@forum_post.user.image, size: '50') %>
+      <% if @forum_thread.user.image.attached?  %>
+        <%= image_tag(@forum_thread.user.image, size: '75') %>
+      <% elsif @forum_thread.user.image_url.present? %>
+        <%= image_tag(@forum_thread.user.image_url, size:'75')%>
       <% else %>
-        <%= image_tag(@forum_post.user.image_url, size:'50')%>
+         <%= image_tag('https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg', size:'75')%>
       <% end %>
       
       <strong class="forum-post-user"><%= @forum_post.user.name %></strong>

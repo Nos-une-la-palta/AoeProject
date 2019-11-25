@@ -15,11 +15,13 @@
 
   <div>
     <div class="avatar-post">
-        <% if forum_post.user.image.attached?  %>
-        <%= image_tag(forum_post.user.image, size: '65') %>
-        <% else %>
-          <%= image_tag(forum_post.user.image_url, size:'65')%>
-        <% end %>
+      <% if forum_thread.user.image.attached?  %>
+        <%= image_tag(forum_thread.user.image, size: '75') %>
+      <% elsif forum_thread.user.image_url.present? %>
+        <%= image_tag(forum_thread.user.image_url, size:'75')%>
+      <% else %>
+         <%= image_tag('https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg', size:'75')%>
+      <% end %>
     </div>
 
     <div class="user-post">
