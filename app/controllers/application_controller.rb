@@ -1,28 +1,9 @@
 class ApplicationController < ActionController::Base
     before_action :configure_permitted_parameters, if: :devise_controller?
     before_action :configure_account_update_params, if: :devise_controller?
-    before_action :cors_set_access_control_headers
-    before_action :whitelist_cors
 
-    def whitelist_cors
-      response.headers['Access-Control-Allow-Origin'] = allow_origin_header
-      response.headers['Access-Control-Allow-Methods'] = 'POST, OPTIONS'
-      response.headers['Access-Control-Allow-Headers'] = 'origin, content-type, accept'
-      return render plain: '' if cors_preflight_check?
-    end
-    
-    def cors_preflight_check?
-      request.request_method == 'OPTIONS'
-    end
-    
-    def allow_origin_header
-      if public?
-        '*'
-      else
-        # whitelist request.headers['origin'] or error
-      end
-    end
-    
+    before_action :cors_set_access_control_headers
+
     def cors_preflight_check
       if request.method == 'OPTIONS'
         cors_set_access_control_headers
