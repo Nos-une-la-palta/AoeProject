@@ -5,11 +5,13 @@
     <div class="col-4">
       <h2>Edit <%= resource_name.to_s.humanize %></h2>
       <div class="avatar">
-        <% if current_user.image.attached?  %>
-         <%= image_tag(current_user.image, size: '175') %>
-        <% else %>
-          <%= image_tag(current_user.image_url, size:'175')%>
-        <% end %>
+          <% if current_user.image.attached?  %>
+            <%= image_tag(current_user.image, size: '175') %>
+          <% elsif current_user.image_url.present? %>
+            <%= image_tag(current_user.image_url, size:'175')%>
+          <% else %>
+            <%= image_tag('https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg', size:'175')%>
+          <% end %>
       </div>
       <div class="field">
         <%= f.label :image, "Cambiar avatar", class:"btn btn-add2"%>
