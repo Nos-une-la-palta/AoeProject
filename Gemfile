@@ -27,6 +27,7 @@ gem 'devise'
 #foro simple discussion
 gem 'simple_discussion'
 #simple discussion
+gem 'rack-cors', :require => 'rack/cors'
 gem 'cancancan'
 #omniauth-facebook
 gem 'omniauth-facebook'
