@@ -16,14 +16,15 @@ module AoeProject
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
   end
-end
-
-class Application < Rails::Application
-  # Access-Control-Allow-Origin
-  config.middleware.insert_before 0, Rack::Cors do
-    allow do
-      origins 'https://radiant-bastion-31318.herokuapp.com', /https*:\/\/.*?bloopist\.com/
-      resource '*', :headers => :any, :methods => :any
+  class Application < Rails::Application
+    # Access-Control-Allow-Origin
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins 'https://radiant-bastion-31318.herokuapp.com', /https*:\/\/.*?bloopist\.com/
+        resource '*', :headers => :any, :methods => :any
+      end
     end
   end
+  
 end
+
