@@ -1,6 +1,6 @@
 <figure class="attachment attachment--<%= blob.representable? ? "preview" : "file" %> attachment--<%= blob.filename.extension %>">
   <% if blob.representable? %>
-    <%= image_tag polymorphic_url(blob.representation(resize: local_assigns[:in_gallery] ? "800x600" : "1024x768"), script_name: nil) %>
+    <%= image_tag polymorphic_url(blob.representation(resize: local_assigns[:in_gallery] ? "800x600" : "1024x768"), script_name: nil, crossorigin:"anonymous") %>
   <% end %>
 
   <figcaption class="attachment__caption">
