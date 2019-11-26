@@ -1,6 +1,4 @@
-// Place all the styles related to the Clans controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+/* new clans form*/
 .clans {
   background-color: #222222;
   color: #cccccc;
@@ -14,39 +12,140 @@
   box-sizing: border-box;
   width: 30%;
   }
-  .clans h2{
-    padding: 0.5rem 0rem 0.5rem 7.5rem;
-    font-weight: 600;
-   }
-   input[type=imput3] {
-     color: #ffffff;
-     box-sizing: border-box;
-     border: solid #000000;
-     border-width: thin;
-     background-color: #333333;
-     width: 100%;
-     padding: 1rem;
-     margin: 0.5rem 0;
-   }
 
-   .btn-clans {
-     box-sizing: border-box;
-     background-color: orange;
-     width: 70%;
-     border-radius: 0.3rem;
-     font-size: 1.5rem;
-     padding: 0.5rem;
-     margin: 1rem 0rem 1rem 4.3rem;
-   }
-   .btn-clans:hover {
-     box-sizing: border-box;
-     background-color: #dd7d00;
-     width: 70%;
-     border-radius: 0.3rem;
-     font-size: 1.5rem;
-     padding: 0.5rem;
-     margin: 1rem 0rem 1rem 4.3rem;
-   }
-   .links2 {
-     margin: 0rem 0rem 0rem 12.5rem;
-   }
+.clans h2{
+  padding: 0.5rem 0rem 0.5rem 7.5rem;
+  font-weight: 600;
+ }
+
+input[type=imput3] {
+   color: #ffffff;
+   box-sizing: border-box;
+   border: solid #000000;
+   border-width: thin;
+   background-color: #333333;
+   width: 100%;
+   padding: 1rem;
+   margin: 0.5rem 0;
+}
+
+.btn-clans {
+   box-sizing: border-box;
+   background-color: orange;
+   width: 70%;
+   border-radius: 0.3rem;
+   font-size: 1.5rem;
+   padding: 0.5rem;
+   margin: 1rem 0rem 1rem 4.3rem;
+}
+
+.btn-clans:hover {
+   box-sizing: border-box;
+   background-color: #dd7d00;
+   width: 70%;
+   border-radius: 0.3rem;
+   font-size: 1.5rem;
+   padding: 0.5rem;
+   margin: 1rem 0rem 1rem 4.3rem;
+}
+
+.links2 {
+   margin: 0rem 0rem 0rem 12.5rem;
+}
+/* new clans form*/
+
+/* clans index table*/
+#clans-table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  box-sizing: border-box;
+  margin: 3.5rem 0rem 0rem 4rem;
+}
+
+
+#clans-table td, #clans-table th{
+  border: thin solid black;
+  padding: 1rem;
+}
+
+#clans-table tr:nth-child(even){background-color: #111;}
+#clans-table tr:nth-child(odd){background-color: #222;}
+#clans-table tr:hover {background-color: #000; color: #666;}
+
+#clans-table tr {
+  color: #ccc;
+  text-align: center;
+}
+
+#clans-table th {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: left;
+  background: repeating-linear-gradient(
+  45deg,
+  #222,
+  #222 0.3rem,
+  #000 0.3rem,
+  #000 0.6rem
+);
+  color: #ddd;
+  text-align: center;
+  border-bottom: thin solid orange;
+}
+
+/* clans table buttons*/
+
+.btn-edit-clans {
+  box-sizing: border-box;
+  background-color: orange;
+  font-size: 1.4rem;
+  padding: 0.3rem 1.5rem 0.4rem 1.5rem;
+  text-align: center;
+  color: #222222;
+  font-weight: 400;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+}
+
+.btn-edit-clans:hover {
+  background-color: #dd7d00;
+}
+
+.btn-destroy-clans {
+  box-sizing: border-box;
+  background-color: orange;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #222222;
+  font-weight: 400;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+}
+
+.btn-destroy-clans:hover {
+  background-color: #ad0600;
+}
+
+/* clans table buttons */
+
+/* clans index table */
+
+/* new clans button*/
+.btn-new-clans{
+  box-sizing: border-box;
+  background-color: orange;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 2.7rem 5rem 0rem 0rem;
+  text-align: center;
+  color: #222222;
+  font-weight: 400;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  }
+
+.btn-new-clans:hover{
+  background-color: #dd7d00;
+  }
+
+/* new clans button*/
