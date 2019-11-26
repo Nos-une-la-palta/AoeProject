@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-/* new tournaments form*/
+/* new news form*/
 .news {
   background-color: #222222 !important;
   color: #cccccc;
@@ -57,9 +57,9 @@
    .linknew {
     color: #bbbbbb !important;
    }
-   /* new tournaments form*/
+   /* new news form*/
 
-   /* new tournaments button*/
+   /* new news button*/
    .btn-new-news{
      box-sizing: border-box;
      background-color: orange;
@@ -76,6 +76,9 @@
    .btn-new-news:hover{
      background-color: #dd7d00;
      }
+
+   /* new news button*/
+
    /* index news card*/
 
    .news-card {

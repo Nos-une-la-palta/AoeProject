@@ -1,5 +1,5 @@
-<div class="row mt-5">
-    <div class="col-3 twitch-up">
+<div class="row justify-content-md-center margin">
+    <div class="col">
         <%#------------- Foros --------------------------------%>
         <div class="card mt-3 forum-card">
             <div class="card-header text-center twitch-card-head" style="font-size: 1.4rem;">
@@ -33,7 +33,6 @@
               </div>
           </div>
         </div>
-
     </div>
     <div class="col-6">
         <%#------------- Tournaments --------------------------------%>
@@ -90,10 +89,10 @@
             <% end %>
         <% end %>
     </div>
-    <div class="col-3 twitch-up">
+    <div class="col">
       <%#------------- Twitch --------------------------------%>
-        <div class="card mt-3 twitch-card float-right" style="width: 17rem;">
-            <div class="card-header text-center twitch-card-head" style="font-size: 1.4rem;">
+        <div class="card mt-3 twitch-card float-left"  style="width: 18rem; margin-left: 2.5rem;">
+            <div class="card-header text-center twitch-card-head " style="font-size: 1.4rem;">
                 <i class="fab fa-twitch"></i> Twitch
             </div>
             <div class="card card-twitch-home">
@@ -102,7 +101,7 @@
 					    <a href="<%= twitch.url %>" target="_blank">
 							<img class="image-twitch-index" src="https://i.imgur.com/1jDJelo.jpg" style="width: 80%">
 						</a>
-                        <div style="position: absolute; top: -10px; left: 20px; width: 60%; text-align: center;">
+                        <div style="position: absolute; top: -10px; left: 28px; width: 60%; text-align: center;">
                             <span style=" border-radius: 3px; background-color: #3D4148; padding: 3px 6px; border: medium solid #111; color: #E7A70F; font-size: 1.2rem;">
                                 <%= twitch.owner %>
                             </span>

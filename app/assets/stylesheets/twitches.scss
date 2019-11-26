@@ -1,8 +1,16 @@
 // Place all the styles related to the Twitches controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+/* new twitches form*/
 .twitches {
-  background-color: #222222;
+  background: repeating-linear-gradient(
+  45deg,
+  #222,
+  #222 0.3rem,
+  #000 0.3rem,
+  #000 0.6rem
+);
   color: #cccccc;
   font-family: 'Open Sans', sans-serif;
   padding: 1rem 2rem 1rem 2rem;
@@ -14,10 +22,12 @@
   box-sizing: border-box;
   width: 30%;
   }
+
   .twitches h2{
     padding: 0.5rem 0rem 0.5rem 7.5rem;
     font-weight: 600;
    }
+
    input[type=imput4] {
      color: #ffffff;
      box-sizing: border-box;
@@ -28,6 +38,7 @@
      padding: 1rem;
      margin: 0.5rem 0;
    }
+
    .btn-twitches {
      box-sizing: border-box;
      background-color: orange;
@@ -37,6 +48,7 @@
      padding: 0.5rem;
      margin: 1rem 0rem 1rem 4.3rem;
    }
+
    .btn-twitches:hover {
      box-sizing: border-box;
      background-color: #dd7d00;
@@ -46,6 +58,97 @@
      padding: 0.5rem;
      margin: 1rem 0rem 1rem 4.3rem;
    }
+
    .links4 {
      margin: 0rem 0rem 0rem 12.5rem;
    }
+
+/* new twitches form*/
+
+/* new twitches button*/
+.btn-new-twitches{
+  box-sizing: border-box;
+  background-color: orange;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 2.7rem 5rem 0rem 0rem;
+  text-align: center;
+  color: #222222;
+  font-weight: 400;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  }
+
+.btn-new-twitches:hover{
+  background-color: #dd7d00;
+  }
+/* new twitches button*
+
+/* index twitch video*/
+.twitch-card-video {
+  box-sizing: border-box;
+  margin: 1.5rem 0.25rem 3rem 0.25rem;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  border-top: thin solid orange;
+  border-bottom: thin solid orange;
+}
+.owner-name {
+  position: absolute;
+  top: 0.5rem;
+  left: 6.69rem;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  font-weight: 600;
+  background: repeating-linear-gradient(
+  45deg,
+  #222,
+  #222 0.3rem,
+  #000 0.3rem,
+  #000 0.6rem
+);
+}
+/* index twitch video*/
+
+/* index twitch button*/
+
+.btn-edit-twitch {
+  box-sizing: border-box;
+  background-color: orange;
+  border-radius: 0rem;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  font-size: 1.4rem;
+  padding: 0.3rem 0.8rem 0.4rem 0.8rem;
+  margin: -5.5rem 0rem 0rem 21.5rem;
+  text-align: center;
+  color: #222222;
+  font-weight: 400;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+}
+
+.btn-edit-twitch:hover {
+  background-color: #dd7d00;
+}
+
+.btn-destroy-twitch {
+  box-sizing: border-box;
+  background-color: orange;
+  border-radius: 0rem;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  font-size: 1.4rem;
+  padding: 0.3rem 0.8rem 0.4rem 0.8rem;
+  margin: -5.5rem 0rem 0rem 0rem;
+  text-align: center;
+  color: #222222;
+  font-weight: 400;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+}
+
+.btn-destroy-twitch:hover {
+  background-color: #ad0600;
+}
+
+/* index twitch button*/
