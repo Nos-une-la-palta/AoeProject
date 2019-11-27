@@ -4,7 +4,7 @@
   color: #cccccc;
   font-family: 'Open Sans', sans-serif;
   padding: 3rem 4rem 2rem 2rem;
-  margin: 3rem 0rem 2rem 21rem;
+  margin: 2rem 0rem 2rem 21rem;
   border-style: solid;
   border-color: orange;
   border-width: thin;
@@ -35,12 +35,12 @@
 
 .hr{
   border: 1px solid #444444;
-  margin: -1rem 0rem 1rem 0rem;
+  margin: -1rem 0rem 1rem 2.5rem;
 }
 
 .hr-bottom{
   border: 1px solid #444444;
-  margin: 1rem 0rem 1rem 0rem;
+  margin: 1rem 0.5rem 1rem 2.5rem;
 }
 
 .btn-update {
@@ -88,3 +88,12 @@
   width: 75%;
   margin: 0rem 0rem 0rem 8rem;
 }
+
+.down-col {
+top: 3rem;
+}
+
+.edit_user {
+  margin: 0rem 1rem 0rem 0rem;
+}
+/* formulario editar perfil */
