@@ -16,7 +16,7 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle nav1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <% if user_signed_in?%>
-                <%=current_user.nick%>
+                <%= truncate(current_user.nick, length: 15)%>
               <% else %>
                 Ingreso
               <% end %>
