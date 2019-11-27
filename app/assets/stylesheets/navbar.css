@@ -10,7 +10,7 @@
 }
 
 .navfull{
-  background-color: orange;
+  background: radial-gradient(#ffb733, #e69500);
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   margin :-4rem 0rem 0rem 0rem;
 }
@@ -20,6 +20,7 @@
     color: #ffffff !important;
     font-size: 1.1rem;
     margin :0rem 1rem 0rem 1rem;
+    text-shadow: 0 0.1rem 0.1rem rgba(0,0,0,0.30);
 }
 
 
