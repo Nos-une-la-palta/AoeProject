@@ -1,8 +1,8 @@
 <div class="container edit">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
-  <div class="row">
-    <div class="col-4">
+  <div class="row justify-content-md-center">
+    <div class="col-4 move-to">
       <h2>Edit <%= resource_name.to_s.humanize %></h2>
       <div class="avatar">
           <% if current_user.image.attached?  %>
@@ -18,10 +18,7 @@
         <%= f.file_field :image, type:"file", class:"custom-file-input" %>
       </div>
     </div>
-        <div class="col-8">
-          <div class="field">
-            <%= f.email_field :email, autofocus: true, autocomplete: "email", type:"imput", placeholder:"Email" %>
-          </div>
+        <div class="col-8 down-col">
           <div class="field">
             <%= f.text_field :nick,  class:"form-inline", placeholder:"Nick", type:"imput" %>
           </div>
