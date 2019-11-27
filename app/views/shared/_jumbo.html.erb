@@ -21,14 +21,14 @@
                 Ingreso
               <% end %>
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <% if user_signed_in? %>
-               <%= link_to "Mi Perfil",  edit_user_registration_path, class:"dropdown-item" %>
-                <%= link_to "Salir", destroy_user_session_path, method: :delete, class:"dropdown-item" %>
-              <% else %>
-                <%= link_to "Ingreso", new_user_session_path, class:"dropdown-item" %>
-                <%= link_to "Registro", new_user_registration_path, class:"dropdown-item" %>
-              <% end %>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink select">
+                <% if user_signed_in? %>
+                <%= link_to "Mi Perfil",  edit_user_registration_path, class:"dropdown-item" %>
+                 <%= link_to "Salir", destroy_user_session_path, method: :delete, class:"dropdown-item" %>
+               <% else %>
+                 <%= link_to "Ingreso", new_user_session_path, class:"dropdown-item" %>
+                 <%= link_to "Registro", new_user_registration_path, class:"dropdown-item" %>
+               <% end %>
             </div>
           </li>
         </ul>
@@ -38,7 +38,15 @@
     <!-- jumbotron content presentation -->
 
     <div class=" heading-text-container">
-      <p class="main-bio">  <strong>Chile AOE es una comunidad formada por jugadores de Age of Empire con más de 15 años de experiencia, siendo uno de los más antiguos en Chile.</strong>  Esta Comunidad busca informar, organizar e intruir sobre este gran juego.</p>
-    </div>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-4"></div>
+        <div class="col-5">
+          <p class="float-right"> <strong>Chile AOE</strong> es una comunidad formada por jugadores de Age of Empire con más de 15 años de experiencia, siendo uno de los más antiguos en Chile.</p>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      </div>
+
   </div>
 </div>
