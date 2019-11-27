@@ -1,3 +1,5 @@
 class Clan < ApplicationRecord
-    validates :avatar, :name, :link, presence: true
+    validates :name, presence: true
+    validates :avatar, url: true, presence: true
+    validates :link, url: true, presence: true
 end

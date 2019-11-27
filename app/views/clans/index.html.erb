@@ -5,6 +5,7 @@
 <div class="table-responsive-xl padding-table">
   <table id="clans-table">
       <tr>
+        <th scope="col">Avatar Image</th>
         <th scope="col">Avatar Link</th>
         <th scope="col">Name</th>
         <th scope="col">Link</th>
@@ -13,6 +14,7 @@
       </tr>
       <% @clans.each do |clan| %>
         <tr>
+            <td><%= image_tag(clan.avatar, size:'40', style:'border-radius: 50%')  %></td>
             <td><%= clan.avatar %></td>
             <td><%= clan.name %></td>
             <td><%= clan.link %></td>
