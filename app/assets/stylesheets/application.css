@@ -37,3 +37,10 @@
     box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
     box-sizing: border-box;
   }
+
+
+@media (max-width: 600px){
+  .body-container{
+    padding: 1rem;
+  }
+}

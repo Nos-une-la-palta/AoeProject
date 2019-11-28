@@ -2,7 +2,7 @@
 <div class="row mt-5 ">
   <div class="col-3">
   </div>
-  <div class="col-6">
+  <div class="col-lg-6 col-sm-12">
     <% @tournaments.reverse_each do |tournament| %>
         <div class="card tournament-card">
           <img src="https://i.imgur.com/ORoxMvn.png" class="card-img-top" alt="...">
@@ -11,11 +11,11 @@
                 <hr style="width: 76%; margin-left: 6rem">
                 <div class="all-numbers">
                   <div class="row price">
-                    <div class="col-5 text-block1">
+                    <div class="col-lg-5 col-sm-2 text-block1">
                       <h4 class="card-text"><span class="orange"><i class="fas fa-wallet"></i> Precio entrada </span></h4>
                        <p class="price"><%= number_to_currency(tournament.value , precision: 0)%></p>
                     </div>
-                    <div class="col-5 text-block2">
+                    <div class="col-lg-5 col-sm-2 text-block2">
                       <h4 class="card-text"><span class="orange"><i class="fas fa-trophy"></i> Premio a repartir </span></h4>
                       <p class="price"><%= number_to_currency(tournament.price , precision: 0)%></p>
                     </div>

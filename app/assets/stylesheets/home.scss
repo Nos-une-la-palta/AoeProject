@@ -137,3 +137,9 @@
 .margin {
   padding-top: 3rem;
 }
+
+@media (max-width: 600px){
+  .forum-card, .clans-card, .twitch-card, .col{
+    display: none;
+  }
+}

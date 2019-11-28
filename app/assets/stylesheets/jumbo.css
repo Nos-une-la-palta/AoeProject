@@ -1,6 +1,4 @@
 /* jumbotron image */
-
-
 .heading-jumbo {
   background-image: url("https://i.imgur.com/gvFR0ih.png");
   background-size: cover;
@@ -64,3 +62,11 @@
 }
 
 /* heading text */
+
+
+@media (max-width: 600px){
+  .heading-text-container p {
+    display: none;
+  }
+  
+}
