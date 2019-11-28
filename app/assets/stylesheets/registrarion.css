@@ -2,9 +2,9 @@
 .registrations {
   background-color: #222222;
   color: #cccccc;
+  margin-bottom: 3rem;
   font-family: 'Open Sans', sans-serif;
   padding: 2rem 3rem 2rem 3rem;
-  margin-bottom: 3rem;
   border-style: solid;
   border-color: orange;
   border-width: thin;
@@ -53,7 +53,6 @@ input[type=password] {
 }
 .btn-sign:hover {
   background-color: #dd7d00;
-  border-radius: 0.3rem;
 }
 /* registration button */
 
@@ -85,7 +84,7 @@ input[type=password] {
 }
 .reg-fb {
   color: #ddd;
-  font-size: 0.8rem;
+  font-size: 1rem;
   background-color: #3b5998;
 }
 .reg-fb:hover {
@@ -96,15 +95,14 @@ input[type=password] {
 
 @media (max-width: 600px){
 
+  .registrations {
+  margin-bottom: 0rem;
+  }
+
   .btn-add {
-    color: #cccccc;
-    box-sizing: border-box;
-    background-color: #000000;
     width: 70%;
-    border-radius: 0.3rem;
     font-size: 1.2rem;
-    padding: 0.6rem;
-    margin: 0rem 0rem 0rem 2rem;
+    margin: -0.5rem 0rem -2rem 2rem;
   }
 
   .btn-sign {
