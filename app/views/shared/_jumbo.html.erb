@@ -1,52 +1,34 @@
 <div class="jumbotron heading-jumbo">
-  <div class="bla">
     <!-- main navbar -->
-    <nav class="navbar navbar-expand-lg">
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarNavDropdown">
-        <ul class="navbar-nav">
-
-        </ul>
-      </div>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle nav1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <% if user_signed_in?%>
-                <%= truncate(current_user.nick, length: 15)%>
-              <% else %>
-                Ingreso
-              <% end %>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink select">
-                <% if user_signed_in? %>
-                <%= link_to "Mi Perfil",  edit_user_registration_path, class:"dropdown-item" %>
-                 <%= link_to "Salir", destroy_user_session_path, method: :delete, class:"dropdown-item" %>
-               <% else %>
-                 <%= link_to "Ingreso", new_user_session_path, class:"dropdown-item" %>
-                 <%= link_to "Registro", new_user_registration_path, class:"dropdown-item" %>
-               <% end %>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <div class="dropdown float-right">
+  <a class="btn btn-signin dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <% if user_signed_in?%>
+      <%= truncate(current_user.nick, length: 15)%>
+    <% else %>
+      Ingreso
+    <% end %>
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink select">
+      <% if user_signed_in? %>
+      <%= link_to "Mi Perfil",  edit_user_registration_path, class:"dropdown-item" %>
+       <%= link_to "Salir", destroy_user_session_path, method: :delete, class:"dropdown-item" %>
+     <% else %>
+       <%= link_to "Ingreso", new_user_session_path, class:"dropdown-item" %>
+       <%= link_to "Registro", new_user_registration_path, class:"dropdown-item" %>
+     <% end %>
+  </div>
+</div>
 
     <!-- jumbotron content presentation -->
 
     <div class=" heading-text-container">
       <div class="row">
-        <div class="col-2"></div>
-        <div class="col-4"></div>
-        <div class="col-5">
-          <p class="float-right"> <strong>Chile AOE</strong> es una comunidad formada por jugadores de Age of Empire con más de 15 años de experiencia, siendo uno de los más antiguos en Chile.</p>
+        <div class="col-9"></div>
+        <div class="col-3">
+          <p class=""> <strong>Chile AOE</strong> es una comunidad formada por jugadores de Age of Empire con más de 15 años de experiencia, siendo uno de los más antiguos en Chile.</p>
         </div>
-        <div class="col-1"></div>
       </div>
-      </div>
+    </div>
 
-  </div>
 </div>
