@@ -146,9 +146,9 @@
 .all-numbers{
   margin: 2rem 0rem 0rem 0rem;
 }
-hr {
+.card-hr{
   border: 1px solid #444444;
-  margin: 0rem 4.3rem 0rem 6rem;
+  margin: 0rem 4.3rem 0rem 6rem !important;
 }
 
 /* index tournaments card*/
@@ -215,10 +215,26 @@ hr {
     margin: 0rem 0rem 0rem 0.5rem;
   }
   .text-block1 {
-    margin: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 1rem;
   }
   .text-block2 {
     margin: 0rem 0rem 0rem 1rem;
     padding: 0rem 0rem 2rem 0rem;
   }
+  .card-hr{
+    border: 1px solid #444444;
+    margin: 0rem 3rem 0rem 3rem !important;
+  }
+
+  .content {
+    max-width: 50%;
+    margin: 1rem 0rem 0rem 7.5rem;
+  }
+  .all-numbers{
+    margin: 2rem 0rem 1rem 0rem;
+  }
+  .text-muted{
+    margin-right: 3rem;
+  }
+
 }
