@@ -62,13 +62,6 @@
 
 
 @media (max-width: 600px){
-<<<<<<< HEAD
-  .heading-text-container p {
-    display: none;
-  }
-  
-}
-=======
 
   .heading-text-container {
    display: none;
@@ -84,4 +77,3 @@
    margin: -1rem 0rem 0rem -2rem;
   }
 }
->>>>>>> 10262aeb2ba92c7559b976a4991dc6d43c3bc01c
