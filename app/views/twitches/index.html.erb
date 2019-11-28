@@ -6,7 +6,7 @@
 </div>
 <div class="row justify-content-md-center">
   <% @twitches.each do |twitch| %>
-    <div class=" px-lg-3" style="position: relative">
+    <div class="px-lg-3" style="position: relative">
       <iframe src="https://player.twitch.tv/?channel=<%= twitch.owner %>" frameborder="0" allowfullscreen="true" scrolling="no" height="297" width="528" class="twitch-card-video"></iframe>
       <div class= "owner-name">
         <span  class="owner-name" style=" border-radius: 3px; background-color: #3D4148; padding: 3px 6px; border: medium solid #111; color: #E7A70F; font-size: 1.2rem;">
