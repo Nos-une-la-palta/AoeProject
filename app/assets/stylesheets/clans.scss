@@ -4,7 +4,6 @@
   color: #cccccc;
   font-family: 'Open Sans', sans-serif;
   padding: 1rem 2rem 1rem 2rem;
-  margin: 3rem 0rem 2rem 36rem;
   border-style: solid;
   border-color: orange;
   border-width: thin;
@@ -14,8 +13,9 @@
   }
 
 .clans h2{
-  padding: 0.5rem 0rem 0.5rem 7.5rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
   font-weight: 600;
+  text-align: center;
  }
 
 input[type=imput3] {
@@ -36,17 +36,11 @@ input[type=imput3] {
    border-radius: 0.3rem;
    font-size: 1.5rem;
    padding: 0.5rem;
-   margin: 1rem 0rem 1rem 4.3rem;
+   margin: 1rem 0rem 1rem 0em;
 }
 
 .btn-clans:hover {
-   box-sizing: border-box;
    background-color: #dd7d00;
-   width: 70%;
-   border-radius: 0.3rem;
-   font-size: 1.5rem;
-   padding: 0.5rem;
-   margin: 1rem 0rem 1rem 4.3rem;
 }
 
 .links2 {
@@ -149,3 +143,21 @@ input[type=imput3] {
   }
 
 /* new clans button*/
+
+
+@media (max-width: 600px) {
+
+  /* new clans form*/
+  .clans {
+    width: 100%;
+  }
+
+  .btn-clans {
+     width: 100%;
+  }
+
+
+
+    /* new clans form*/
+
+}
