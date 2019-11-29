@@ -15,47 +15,47 @@
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
   box-sizing: border-box;
   width: 30%;
-  }
+}
 
-  .twitches h2{
-    padding: 0.5rem 0rem 0.5rem 7.5rem;
-    font-weight: 600;
-   }
+.twitches h2{
+  padding: 0.5rem 0rem 0.5rem 7.5rem;
+  font-weight: 600;
+}
 
-   input[type=imput4] {
-     color: #ffffff;
-     box-sizing: border-box;
-     border: solid #000000;
-     border-width: thin;
-     background-color: #333333;
-     width: 100%;
-     padding: 1rem;
-     margin: 0.5rem 0;
-   }
+input[type=imput4] {
+  color: #ffffff;
+  box-sizing: border-box;
+  border: solid #000000;
+  border-width: thin;
+  background-color: #333333;
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
 
-   .btn-twitches {
-     box-sizing: border-box;
-     background-color: orange;
-     width: 70%;
-     border-radius: 0.3rem;
-     font-size: 1.5rem;
-     padding: 0.5rem;
-     margin: 1rem 0rem 1rem 4.3rem;
-   }
+.btn-twitches {
+  box-sizing: border-box;
+  background-color: orange;
+  width: 70%;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin: 1rem 0rem 1rem 4.3rem;
+}
 
-   .btn-twitches:hover {
-     box-sizing: border-box;
-     background-color: #dd7d00;
-     width: 70%;
-     border-radius: 0.3rem;
-     font-size: 1.5rem;
-     padding: 0.5rem;
-     margin: 1rem 0rem 1rem 4.3rem;
-   }
+.btn-twitches:hover {
+  box-sizing: border-box;
+  background-color: #dd7d00;
+  width: 70%;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin: 1rem 0rem 1rem 4.3rem;
+}
 
-   .links4 {
-     margin: 0rem 0rem 0rem 12.5rem;
-   }
+.links4 {
+  margin: 0rem 0rem 0rem 12.5rem;
+}
 
 /* new twitches form*/
 
@@ -71,11 +71,11 @@
   color: #222222;
   font-weight: 400;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
-  }
+}
 
 .btn-new-twitches:hover{
   background-color: #dd7d00;
-  }
+}
 /* new twitches button*
 
 /* index twitch video*/
@@ -107,7 +107,7 @@
   #222 0.3rem,
   #000 0.3rem,
   #000 0.6rem
-);
+  );
 }
 /* index twitch video*/
 
@@ -148,7 +148,13 @@
 .btn-destroy-twitch:hover {
   background-color: #ad0600;
 }
+iframe{
+  max-width: 100%;
+}
 
+.button-row{
+  margin-top: -3rem;
+}
 /* index twitch button*/
 @media (max-width: 600px){
   .px-lg-3{

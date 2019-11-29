@@ -66,6 +66,7 @@
   color: #222222;
   font-weight: 400;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  float: right;
 }
 
 .btn-new:hover{
@@ -191,7 +192,9 @@
 .btn-destroy-tournament:hover {
   background-color: #ad0600;
 }
-
+.tournament-row{
+  position: absolute;
+}
 /* index tournaments button*/
 
 @media (max-width: 600px){

@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 <div class="row mt-5">
   <div class="col-lg-10">
     <% @twitches.each do |twitch| %>
@@ -6,6 +5,16 @@
           <iframe src="https://player.twitch.tv/?channel=<%= twitch.owner %>" frameborder="0" allowfullscreen="true" scrolling="no" height="297" width="528" class="twitch-card-video"></iframe>
           <span class="owner-name"><%= twitch.owner %></span>
       </div>
+      <div class="row button-row">
+          <div class="col-lg-2 col-sm-6">
+          </div>
+          <div class="col-lg-4 col-sm-6 btn-group btn-group-twitch">
+            <% if can? :create, News %>
+             <p><%= link_to 'Editar', edit_twitch_path(twitch) , class:"btn btn-edit-twitch"  %>
+              <%= link_to 'Eliminar', twitch, method: :delete, data: { confirm: '¿Estas seguro?' }, class:"btn btn-destroy-twitch"  %></p>
+           <% end %>
+          </div>
+        </div>
     <% end %>
 
   </div>
