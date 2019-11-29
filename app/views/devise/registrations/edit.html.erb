@@ -2,7 +2,7 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
   <div class="row justify-content-md-center">
-    <div class="col-4 move-to">
+    <div class="col-lg-4 col-sm-12">
       <h2>Edit <%= resource_name.to_s.humanize %></h2>
       <div class="avatar">
           <% if current_user.image.attached?  %>
@@ -18,7 +18,7 @@
         <%= f.file_field :image, type:"file", class:"custom-file-input" %>
       </div>
     </div>
-        <div class="col-8 down-col">
+        <div class="col-lg-8 col-sm-12 down-nick">
           <div class="field">
             <%= f.text_field :nick,  class:"form-inline", placeholder:"Nick", type:"imput" %>
           </div>
@@ -34,9 +34,9 @@
           </div>
        </div>
     </div>
-    <hr class="hr">
+    <hr class="hr-edit">
     <div class="row">
-      <div class="col-9">
+      <div class="col-lg-9 col-sm-12">
         <div class="field-up">
           <%= f.password_field :current_password, autocomplete: "current-password", type:"password", placeholder:"Contraseña Actual" %>
         </div>
@@ -44,23 +44,23 @@
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
         <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
       <% end %>
-      <div class="col-3">
+      <div class="col-lg-3 col-sm-12">
         <div class="actions">
           <%= f.submit "Actualizar", class:"btn btn-update" %>
         </div>
       <% end %>
       </div>
-      <p class="text-update">*Para guardar los cambios ingresa tu contraseña actual y presiona actualizar</p><br />
+      <p class="text-update">*Para guardar los cambios ingresa tu contraseña actual y presiona actualizar.</p><br />
     </div>
 
   <hr class="hr-bottom">
   <div class="row">
-    <div class="col">
-      <div class="back-update">
+    <div class="col-lg-6 col-sm-12">
+      <div class="back-update d-flex justify-content-md-center">
         <%= link_to "Back", :back, class: "linknew-up" %>
       </div>
    </div>
-   <div class="col">
+   <div class="col-lg-6 col-sm-12 d-flex justify-content-md-center">
      <div class="account-cancel">
        <%= link_to "¿Quieres cancelar tu cuenta?", registration_path(resource_name), data: { confirm: "¿Estas seguro que quieres cancelar tu cuenta?" }, method: :delete, class: "linknew-delete" %>
      </div>
