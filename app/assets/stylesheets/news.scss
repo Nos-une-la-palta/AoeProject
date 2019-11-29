@@ -1,14 +1,10 @@
-// Place all the styles related to the news controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-
 /* new news form*/
 .news {
   background-color: #222222 !important;
   color: #cccccc;
   font-family: 'Open Sans', sans-serif;
   padding: 1.5rem 2rem 1rem 2rem;
-  margin: 1.5rem 0rem 2rem 33rem;
+  margin: 1rem 0rem 3rem 33rem;
   border-style: solid;
   border-color: orange;
   border-width: thin;
@@ -16,6 +12,7 @@
   box-sizing: border-box;
   width: 40%;
   }
+
   .news h2{
     padding: 0.5rem 0rem 0.5rem 0rem;
     font-weight: 600;
@@ -39,21 +36,12 @@
      border-radius: 0.3rem;
      font-size: 1.5rem;
      padding: 0.5rem;
-     margin: 2rem 0rem 1rem 5.1rem;
+     margin: 1rem 0rem 1rem 0rem;
    }
    .btn-news:hover {
-     box-sizing: border-box;
      background-color: #dd7d00;
-     width: 70%;
-     border-radius: 0.3rem;
-     font-size: 1.5rem;
-     padding: 0.5rem;
-     margin: 2rem 0rem 1rem 5.1rem;
    }
 
-   .links {
-     margin: 0rem 0rem 0rem 17rem;
-   }
    .linknew {
     color: #bbbbbb !important;
    }
@@ -149,3 +137,12 @@
    }
 
    /* index news button*/
+
+ @media (max-width: 600px){
+   /* new news form*/
+   .news {
+     margin: 0rem 0rem 0rem 0rem;
+     width: 100%;
+   }
+   /* new news form*/
+ }

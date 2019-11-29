@@ -19,10 +19,10 @@
     <%= form.rich_text_area :content, placeholder:"Contenido"%>
   </div>
 
-  <div class="actions">
+  <div class="actions d-flex justify-content-center">
     <%= form.submit "Publicar", class:"btn btn-news" %>
   </div>
 <% end %>
-<div class="links">
+<div class="actions d-flex justify-content-center">
   <%= link_to 'Back', news_index_path,  class: "linknew" %>
 </div>

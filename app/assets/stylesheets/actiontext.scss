@@ -36,7 +36,7 @@
 }
 
 trix-toolbar {
-  margin: 2rem 0rem 0em 0rem;
+  margin: 1rem 0rem 0em 0rem;
   background-color: orange;
   border: solid #000000;
   border-width: thin;
@@ -64,7 +64,7 @@ trix-toolbar .trix-button-group--block-tools {
   }
 
 trix-toolbar .trix-button-group--history-tools {
-  border: none
+  border: none;
   }
 
 
@@ -84,4 +84,30 @@ trix-editor {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+trix-toolbar .trix-button:not(:first-child) {
+    border-left: none;
+}
+
+@media (max-width: 600px){
+
+  trix-toolbar {
+    margin: 0rem 0rem -0.3em 0rem;
+    padding: 0rem 0.3rem 0rem 0rem;
+    }
+
+  trix-toolbar .trix-button {
+    font-size: 0.5rem;
+    margin: 0.25rem -0.1rem 0em -0.1rem;
+  }
+
+  trix-toolbar .trix-button-group--text-tools {
+    margin-left: 0rem;
+    }
+
+  trix-toolbar .trix-button-group--file-tools {
+    margin-right: 0rem;
+    }
+
 }
