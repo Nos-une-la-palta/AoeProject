@@ -4,6 +4,7 @@
   font-size: 3.3rem;
   color: #dddddd;
   margin: 0rem 0rem 0.5rem 4.5rem;
+  text-align: center;
 }
 /* title forum*/
 
@@ -146,7 +147,6 @@ select{
 
 /* forum threads style*/
 
-
 .image-forum-posts2{
   margin: 1.2rem 0rem 1rem 0rem;
 }
@@ -165,7 +165,7 @@ select{
   margin:  0rem 0rem 0.8rem 0rem;
 }
 .count-posts {
-  margin: 1rem -2.5rem 0rem 0rem;
+  top: 1rem
 }
 .count-color {
   color: #999;
@@ -191,7 +191,7 @@ select{
   margin: 0.2rem 0rem 2rem 0rem;
 }
 .user-post {
-  margin: -4.7rem 0rem 1.5rem 5rem;
+  margin: -4.7rem 0rem 1.5rem 0rem;
 }
 .forum-post-user {
   color: #ccc;
@@ -199,4 +199,41 @@ select{
 .colour-date {
   color: #888;
 }
+.hr-forum-threads {
+  border: 1px solid #444444;
+  margin: 0rem 3rem 0rem 3rem;
+}
 /* forum threads style*/
+
+@media (max-width: 600px){
+  /* title forum*/
+  .titulo h1{
+    font-size: 3.0rem;
+    margin: 0.4rem 0rem 0.7rem 4rem;
+  }
+  /* title forum*/
+
+  /* forum threads style*/
+
+  .forum-title{
+    text-align: center;
+  }
+  .title-forum-post{
+  margin-left: 1.2rem;
+  margin-bottom: 1rem
+  }
+  .thread-details{
+    margin: 0rem 0rem 0rem 1.2rem;
+  }
+
+  .content-text {
+    margin: 0.75rem 1.2rem 0rem 1.2rem;
+  }
+  .count-posts {
+    top: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+  }
+  /* forum threads style*/
+
+}
