@@ -7,8 +7,8 @@
   background-color: #222222;
   color: #cccccc;
   font-family: 'Open Sans', sans-serif;
-  padding: 2rem 3rem 2rem 3rem;
-  margin: 3rem 0rem 2rem 16rem;
+  padding: 2rem 3rem 1rem 3rem;
+  margin: 1rem 0rem 3rem 16rem;
   border-style: solid;
   border-color: orange;
   border-width: thin;
@@ -38,19 +38,13 @@
   border-radius: 0.3rem;
   font-size: 1.5rem;
   padding: 0.5rem;
-  margin: 0rem 0rem 0rem 19rem;
+  margin-top: 1rem;
 }
 .btn-tournament:hover {
-  box-sizing: border-box;
   background-color: #dd7d00;
-  width: 40%;
-  border-radius: 0.3rem;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  margin: 0rem 0rem 0rem 19rem;
 }
 .links1 {
-  margin: 1.2rem 0rem 0rem 31rem;
+  margin-top: 1rem;
 }
 /* new tournaments form*/
 
@@ -197,6 +191,21 @@
 /* index tournaments button*/
 
 @media (max-width: 600px){
+
+  /* new tournaments form*/
+  .tournament-new {
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 0rem 0rem 0rem 0rem;
+    width: 100%
+  }
+
+  .btn-tournament {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* new tournaments form*/
+
   .tournament-card{
     max-width: 100%;
   }
