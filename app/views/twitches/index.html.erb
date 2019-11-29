@@ -1,24 +1,17 @@
 <p id="notice"><%= notice %></p>
-<div class="button">
-  <% if can? :create, Twitch %>
-    <%= link_to 'Agregar canal', new_twitch_path, class:"btn btn-new-twitches float-right"%>
+<div class="row mt-5">
+  <div class="col-lg-10">
+    <% @twitches.each do |twitch| %>
+      <div class="col-lg-4 col-sm-12 ">
+          <iframe src="https://player.twitch.tv/?channel=<%= twitch.owner %>" frameborder="0" allowfullscreen="true" scrolling="no" height="297" width="528" class="twitch-card-video"></iframe>
+          <span class="owner-name"><%= twitch.owner %></span>
+      </div>
+    <% end %>
+
+  </div>
+  <div class="col-lg-2">
+  <% if can? :create, News %>
+    <%= link_to 'Nueva Noticia', new_news_path, class:"btn btn-new-news float-right mb-3"%>
   <% end %>
-</div>
-<div class="row justify-content-md-center">
-  <% @twitches.each do |twitch| %>
-    <div class="px-lg-3" style="position: relative">
-      <iframe src="https://player.twitch.tv/?channel=<%= twitch.owner %>" frameborder="0" allowfullscreen="true" scrolling="no" height="297" width="528" class="twitch-card-video"></iframe>
-      <div class= "owner-name">
-        <span  class="owner-name" style=" border-radius: 3px; background-color: #3D4148; padding: 3px 6px; border: medium solid #111; color: #E7A70F; font-size: 1.2rem;">
-          <%= twitch.owner %>
-        </span>
-       </div>
-       <div class="buttons-twitch">
-          <% if can? :create, Twitch %>
-            <%= link_to 'Edit', edit_twitch_path(twitch), class:"btn btn-edit-twitch "  %>
-            <%= link_to 'Destroy', twitch, method: :delete, data: { confirm: '¿Estas seguro?' }, class:"btn btn-destroy-twitch"  %>
-          <% end %>
-       </div>
-     </div>
-  <% end %>
+  </div>
 </div>
