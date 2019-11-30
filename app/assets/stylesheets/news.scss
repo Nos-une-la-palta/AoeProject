@@ -30,7 +30,6 @@ input[type=imput2] {
   margin: 1rem 0;
 }
 
-<<<<<<< HEAD
    /* new news button*/
    .btn-new-news{
     box-sizing: border-box;
@@ -96,7 +95,6 @@ input[type=imput2] {
     font-weight: 400;
     box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
    }
-=======
 .btn-news {
   box-sizing: border-box;
   background-color: orange;
@@ -106,7 +104,6 @@ input[type=imput2] {
   padding: 0.5rem;
   margin: 1rem 0rem 1rem 0rem;
 }
->>>>>>> b94cde71479e6540bebdcf122af367d5c007f762
 
 .btn-news:hover {
   background-color: #dd7d00;
@@ -142,7 +139,7 @@ input[type=imput2] {
 
 .news-card {
   box-sizing: border-box;
-  margin: -1.5rem 0rem 4.5rem 0rem;
+  margin: -1.5rem 0rem 0rem 0rem;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
   border: thin solid orange;
 }
@@ -178,7 +175,6 @@ input[type=imput2] {
   border-bottom-right-radius: 0.6rem;
   font-size: 1.4rem;
   padding: 0.3rem 0.8rem 0.4rem 0.8rem;
-  margin: -7.6rem 0rem 0rem 35.5rem;
   text-align: center;
   color: #222222;
   font-weight: 400;
@@ -197,7 +193,6 @@ input[type=imput2] {
   border-bottom-right-radius: 0.6rem;
   font-size: 1.4rem;
   padding: 0.3rem 0.8rem 0.4rem 0.8rem;
-  margin: -7.6rem 0rem 0rem 0rem;
   text-align: center;
   color: #222222;
   font-weight: 400;
@@ -239,21 +234,14 @@ input[type=imput2] {
     .btn-destroy-news{
       font-size: 1rem;
     }
+    .news {
+      margin: 0rem 0rem 0rem 0rem;
+      width: 100%;
+    }
+ 
+    .btn-news {
+      width: 100%;
+    }
 
   }
   
-/* index news button*/
-
- @media (max-width: 600px){
-   /* new news form*/
-   .news {
-     margin: 0rem 0rem 0rem 0rem;
-     width: 100%;
-   }
-
-   .btn-news {
-     width: 100%;
-   }
-
-   /* new news form*/
- }
