@@ -76,7 +76,6 @@ input[type=imput4] {
   border-radius: 0.3rem;
   font-size: 1.5rem;
   padding: 0.5rem;
-  margin: 1rem 0rem 1rem 0rem;
 }
 
 .btn-twitches:hover {
@@ -121,8 +120,8 @@ input[type=imput4] {
   font-size: 1.2rem;
   color: #E7A70F;
   top: 0.5rem;
-  left: 6.69rem;
-  width: 50%;
+  left: 12rem;
+  width: 30%;
   text-align: center;
   box-sizing: border-box;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
@@ -178,9 +177,12 @@ iframe{
   max-width: 100%;
 }
 
-.button-row{
-  margin-top: -4rem;
+.buttons-twitch{
+  margin-top: -2.8rem;
+  margin-bottom: 2rem;
 }
+
+
 /* index twitch button*/
 @media (max-width: 600px){
 
@@ -201,14 +203,14 @@ iframe{
     max-width: 100%;
   }
   .owner-name{
-    left: 5rem
+    left: 9rem
   }
   .btn-edit-twitch{
     font-size: 1.1rem;
-    margin: -5.5rem 0rem 0rem 21.5rem;
+    margin: -2rem 0rem 0rem 21.5rem;
   }
   .btn-destroy-twitch{
     font-size: 1.1rem;
-    margin: -8.5rem 0rem 0rem 17rem;
+    margin: -2rem 0rem 0rem 17rem;
   }
 }
