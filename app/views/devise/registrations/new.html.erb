@@ -3,7 +3,7 @@
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
   <div class="row">
-    <div class="col">
+    <div class="col-sm-12 col-lg-6">
         <div class="field">
           <%= f.email_field :email, autofocus: true, autocomplete: "email", type:"imput", placeholder:"Email" %>
         </div>
@@ -17,7 +17,7 @@
         </div>
         <br>
      </div>
-     <div class="col">
+     <div class="col-sm-12 col-lg-6">
         <div class="field">
           <%= f.text_field :nick, class:"form-inline", placeholder:"Nick", type:"imput" %>
         </div>
@@ -29,14 +29,15 @@
          <br>
 
     </div>
-
   </div>
-  <div class="actions">
+
+  <div class="actions d-flex justify-content-center">
     <%= f.submit "Registrarse", class:"btn btn-sign" %>
   </div>
   <% end %>
   <hr class="hr-fb-reg">
-  <div class="fb-reg">
+
+  <div class="fb-reg d-flex justify-content-center">
       <%= link_to "Regístrate con Facebook", user_facebook_omniauth_authorize_path, method: :post, class:"btn reg-fb" %>
   </div>
 </div>

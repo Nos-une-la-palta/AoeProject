@@ -8,7 +8,6 @@
   color: #cccccc;
   font-family: 'Open Sans', sans-serif;
   padding: 1rem 2rem 1rem 2rem;
-  margin: 3rem 0rem 2rem 36rem;
   border-style: solid;
   border-color: orange;
   border-width: thin;
@@ -53,8 +52,40 @@ input[type=imput4] {
   margin: 1rem 0rem 1rem 4.3rem;
 }
 
+<<<<<<< HEAD
 .links4 {
   margin: 0rem 0rem 0rem 12.5rem;
+=======
+.twitches h2{
+  text-align: center;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  font-weight: 600;
+}
+
+input[type=imput4] {
+  color: #ffffff;
+  box-sizing: border-box;
+  border: solid #000000;
+  border-width: thin;
+  background-color: #333333;
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+.btn-twitches {
+  box-sizing: border-box;
+  background-color: orange;
+  width: 60%;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.btn-twitches:hover {
+  background-color: #dd7d00;
+>>>>>>> b94cde71479e6540bebdcf122af367d5c007f762
 }
 
 /* new twitches form*/
@@ -157,6 +188,17 @@ iframe{
 }
 /* index twitch button*/
 @media (max-width: 600px){
+
+  /* new twitches form*/
+  .twitches {
+    width: 100%;
+  }
+  .btn-twitches {
+    width: 100%;
+  }
+
+  /* new twitches form*/
+
   .px-lg-3{
     margin-left: 20px;
   }

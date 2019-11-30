@@ -4,7 +4,6 @@
   color: #cccccc;
   font-family: 'Open Sans', sans-serif;
   padding: 3rem 4rem 2rem 2rem;
-  margin: 2rem 0rem 2rem 21rem;
   border-style: solid;
   border-color: orange;
   border-width: thin;
@@ -14,8 +13,9 @@
   }
 
 .edit h2{
-    padding: 0.3rem 0rem 0rem 4.3rem;
+    padding: 0.3rem 0rem 0rem 0rem;
     font-weight: 600;
+    text-align: center;
  }
 
  .btn-add2 {
@@ -33,7 +33,7 @@
    background-color: #333333;
  }
 
-.hr{
+.hr-edit{
   border: 1px solid #444444;
   margin: -1rem 0rem 1rem 2.5rem;
 }
@@ -62,7 +62,7 @@
 
 .text-update {
   color: #888888;
-  margin: 0rem 0rem 0rem 9.5rem;
+  margin-left: 9.2rem;
   letter-spacing: 0.08rem;
 }
 .linknew-up {
@@ -79,17 +79,17 @@
   margin: 0rem 0rem 0rem 0.5rem;
 }
 .back-update{
-  margin: 0.5rem 0rem 0rem 27.5rem;
+  margin: 0.5rem 0rem 0rem 28.5rem;
 }
 .account-cancel{
-  margin: 0.3rem 0rem 0rem 11.5rem;
+  margin: 0.3rem 0rem 0rem 13.7rem;
 }
 .field-up {
   width: 75%;
-  margin: 0rem 0rem 0rem 8rem;
+  margin-left: 8rem;
 }
 
-.down-col {
+.down-nick {
 top: 3rem;
 }
 
@@ -97,3 +97,47 @@ top: 3rem;
   margin: 0rem 1rem 0rem 0rem;
 }
 /* formulario editar perfil */
+
+@media (max-width: 600px) {
+  .edit {
+    padding: 2rem 1rem 2rem 2rem;
+    width: 100%;
+  }
+
+  .down-nick {
+    top: -1rem;
+  }
+
+  .hr-edit{
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .hr-bottom{
+    margin: 0rem 0rem 0rem 0rem;
+    width: 95%
+  }
+
+  .field-up {
+    width: 100%;
+    margin: 2rem 0rem 0rem 0rem;
+  }
+
+  .btn-update {
+    width: 100%;
+    border-radius: 0.3rem;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .text-update {
+    margin: 1rem 0rem 0rem 1rem;
+    letter-spacing: 0rem;
+  }
+
+  .back-update{
+    margin: 1.5rem 0rem 0rem 7.5rem;
+  }
+
+  .account-cancel{
+    margin: 1.5rem 0rem -1rem 2rem;
+  }
+}

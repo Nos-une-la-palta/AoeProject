@@ -4,7 +4,6 @@
   color: #cccccc;
   font-family: 'Open Sans', sans-serif;
   padding: 1rem 2rem 1rem 2rem;
-  margin: 3rem 0rem 2rem 36rem;
   border-style: solid;
   border-color: orange;
   border-width: thin;
@@ -44,10 +43,11 @@ input[type=imput1] {
 .btn-log {
   box-sizing: border-box;
   background-color: orange;
-  width: 70%;
+  width: 60%;
   border-radius: 0.3rem;
   font-size: 1.5rem;
-  margin: 1rem 0rem 1rem 4.5rem;
+  padding: 0.5rem;
+  margin: 1rem 0rem 0.8rem 5.5rem;
 }
 
 .btn-log:hover {
@@ -61,11 +61,12 @@ input[type=imput1] {
   margin: 0rem 0rem 0rem 7.5rem;
 }
 .fb-log {
-  margin: 2.2rem 0rem 0.5rem 7.8rem;
+  margin: 2.5rem 0rem 0.8rem 0rem;
 }
 
 .hr-fb {
   margin: 1rem 0rem -1rem 0rem;
+  border: 1px solid #444444;
 }
 
 .log-fb {
@@ -80,3 +81,19 @@ input[type=imput1] {
 }
 
 /* formulario login */
+@media (max-width: 600px){
+
+  .login {
+    width: 100%;
+    }
+
+  .btn-log {
+    width: 100%;
+    margin: 1rem 0rem 1em 0rem;
+  }
+
+  .forgot{
+    margin: 0rem 0rem 0rem 2rem;
+  }
+
+}

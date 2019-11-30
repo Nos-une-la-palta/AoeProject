@@ -1,4 +1,4 @@
-<div class="login">
+<div class="container login">
 <h2>Ingreso</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -23,7 +23,7 @@
   </div>
 <% end %>
 <hr class="hr-fb">
-<div class="fb-log">
+<div class="fb-log d-flex justify-content-center">
   <%= link_to "Ingresar con Facebook", user_facebook_omniauth_authorize_path, method: :post, class:"btn log-fb" %>
 </div>
 
