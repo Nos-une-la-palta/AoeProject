@@ -1,7 +1,7 @@
 <%= cache forum_thread do %>
-  <div class="forum-thread">
+  <div class=" container-fluid forum-thread">
     <div class="row">
-      <div class="col-sm-6 col-lg-1 text-left image-forum-posts2">
+      <div class="col-xs-6 col-md-1 image-forum-posts2">
           <% if forum_thread.user.image.attached?  %>
             <%= image_tag(forum_thread.user.image, size: '75') %>
           <% elsif forum_thread.user.image_url.present? %>
@@ -10,7 +10,7 @@
             <%= image_tag('https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg', size:'75')%>
           <% end %>
       </div>
-      <div class="col-sm-6 col-lg-9">
+      <div class="col-xs-6 col-md-9 info-post">
           <% if forum_thread.solved? %>
             <span class="text-success"><%= icon "check-circle" %></span>
           <% end %>
