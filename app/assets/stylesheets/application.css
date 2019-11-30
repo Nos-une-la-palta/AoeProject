@@ -28,7 +28,6 @@
    padding: 3rem 5rem 0rem 5rem;
   }
 
-
   .card-body{
     background-color: #222222;
     color: white;
@@ -37,7 +36,6 @@
     box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
     box-sizing: border-box;
   }
-
 
 @media (max-width: 600px){
   .body-container{

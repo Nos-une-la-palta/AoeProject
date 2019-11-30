@@ -192,9 +192,7 @@
 .btn-destroy-tournament:hover {
   background-color: #ad0600;
 }
-.tournament-row{
-  position: absolute;
-}
+
 /* index tournaments button*/
 
 @media (max-width: 600px){
@@ -229,7 +227,7 @@
 
   .content {
     max-width: 50%;
-    margin: 1rem 0rem 0rem 7.5rem;
+    margin: 1rem 0rem 0rem 5rem;
   }
   .all-numbers{
     margin: 2rem 0rem 1rem 0rem;
@@ -241,7 +239,7 @@
     font-size: 1rem;
   }
   .btn-destroy-tournament{
-    font-size: 1rem;;
+    font-size: 1rem;
   }
 
 }

@@ -1,13 +1,11 @@
 <div class="row mt-2">
-  <div class="col-md-2 col-lg-9 ">
-  </div>
-  <div class="col-md-5 col-lg-3 mb-4">
+  <div class="col-lg-2 offset-lg-10 mb-4">
     <% if can? :create, Tournament %>
-      <%= link_to 'Nuevo Torneo', new_tournament_path, class:"btn btn-news mb-3 "%>
+      <%= link_to 'Nuevo Torneo', new_tournament_path, class:"btn btn-new mb-3 "%>
     <% end %>
   </div>
 </div>
-<div class="row tournament-row">
+<div class="row">
   <div class="col-3">
   </div>
   <div class="col-lg-6 col-sm-12">
@@ -39,9 +37,7 @@
             </div>
         </div>
         <div class="row">
-          <div class="col-sm-8 col-lg-8 ">
-          </div>
-          <div class="col-sm-4 col-lg-4 btn-group">
+          <div class="col-lg-3 offset-lg-9 col-sm-3 offset-sm-9 btn-group">
            <% if can? :create, Tournament %>
               <p><%= link_to 'Editar', edit_tournament_path(tournament) , class:"btn btn-edit-tournament"  %>
             <%= link_to 'Eliminar', tournament, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-destroy-tournament"  %></p>
