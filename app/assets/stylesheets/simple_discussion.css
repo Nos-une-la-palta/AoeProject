@@ -140,7 +140,7 @@ select{
 .menu-items2{
   margin: 0.8rem 0rem -0.5rem 0rem;
 }
-.menu-items3{/* forum side menu style*/
+.menu-items3{
   margin: 1rem 0rem -0.5rem 0rem;
 }
 /* forum side menu style*/
@@ -161,9 +161,7 @@ select{
 .thread-details{
   margin: -0.2rem 0rem 0rem 0rem;
 }
-.thread-details-show{
-  margin:  0rem 0rem 0.8rem 0rem;
-}
+
 .count-posts {
   top: 1rem
 }
@@ -176,21 +174,24 @@ select{
 .bullet {
   margin: 0rem 0.4rem 0rem 0.4rem;
 }
-.edit-pencil {
-  margin: 0rem 0rem 0rem 2.7rem;
+
+.hr-forum-threads {
+  border: 1px solid #444444;
+  margin: 0rem 3rem 0rem 3rem;
 }
-.pencil-edit-post {
-  position: absolute;
-  margin: 0rem 0rem 0rem 71rem;
-  top: 10px
+/* forum threads style*/
+
+/* forum show post style*/
+
+.thread-details-show{
+  margin:  0rem 0rem 0.8rem 0rem;
 }
 
 .avatar-post {
-
-  margin: 0.2rem 0rem 2rem 0rem;
+  margin: 0.2rem 0rem 3.1rem 0rem;
 }
 .user-post {
-  margin: -4.7rem 0rem 1.5rem 0rem;
+  margin: -6rem 0rem 1.5rem 6.6rem;
 }
 .forum-post-user {
   color: #ccc;
@@ -198,11 +199,15 @@ select{
 .colour-date {
   color: #888;
 }
-.hr-forum-threads {
-  border: 1px solid #444444;
-  margin: 0rem 3rem 0rem 3rem;
+.edit-pencil {
+  margin: 0rem 0rem 0rem 2.7rem;
 }
-/* forum threads style*/
+.pencil-edit-post{
+  position: absolute;
+  margin: 0.2rem 0rem 0rem -1rem;
+}
+
+/* forum show post style*/
 
 @media (max-width: 600px){
   /* title forum*/
@@ -246,9 +251,38 @@ select{
     color: #ddd;
     font-weight: 400;
   }
-
-
-
   /* forum threads style*/
 
+ /* forum show post style*/
+.col-md-11 h1 {
+  text-align: center;
+}
+
+.thread-details-show{
+  text-align: left;
+  font-size: 0.9rem;
+  margin:  0rem 2rem 0.5rem 0rem;
+}
+.avatar-post {
+  margin: 0.2rem 0rem 3.1rem 0rem;
+}
+.user-post {
+  margin: -7.2rem 0rem 1.5rem 6.2rem;
+}
+.forum-post-user {
+  color: #ccc;
+}
+.colour-date {
+  color: #888;
+  margin-top: 30rem;
+}
+.edit-pencil {
+  margin: 0rem 0rem -1.2rem 0rem;
+  float:right;
+}
+.pencil-edit-post{
+  position: absolute;
+  margin: -0.4rem 0rem 0rem -0.7rem;
+}
+ /* forum show post style*/
 }
