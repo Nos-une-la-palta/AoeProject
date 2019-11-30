@@ -1,9 +1,7 @@
 <%= cache forum_thread do %>
-  <div class="forum-thread">
+  <div class=" container-fluid forum-thread">
     <div class="row">
-
-      <div class="col-sm-1 text-center">
-        <div class="image-forum-posts2">
+      <div class="col-xs-6 col-md-1 image-forum-posts2">
           <% if forum_thread.user.image.attached?  %>
             <%= image_tag(forum_thread.user.image, size: '75') %>
           <% elsif forum_thread.user.image_url.present? %>
@@ -11,10 +9,8 @@
           <% else %>
             <%= image_tag('https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg', size:'75')%>
           <% end %>
-        </div>
       </div>
-      <div class="col">
-
+      <div class="col-xs-6 col-md-9 info-post">
           <% if forum_thread.solved? %>
             <span class="text-success"><%= icon "check-circle" %></span>
           <% end %>
@@ -30,10 +26,10 @@
           <span class="time-ago"> <%= forum_thread.created_at.strftime("Publicado el %m/%d/%Y") %> por <%= forum_thread.user.name%></span>
         </div>
 
-        <p class="text-muted"><%= truncate(strip_tags(forum_thread.forum_posts.first.body.to_s),length: 101)  %></p>
+        <p class="text-muted content-text"><%= truncate(strip_tags(forum_thread.forum_posts.first.body.to_s),length: 101)  %></p>
       </div>
 
-      <div class="col-sm-2 text-center count-posts">
+      <div class="col-sm-2 col-lg-2  text-right count-posts">
         <%= link_to simple_discussion.forum_thread_path(forum_thread), class: "thread-posts-count" do %>
           <span class="count-color"><%= forum_thread.forum_posts_count %></span>
           <small class="count-color"><%= t("post", count: forum_thread.forum_posts_count) %></small>
@@ -42,4 +38,4 @@
     </div>
   </div>
 <% end %>
-<hr>
+<hr class="hr-forum-threads">
