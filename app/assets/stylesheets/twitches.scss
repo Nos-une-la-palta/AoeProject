@@ -39,17 +39,11 @@ input[type=imput4] {
   border-radius: 0.3rem;
   font-size: 1.5rem;
   padding: 0.5rem;
-  margin: 1rem 0rem 1rem 4.3rem;
+  margin: 1rem 0rem 1rem 0rem;
 }
 
 .btn-twitches:hover {
-  box-sizing: border-box;
   background-color: #dd7d00;
-  width: 70%;
-  border-radius: 0.3rem;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  margin: 1rem 0rem 1rem 4.3rem;
 }
 
 .twitches h2{
@@ -91,7 +85,7 @@ input[type=imput4] {
   border-radius: 0.3rem;
   font-size: 1.5rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  margin: 2.7rem 5rem 0rem 0rem;
+  margin: 2.7rem 5rem 0rem 0rem;  
   text-align: center;
   color: #222222;
   font-weight: 400;
@@ -106,7 +100,7 @@ input[type=imput4] {
 /* index twitch video*/
 .twitch-card-video {
   box-sizing: border-box;
-  margin: 1.5rem 0.25rem 3rem 0.25rem;
+  margin: 1.5rem 0.25rem 0rem 0.25rem;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
   border-top: thin solid orange;
   border-bottom: thin solid orange;
@@ -207,10 +201,15 @@ iframe{
   }
   .btn-edit-twitch{
     font-size: 1.1rem;
-    margin: -2rem 0rem 0rem 21.5rem;
+    margin-left: 0;
   }
   .btn-destroy-twitch{
     font-size: 1.1rem;
-    margin: -2rem 0rem 0rem 17rem;
+  }
+  .btn-new-twitches{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 28%;
+    margin-right: 25%;
   }
 }

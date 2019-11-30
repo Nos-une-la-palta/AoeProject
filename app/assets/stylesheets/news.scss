@@ -95,10 +95,11 @@ input[type=imput2] {
     font-weight: 400;
     box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
    }
+
 .btn-news {
   box-sizing: border-box;
   background-color: orange;
-  width: 60%;
+  width: 50%;
   border-radius: 0.3rem;
   font-size: 1.5rem;
   padding: 0.5rem;
@@ -127,6 +128,8 @@ input[type=imput2] {
   color: #222222;
   font-weight: 400;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  float: right;
+  width: 100%;
 }
 
 .btn-new-news:hover{
@@ -239,8 +242,12 @@ input[type=imput2] {
       width: 100%;
     }
  
-    .btn-news {
-      width: 100%;
+    .btn-new-news {
+      width: 50%;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 28%;
+      margin-right: 25%;;
     }
 
   }
