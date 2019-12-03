@@ -140,3 +140,15 @@
     display: none;
   }
 }
+@media (min-width: 601px) and (max-width: 1024px){
+  .twitch-card, .col{
+    display: none;
+  }
+  .forum-card, .clans-card{
+    width: 100%;
+    margin: 0;
+  }
+  .col-md-8{
+    
+  }
+}
