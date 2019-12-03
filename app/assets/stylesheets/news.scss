@@ -230,7 +230,7 @@ input[type=imput2] {
 
    /* index news button*/
 
-   @media (max-width: 600px){
+   @media (max-width: 575.98px){
     .btn-edit-news{
       font-size: 1rem;
     }
@@ -248,7 +248,7 @@ input[type=imput2] {
     }
   }
   
-  @media (min-width: 601px) and (max-width: 1024px){
+  @media (max-width: 991.98px){
     .btn-new-news{
       width: 80%;
       margin: 0 10% 0 auto;
@@ -256,6 +256,12 @@ input[type=imput2] {
     .news {
       margin: 0rem;
       width: 100%;
+    }
+    .btn-edit-news{
+      font-size: 1.2rem;
+    }
+    .btn-destroy-news{
+      font-size: 1.2rem;
     }
 
   }

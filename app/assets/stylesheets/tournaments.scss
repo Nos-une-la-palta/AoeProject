@@ -181,7 +181,7 @@
 
 /* index tournaments button*/
 
-@media (max-width: 600px){
+@media (max-width: 575.98px){
 
   /* new tournaments form*/
   .tournament-new {
@@ -248,10 +248,16 @@
   }
 }
 
-@media (min-width: 601px) and (max-width: 1024px){
+@media (max-width: 991.98px){
   .btn-new{
     width: 80%;
     margin: 0 10% 0 auto;
+  }
+  .btn-edit-tournament{
+    font-size: 1.1rem;
+  }
+  .btn-destroy-tournament{
+    font-size: 1.1rem;
   }
     /* new tournaments form*/
     .tournament-new {

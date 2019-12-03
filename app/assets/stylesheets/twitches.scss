@@ -178,7 +178,7 @@ iframe{
 
 
 /* index twitch button*/
-@media (max-width: 600px){
+@media (max-width: 575.98px){
 
   /* new twitches form*/
   .twitches {
@@ -205,24 +205,39 @@ iframe{
   }
 }
 
-@media (min-width: 601px) and (max-width: 1024px){
+@media (max-width: 991.98px){
   .btn-new-twitches{
     width: 80%;
-    margin: 0 auto 0 10%;
+    margin: 0 auto ;
   }
-  iframe{
-    max-width: 100%;
+  .btn-edit-twitch{
+    font-size: 1.1rem;
+    margin-left: 0;
   }
-  .twitch-card-video{
-    max-width: 100%;
-  }
-  .row-twitch{
-    max-width: 100%; 
+  .btn-destroy-twitch{
+    font-size: 1.1rem;
   }
   .twitches {
     width: 100%;
   }
   .btn-twitches {
     width: 100%;
+  }
+  iframe{
+    width: 100%;
+    height: 400;
+  }
+}
+@media (max-width: 1652.98px){
+  .btn-edit-twitch{
+    font-size: 1.1rem;
+    margin-left: 0;
+  }
+  .btn-destroy-twitch{
+    font-size: 1.1rem;
+  }
+  .btn-new-twitches{
+    width: 100%;
+    margin: 0rem;
   }
 }

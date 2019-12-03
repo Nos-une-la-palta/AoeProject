@@ -135,12 +135,12 @@
   padding-top: 3rem;
 }
 
-@media (max-width: 600px){
+@media (max-width: 575.98px){
   .forum-card, .clans-card, .twitch-card{
     display: none;
   }
 }
-@media (min-width: 601px) and (max-width: 1024px){
+@media (max-width: 991.98px){
   .twitch-card, .col{
     display: none;
   }
@@ -150,5 +150,15 @@
   }
   .card-forum-home{
     padding: 1rem 1rem 1rem 1rem;
+  }
+}
+@media (max-width: 1199.98px){
+  .forum-card, .clans-card{
+    width: 100%;
+    margin: 0;
+  }
+  .twitch-card{
+    max-width: 90%;
+    margin: 0;
   }
 }
