@@ -159,4 +159,27 @@ input[type=imput3] {
     width: 80%;
     margin: 0 10% 0 auto;
   }
+  .padding-table{
+    margin-left: -3rem;
+    margin-top: -1rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px){
+  .btn-new-clans{
+    width: 80%;
+    margin: 0 10% 0 auto;
+  }
+  .padding-table{
+    margin-left: -3rem;
+    margin-top: -1rem;
+  }
+    /* new clans form*/
+    .clans {
+      width: 100%;
+    }
+  
+    .btn-clans {
+       width: 100%;
+    }
 }

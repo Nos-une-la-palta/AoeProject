@@ -189,15 +189,8 @@ iframe{
   }
 
   /* new twitches form*/
-
-  .px-lg-3{
-    margin-left: 20px;
-  }
   iframe{
     max-width: 100%;
-  }
-  .owner-name{
-    left: 9rem
   }
   .btn-edit-twitch{
     font-size: 1.1rem;
@@ -209,5 +202,27 @@ iframe{
   .btn-new-twitches{
     width: 80%;
     margin: 0 auto 0 10%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px){
+  .btn-new-twitches{
+    width: 80%;
+    margin: 0 auto 0 10%;
+  }
+  iframe{
+    max-width: 100%;
+  }
+  .twitch-card-video{
+    max-width: 100%;
+  }
+  .row-twitch{
+    max-width: 100%; 
+  }
+  .twitches {
+    width: 100%;
+  }
+  .btn-twitches {
+    width: 100%;
   }
 }

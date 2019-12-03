@@ -248,3 +248,14 @@ input[type=imput2] {
     }
   }
   
+  @media (min-width: 601px) and (max-width: 1024px){
+    .btn-new-news{
+      width: 80%;
+      margin: 0 10% 0 auto;
+    }
+    .news {
+      margin: 0rem;
+      width: 100%;
+    }
+
+  }
