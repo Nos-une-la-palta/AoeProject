@@ -197,6 +197,8 @@
 
   /* new tournaments form*/
 
+  /* index tournaments card*/
+
   .tournament-card{
     max-width: 100%;
   }
@@ -207,45 +209,68 @@
     padding: 0;
   }
   .card-title{
-    margin: 0;
+    padding: 0.8rem 1rem 0rem 0rem;
   }
+
+  .tournament-body h2{
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+
   .price{
     font-weight: 600;
-    font-size: 2rem;
-    margin: 0rem 0rem 0rem 0.5rem;
+    font-size: 2.5rem;
+    margin: -0.5rem 0rem 0rem 0rem;
   }
   .text-block1 {
     margin: 0rem 0rem 0rem 1rem;
   }
   .text-block2 {
-    margin: 0rem 0rem 0rem 1rem;
-    padding: 0rem 0rem 2rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+
+  .card-text {
+    margin: 0rem 1rem 0rem 0rem;
+  }
+  .card-text2 {
+    margin: 0.5rem 0rem 0rem 0rem;
   }
   .card-hr{
     border: 1px solid #444444;
-    margin: 0rem 3rem 0rem 3rem !important;
+    margin: 0rem 2rem -0.5rem 2rem !important;
   }
 
   .content {
-    max-width: 50%;
-    margin: 1rem 0rem 0rem 5rem;
+    max-width: 70%;
+    margin: 1.5rem 0rem -0.5rem 3.3rem;
   }
   .all-numbers{
     margin: 2rem 0rem 1rem 0rem;
   }
   .date-tournament{
-    margin-right: 3rem;
+    margin-top: 0.6rem;
+    margin-right: 1rem;
   }
   .btn-edit-tournament{
     font-size: 1rem;
+    margin: 0rem 0rem 0rem 10.5rem;
   }
   .btn-destroy-tournament{
     font-size: 1rem;
+
+  /* index tournaments card*/
+
+  /* new tournaments button*/
   }
   .btn-new{
     width: 80%;
     margin: 0 10% 0 auto;
   }
+  /* new tournaments button*/
+
   .padding-table{
     margin-left: -3rem;
     margin-top: -1rem;
