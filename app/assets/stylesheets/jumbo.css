@@ -1,6 +1,6 @@
 /* jumbotron image */
 .heading-jumbo {
-  background-image: url("https://i.imgur.com/gvFR0ih.png");
+  background-image: url("https://i.imgur.com/XemiGxn.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -55,14 +55,31 @@
  text-shadow: 0 0.2rem 0.3rem rgba(0,0,0,0.30), 0 0.5rem 0.5rem rgba(0,0,0,0.35);
  text-align: right;
  position: absolute;
- margin-left: -2rem;
+ margin: 2.5rem 0rem 0rem 7rem;
 }
 
 /* heading text */
 
+@media (max-width: 1199.98px) {
+  .heading-jumbo {
+    background-image: url("https://i.imgur.com/W4F7TLc.png");
+  }
+}
 
-@media (max-width: 600px){
+@media (max-width: 991.98px) {
+  .heading-jumbo {
+    height: 18rem;
+    background-image: url("https://i.imgur.com/29REjwo.png");
+  }
+  .heading-text-container {
+   display: none;
+  }
+  .btn-signin {
+    font-weight: 400;
+  }
+}
 
+@media (max-width: 575.98px){
   .heading-text-container {
    display: none;
   }
