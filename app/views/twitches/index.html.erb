@@ -4,19 +4,18 @@
     <%= link_to 'Nuevo canal', new_twitch_path, class:"btn btn-new-twitches mb-3"%>
   <% end %>
   </div>
-  </div>
-  <div class="row">
-    <% @twitches.each do |twitch| %>
-          <div class="col-lg-4">
-          <iframe src="https://player.twitch.tv/?channel=<%= twitch.owner %>" frameborder="0" allowfullscreen="true" scrolling="no" height="297" width="528" class="twitch-card-video"></iframe>
-
-          <div class="offset-lg-7 mb-2 ">
-            <% if can? :create, News %>
-             <%= link_to 'Editar', edit_twitch_path(twitch) , class:"btn btn-edit-twitch"  %>
-             <%= link_to 'Eliminar', twitch, method: :delete, data: { confirm: '¿Estas seguro?' }, class:"btn btn-destroy-twitch"  %>
-           <% end %>
-           </div>
-            </div>
-    <% end %>
- </div>
+</div>
+ <div class="row row-twitch">
+  <% @twitches.each do |twitch| %>
+    <div class="col-lg-4 col-md-12 col-sm-12">
+      <iframe src="https://player.twitch.tv/?channel=<%= twitch.owner %>" frameborder="0" allowfullscreen="true" scrolling="no" height="297" width="528" class="twitch-card-video"></iframe>
+      <div class="offset-lg-7 mb-2 offset-sm-7 ">
+        <% if can? :create, News %>
+          <%= link_to 'Editar', edit_twitch_path(twitch) , class:"btn btn-edit-twitch"  %>
+          <%= link_to 'Eliminar', twitch, method: :delete, data: { confirm: '¿Estas seguro?' }, class:"btn btn-destroy-twitch"  %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
 

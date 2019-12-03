@@ -9,7 +9,7 @@
 <div class="row">
   <div class="col-3">
   </div>
-  <div class="col-lg-6 col-sm-12">
+  <div class="col-lg-6 col-sm-12 col-md-12">
     <% @news.reverse_each do |news| %>
         <div class="card news-card">
           <img src="https://i.imgur.com/7OO5p0O.png" class="card-img-top" alt="...">
@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 offset-lg-8 col-sm-3 offset-sm-9 btn-group">
+          <div class="col-lg-4 offset-lg-8 col-sm-4 offset-sm-8 col-md-4 offset-md-8 btn-group">
             <% if can? :create, News %>
              <p><%= link_to 'Editar', edit_news_path(news) , class:"btn btn-edit-news"  %>
               <%= link_to 'Eliminar', news, method: :delete, data: { confirm: '¿Estas seguro?' }, class:"btn btn-destroy-news"  %></p>

@@ -269,11 +269,24 @@
     width: 80%;
     margin: 0 10% 0 auto;
   }
-  /* new tournaments button*/
+}
 
-  .padding-table{
-    margin-left: -3rem;
-    margin-top: -1rem;
+@media (min-width: 601px) and (max-width: 1024px){
+  .btn-new{
+    width: 80%;
+    margin: 0 10% 0 auto;
   }
+    /* new tournaments form*/
+    .tournament-new {
+      padding: 1rem 2rem 1rem 2rem;
+      margin: 0rem 0rem 0rem 0rem;
+      max-width: 100%
+    }
 
+    .btn-tournament {
+      max-width: 100%;
+      margin-top: 1rem;
+    }
+
+    /* new tournaments form*/
 }
