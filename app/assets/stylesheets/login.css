@@ -81,7 +81,7 @@ input[type=imput1] {
 }
 
 /* formulario login */
-@media (max-width: 600px){
+@media (max-width: 575.98px){
 
   .login {
     width: 100%;
@@ -96,4 +96,18 @@ input[type=imput1] {
     margin: 0rem 0rem 0rem 2rem;
   }
 
+}
+@media (max-width: 991.98px){
+  .login {
+    width: 100%;
+    }
+
+  .btn-log {
+    width: 100%;
+    margin: 1rem 0rem 1em 0rem;
+  }
+
+  .forgot{
+    margin: 0rem 0rem 0rem 2rem;
+  }
 }

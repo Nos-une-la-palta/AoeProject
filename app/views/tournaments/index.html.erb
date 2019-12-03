@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="row">
-          <div class="col-sm-3 offset-sm-9 col-lg-4 offset-lg-8 btn-group">
+          <div class="col-lg-4 offset-lg-8 col-sm-4 offset-sm-8 col-md-4 offset-md-8 btn-group">
            <% if can? :create, Tournament %>
               <p><%= link_to 'Editar', edit_tournament_path(tournament) , class:"btn btn-edit-tournament"  %>
             <%= link_to 'Eliminar', tournament, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-destroy-tournament"  %></p>

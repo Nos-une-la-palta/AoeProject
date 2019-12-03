@@ -98,7 +98,7 @@ top: 3rem;
 }
 /* formulario editar perfil */
 
-@media (max-width: 600px) {
+@media (max-width: 575.98px){
   .edit {
     padding: 2rem 1rem 2rem 2rem;
     width: 100%;
@@ -135,6 +135,93 @@ top: 3rem;
 
   .back-update{
     margin: 1.5rem 0rem 0rem 7.5rem;
+  }
+
+  .account-cancel{
+    margin: 1.5rem 0rem -1rem 2rem;
+  }
+}
+@media (max-width: 991.98px){
+  .edit {
+    padding: 2rem 1rem 2rem 2rem;
+    width: 100%;
+  }
+
+  .down-nick {
+    top: -1rem;
+  }
+
+  .hr-edit{
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .hr-bottom{
+    margin: 0rem 0rem 0rem 0rem;
+    width: 95%
+  }
+
+  .field-up {
+    width: 100%;
+    margin: 2rem 0rem 0rem 0rem;
+  }
+
+  .btn-update {
+    width: 100%;
+    border-radius: 0.3rem;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .text-update {
+    margin: 1rem auto 1rem auto;
+    letter-spacing: 0rem;
+  }
+
+  .back-update{
+    margin: 1rem auto 0rem auto;
+  }
+
+  .account-cancel{
+    margin: 1.5rem 0rem -1rem 2rem;
+  }
+}
+
+@media (max-width: 1652.98px){
+  .edit {
+    padding: 2rem 1rem 2rem 2rem;
+    width: 100%;
+  }
+
+  .down-nick {
+    top: -1rem;
+  }
+
+  .hr-edit{
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .hr-bottom{
+    margin: 0rem 0rem 0rem 0rem;
+    width: 95%
+  }
+
+  .field-up {
+    width: 100%;
+    margin: 2rem 0rem 0rem 0rem;
+  }
+
+  .btn-update {
+    width: 100%;
+    border-radius: 0.3rem;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .text-update {
+    margin: 1rem auto 1rem auto;
+    letter-spacing: 0rem;
+  }
+
+  .back-update{
+    margin: 1rem auto 0rem auto;
   }
 
   .account-cancel{
