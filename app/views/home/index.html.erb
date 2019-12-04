@@ -36,52 +36,53 @@
     </div>
     <div class="col-sm-8 col-md-8 col-lg-6 col-xs-12">
         <%#------------- Tournaments --------------------------------%>
-    <% @tournaments.reverse_each do |tournament| %>
-        <div class="card tournament-card">
-          <img src="https://i.imgur.com/ORoxMvn.png" class="card-img-top" alt="...">
-            <div class="card tournament-body">
-                <h2 class="card-title"> <%= tournament.title %>: <span class="orange"><%= tournament.modality%></span></h2>
-                <hr class="card-hr">
-                <div class="all-numbers">
-                  <div class="row price">
-                    <div class="col-lg-5 text-block1">
-                      <h4 class="card-text"><span class="orange"><i class="fas fa-wallet"></i> Precio entrada </span></h4>
-                       <p class="price"><%= number_to_currency(tournament.value , precision: 0)%></p>
-                    </div>
-                    <div class="col-lg-5 text-block2">
-                      <h4 class="card-text"><span class="orange"><i class="fas fa-trophy"></i> Premio a repartir </span></h4>
-                      <p class="price"><%= number_to_currency(tournament.price , precision: 0)%></p>
-                    </div>
-                  </div>
+    <% @items.reverse_each do |item| %>
+      <% if item.class == Tournament %>
+          <div class="card tournament-card">
+            <img src="https://i.imgur.com/ORoxMvn.png" class="card-img-top" alt="...">
+              <div class="card tournament-body">
+                  <h2 class="card-title"> <%= item.title %>: <span class="orange"><%= item.modality%></span></h2>
                   <hr class="card-hr">
-                  <div class="content">
-                    <p class="card-text mt-3 tournent-content-color"><%= tournament.content%></p>
-                  </div>
-                  <hr class="card-hr">
-                  <h5 class="card-text"> Mapa :  <span class="orange"><%= tournament.map %></span> </h5>
-                  <p class="card-text mt-2"><small class="text-muted date-tournament float-right"><%= tournament.created_at.to_date%></small></p>
+                  <div class="all-numbers">
+                    <div class="row price">
+                      <div class="col-lg-5 text-block1">
+                        <h4 class="card-text"><span class="orange"><i class="fas fa-wallet"></i> Precio entrada </span></h4>
+                        <p class="price"><%= number_to_currency(item.value , precision: 0)%></p>
+                      </div>
+                      <div class="col-lg-5 text-block2">
+                        <h4 class="card-text"><span class="orange"><i class="fas fa-trophy"></i> Premio a repartir </span></h4>
+                        <p class="price"><%= number_to_currency(item.price , precision: 0)%></p>
+                      </div>
+                    </div>
+                    <hr class="card-hr">
+                    <div class="content">
+                      <p class="card-text mt-3 tournent-content-color"><%= item.content%></p>
+                    </div>
+                    <hr class="card-hr">
+                    <h5 class="card-text"> Mapa :  <span class="orange"><%= item.map %></span> </h5>
+                    <p class="card-text mt-2"><small class="text-muted date-tournament float-right"><%= item.created_at.to_date%></small></p>
+                </div>
               </div>
-            </div>
-        </div>
-        <div class="btn-group">
-        </div>
-     <% end %>
-
+          </div>
+          <div class="btn-group">
+          </div>
+      <% end %>
         <%#------------- News --------------------------------%>
-        <% @news.reverse_each do |news| %>
+        <% if item.class == News %>
             <div class="card news-card">
               <img src="https://i.imgur.com/7OO5p0O.png" class="card-img-top" alt="...">
                 <div class="card card-news">
-                  <h4 class="card-title title-h4"><%= news.title %></h4>
+                  <h4 class="card-title title-h4"><%= item.title %></h4>
                   <hr class="hr-news-cards">
-                  <p class="card-text-1"><%= news.content%></p>
+                  <p class="card-text-1"><%= item.content%></p>
                   <hr class="hr-news-cards">
-                  <p class="card-text"><small class="text-muted float-right"><%= news.created_at.to_date%></small></p>
+                  <p class="card-text"><small class="text-muted float-right"><%= item.created_at.to_date%></small></p>
                 </div>
             </div>
           <div class="btn-group">
           </div>
         <% end %>
+      <% end %>
     </div>
     <div class="col-lg-3">
       <%#------------- Twitch --------------------------------%>

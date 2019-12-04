@@ -5,5 +5,9 @@ class HomeController < ApplicationController
     @twitches = Twitch.all
     @clans= Clan.all
     @user = current_user
+    
+    totalitems = Tournament.all + News.all
+    @items = totalitems.sort_by do |item| item.created_at end
+      
   end
 end
