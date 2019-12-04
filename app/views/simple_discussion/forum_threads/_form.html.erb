@@ -31,7 +31,7 @@
     <% end %>
   <% end %>
 
-  <div class="form-group text-right">
+  <div class="form-group">
     <% if f.object.new_record? %>
       <%= f.button "Publicar", class: "btn btn-post", data: {disable_with: "<i class='fa fa-spinner fa-spin'></i> #{t('saving')}"} %>
     <% else %>
