@@ -50,13 +50,21 @@ input[type=imput2] {
   background-color: #dd7d00;
 }
 
+<<<<<<< HEAD
  /* new news button*/
+=======
+/* new news button*/
+>>>>>>> 36e57d5b8720ca83e455dd87da2ea51b13e9d912
 
 /* index news card*/
 
 .news-card {
   box-sizing: border-box;
+<<<<<<< HEAD
   margin: -1.5rem 0rem 0rem 0rem;
+=======
+  margin: -1rem 0rem 0rem 0rem;
+>>>>>>> 36e57d5b8720ca83e455dd87da2ea51b13e9d912
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
   border: thin solid orange;
 }
@@ -77,12 +85,18 @@ input[type=imput2] {
   color: #ccc;
   padding: 0.3rem 1rem 0.5rem 1rem;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 36e57d5b8720ca83e455dd87da2ea51b13e9d912
 .hr-news-cards {
   margin: 0rem 0rem 0.5rem 0rem;
   border: 1px solid #444444;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 36e57d5b8720ca83e455dd87da2ea51b13e9d912
 /* index news card*/
 
 /* index news button*/
@@ -233,7 +247,10 @@ input[type=imput2] {
   margin-bottom: 4.5rem;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 36e57d5b8720ca83e455dd87da2ea51b13e9d912
 /* index news button*/
 
 @media (max-width: 991.98px){
@@ -243,11 +260,16 @@ input[type=imput2] {
   }
 
   .news {
+<<<<<<< HEAD
+=======
+    margin: 0rem;
+>>>>>>> 36e57d5b8720ca83e455dd87da2ea51b13e9d912
     width: 100%;
   }
 
   .btn-edit-news{
     font-size: 1.2rem;
+<<<<<<< HEAD
   }
 
   .btn-destroy-news{
@@ -262,10 +284,29 @@ input[type=imput2] {
   }
 
   .btn-destroy-news{
+=======
+  }
+
+  .btn-destroy-news{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 575.98px){
+  .btn-edit-news{
+    font-size: 1rem;
+  }
+
+  .btn-destroy-news{
+>>>>>>> 36e57d5b8720ca83e455dd87da2ea51b13e9d912
     font-size: 1rem;
   }
 
   .news {
+<<<<<<< HEAD
+=======
+    margin: 0rem;
+>>>>>>> 36e57d5b8720ca83e455dd87da2ea51b13e9d912
     width: 100%;
   }
 

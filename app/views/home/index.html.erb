@@ -1,5 +1,6 @@
-<div class="row mt-2">
-    <div class="col-sm-4 col-md-4 col-lg-3 col-4">
+<div class="row">
+    <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3">
+
         <%#------------- Foros --------------------------------%>
         <div class="card mt-3 forum-card">
             <div class="card-header text-center twitch-card-head" style="font-size: 1.4rem;">
@@ -34,7 +35,7 @@
           </div>
         </div>
     </div>
-    <div class="col-sm-8 col-md-8 col-lg-6 col-xs-12">
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-6 col-xl-6 info-cards">
         <%#------------- Tournaments --------------------------------%>
     <% @items.reverse_each do |item| %>
       <% if item.class == Tournament %>
@@ -64,8 +65,7 @@
                 </div>
               </div>
           </div>
-          <div class="btn-group">
-          </div>
+          <br><br>
       <% end %>
         <%#------------- News --------------------------------%>
         <% if item.class == News %>
@@ -79,31 +79,29 @@
                   <p class="card-text"><small class="text-muted float-right"><%= item.created_at.to_date%></small></p>
                 </div>
             </div>
-          <div class="btn-group">
-          </div>
+          <br><br>
         <% end %>
       <% end %>
     </div>
-    <div class="col-lg-3">
+    <div class="col-lg-3 col-xl-3">
       <%#------------- Twitch --------------------------------%>
-        <div class="card mt-3 twitch-card float-left"  style="width: 18rem; margin-left: 2.5rem;">
-            <div class="card-header text-center twitch-card-head " style="font-size: 1.4rem;">
+        <div class="card mt-3 twitch-card">
+            <div class="card-header twitch-card-head" style="font-size: 1.4rem;">
                 <i class="fab fa-twitch"></i> Twitch
             </div>
             <div class="card card-twitch-home">
                 <% @twitches.each do |twitch| %>
                     <div class="row ml-4 mb-4 mt-2" style="position: relative">
-					    <a href="<%= twitch.url %>" target="_blank">
-							<img class="image-twitch-index" src="https://i.imgur.com/1jDJelo.jpg" style="width: 80%">
-						</a>
-                        <div style="position: absolute; top: -10px; left: 28px; width: 60%; text-align: center;">
-                            <span style=" border-radius: 3px; background-color: #3D4148; padding: 3px 6px; border: medium solid #111; color: #E7A70F; font-size: 1.2rem;">
-                                <%= twitch.owner %>
-                            </span>
-                        </div>
+					            <a href="<%= twitch.url %>" target="_blank">
+							        <img class="image-twitch-index" src="https://i.imgur.com/1jDJelo.jpg" style="width: 85%"></a>
+                      <div style="position: absolute; top: -0.8rem; margin-left :1.8rem; width: 65%; text-align: center">
+                        <span style=" border-radius: 3px; background-color: #3D4148; padding: 3px 6px; border: medium solid #111; color: #E7A70F; font-size: 1.1rem;">
+                          <%= twitch.owner %>
+                        </span>
+                      </div>
                     </div>
                 <% end %>
             </div>
-        </div>
+         </div>
     </div>
 </div>
