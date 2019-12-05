@@ -1,17 +1,19 @@
 /* twitch-card home*/
 .twitch-card{
-    color: #CCCCCC;
-    border: black solid;
-    border-width: thin;
-    box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
-    box-sizing: border-box;
-    margin: 0rem 0rem 0rem 0rem;
+  color: #CCCCCC;
+  border: black solid;
+  border-width: thin;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  box-sizing: border-box;
+  width: 80%;
+  margin-left: 1rem;
 }
 
 .twitch-card-head{
-    background-color: #000000;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+  background-color: #000000;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  text-align: center;
 }
 
 .card-twitch-home{
@@ -24,7 +26,10 @@
 );
   box-sizing: border-box;
   border-radius: 0rem;
-  padding: 1rem 0rem 0.3rem 0.7rem;
+  padding-top: 1rem;
+  padding-bottom: 0.3rem;
+  align-items: center;
+  width: 100%;
 }
 
 .image-twitch-index {
@@ -34,21 +39,19 @@
   box-sizing: border-box;
 }
 
-.twitch-up {
-  margin: -2rem 0rem 0rem 0rem;
-}
 /* twitch-card home*/
 
 /* forum-card home*/
 
 .forum-card{
-    color: #CCCCCC;
-    border: black solid;
-    border-width: thin;
-    box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
-    box-sizing: border-box;
-    margin: 0rem 0rem 0rem 5rem;
-    width: 70%;
+  color: #CCCCCC;
+  border: black solid;
+  border-width: thin;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  box-sizing: border-box;
+  width: 75%;
+  float:right;
+  margin-right: 1rem;
 }
 
 .card-forum-home {
@@ -77,13 +80,15 @@
 
 /* clans-card home*/
 .clans-card{
-    color: #CCCCCC;
-    border: black solid;
-    border-width: thin;
-    box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
-    box-sizing: border-box;
-    margin: 4rem 0rem 0rem 5rem;
-    width: 70%
+  color: #CCCCCC;
+  border: black solid;
+  border-width: thin;
+  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  box-sizing: border-box;
+  margin-top: 4rem;
+  width: 75%;
+  float:right;
+  margin-right: 1rem;
 }
 
 .card-clans-home{
@@ -107,9 +112,9 @@
 }
 
 .clans-card-head{
-    background-color: #000000;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+  background-color: #000000;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .down {
@@ -129,17 +134,21 @@
 }
 
 /* clans-card home*/
-
-
-.margin {
-  padding-top: 3rem;
+.info-cards{
+  margin-top: 2.5rem;
 }
 
-@media (max-width: 575.98px){
-  .forum-card, .clans-card, .twitch-card{
-    display: none;
+@media (max-width: 1199.98px){
+  .forum-card, .clans-card{
+    width: 100%;
+    margin: 0
+  }
+  .twitch-card{
+    width: 100%;
+    margin: 0;
   }
 }
+
 @media (max-width: 991.98px){
   .twitch-card, .col{
     display: none;
@@ -152,13 +161,9 @@
     padding: 1rem 1rem 1rem 1rem;
   }
 }
-@media (max-width: 1199.98px){
-  .forum-card, .clans-card{
-    width: 100%;
-    margin: 0;
-  }
-  .twitch-card{
-    max-width: 90%;
-    margin: 0;
+
+@media (max-width: 575.98px){
+  .forum-card, .clans-card, .twitch-card{
+    display: none;
   }
 }
