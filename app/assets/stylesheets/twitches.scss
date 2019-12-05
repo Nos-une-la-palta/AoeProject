@@ -1,19 +1,17 @@
-// Place all the styles related to the Twitches controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-
 /* new twitches form*/
 .twitches {
   background-color: #222222;
   color: #cccccc;
   font-family: 'Open Sans', sans-serif;
   padding: 1rem 2rem 1rem 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
   border-style: solid;
   border-color: orange;
   border-width: thin;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
   box-sizing: border-box;
-  width: 30%;
+  width: 40%;
 }
 
 .twitches h2{
@@ -85,7 +83,7 @@ input[type=imput4] {
   border-radius: 0.3rem;
   font-size: 1.5rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  margin: 2.7rem 5rem 0rem 0rem;  
+  margin: 2.7rem 5rem 0rem 0rem;
   text-align: center;
   color: #222222;
   font-weight: 400;

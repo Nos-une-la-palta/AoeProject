@@ -9,7 +9,7 @@
   border-width: thin;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
   box-sizing: border-box;
-  width: 30%;
+  width: 40%;
   }
 
 .login h2{
@@ -47,7 +47,7 @@ input[type=imput1] {
   border-radius: 0.3rem;
   font-size: 1.5rem;
   padding: 0.5rem;
-  margin: 1rem 0rem 0.8rem 5.5rem;
+  margin: 1rem 0rem 0.8rem 0rem;
 }
 
 .btn-log:hover {
@@ -57,9 +57,11 @@ input[type=imput1] {
   color: #bbbbbb !important;
   border-radius: 0.3rem;
   font-size: 1rem;
-  padding: 0.5rem 1rem 1rem 0.6rem;
-  margin: 0rem 0rem 0rem 7.5rem;
 }
+.recovery-pass {
+  text-align: center;
+}
+
 .fb-log {
   margin: 2.5rem 0rem 0.8rem 0rem;
 }
@@ -81,23 +83,29 @@ input[type=imput1] {
 }
 
 /* formulario login */
-@media (max-width: 575.98px){
 
+@media (max-width: 1199.98px){
   .login {
-    width: 100%;
+    width: 60%;
+    }
+}
+
+@media (max-width: 991.98px){
+  .login {
+    width: 80%;
     }
 
   .btn-log {
-    width: 100%;
+    width: 80%;
     margin: 1rem 0rem 1em 0rem;
   }
 
   .forgot{
-    margin: 0rem 0rem 0rem 2rem;
+    margin: 0rem 0rem 0rem 0rem;
   }
-
 }
-@media (max-width: 991.98px){
+
+@media (max-width: 575.98px){
   .login {
     width: 100%;
     }

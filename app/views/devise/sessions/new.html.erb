@@ -17,8 +17,10 @@
     </div>
   <% end %>
 
-  <div class="actions">
-    <%= f.submit "Ingresar", class:"btn btn-log" %> <br>
+  <div class="actions d-flex justify-content-center">
+    <%= f.submit "Ingresar", class:"btn btn-log" %>
+  </div>
+  <div class=" container recovery-pass">
     <%= link_to "¿Olvidaste tu contraseña?", new_password_path(resource_name), class:"forgot" %>
   </div>
 <% end %>

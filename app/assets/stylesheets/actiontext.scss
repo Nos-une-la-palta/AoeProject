@@ -45,7 +45,8 @@ trix-toolbar {
 
 trix-toolbar .trix-button {
   border: none;
-  margin: -0.6rem -0.2rem -1em -0.1rem;
+  margin: -0.6rem -0.5rem -1em -0.1rem;
+  font-size: 0.9rem;
   }
 
 
@@ -90,7 +91,48 @@ trix-toolbar .trix-button:not(:first-child) {
     border-left: none;
 }
 
-@media (max-width: 600px){
+@media (max-width: 1199.98px){
+  trix-toolbar {
+    margin: 0rem 0rem 0em 0rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+  trix-toolbar .trix-button {
+    font-size: 0.8rem;
+    margin: 0.25rem -0.2rem 0em -0.2rem;
+  }
+
+  trix-toolbar .trix-button-group--text-tools {
+    margin-left: 0rem;
+    }
+
+  trix-toolbar .trix-button-group--file-tools {
+    margin-right: -2rem;
+    }
+}
+
+@media (max-width: 991.98px){
+  trix-toolbar {
+    margin: 0rem 0rem 0em 0rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+  trix-toolbar .trix-button {
+    font-size: 0.8rem;
+    margin: 0.25rem -0.1rem 0em -0.1rem;
+  }
+
+  trix-toolbar .trix-button-group--text-tools {
+    margin-left: 0rem;
+    }
+
+  trix-toolbar .trix-button-group--file-tools {
+    margin-right: 0rem;
+    }
+}
+
+
+@media (max-width: 575.98px){
 
   trix-toolbar {
     margin: 0rem 0rem -0.3em 0rem;
