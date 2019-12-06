@@ -2,7 +2,7 @@
     <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3">
 
         <%#------------- Foros --------------------------------%>
-        <div class="card mt-3 forum-card">
+        <div class="card forum-card">
             <div class="card-header text-center twitch-card-head" style="font-size: 1.4rem;">
                 <i class="fas fa-comments"></i> Foros
             </div>
@@ -35,7 +35,7 @@
           </div>
         </div>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-6 col-xl-6 info-cards">
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-6 col-xl-6">
         <%#------------- Tournaments --------------------------------%>
     <% @items.reverse_each do |item| %>
       <% if item.class == Tournament %>
@@ -98,7 +98,7 @@
     </div>
     <div class="col-lg-3 col-xl-3">
       <%#------------- Twitch --------------------------------%>
-        <div class="card mt-3 twitch-card">
+        <div class="card twitch-card">
             <div class="card-header twitch-card-head" style="font-size: 1.4rem;">
                 <i class="fab fa-twitch"></i> Twitch
             </div>

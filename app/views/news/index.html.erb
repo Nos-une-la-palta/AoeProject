@@ -1,15 +1,17 @@
-<div class="row mt-2">
-  <div class="col-lg-4 offset-lg-8 mb-5">
+<div class="row news-row">
     <% if can? :create, News %>
+  <div class="col-lg-4 offset-lg-8 mb-5">
+
       <%= link_to 'Nueva Noticia', new_news_path, class:"btn btn-new-news mb-3"%>
-    <% end %>
+   
   </div>
+   <% end %>
 </div>
 
 <div class="row">
   <div class="col-3">
   </div>
-  <div class="col-lg-6 col-sm-12 col-md-12 top-margin-news">
+  <div class="col-lg-6 col-sm-12 col-md-12 ">
     <% @news.reverse_each do |news| %>
         <div class="card news-card">
           <img src="https://i.imgur.com/7OO5p0O.png" class="card-img-top" alt="...">
