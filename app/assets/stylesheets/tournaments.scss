@@ -52,13 +52,12 @@
   border-radius: 0.3rem;
   font-size: 1.5rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  margin: .7rem 5rem 0rem 0rem;
+  margin-top: 1rem;
   text-align: center;
   color: #222222;
   font-weight: 400;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
   float: right;
-  width: 100%;
 }
 
 .btn-new:hover{
@@ -68,6 +67,11 @@
 /* new tournaments button*/
 
 /* index tournaments card*/
+
+.top-margin-tournament {
+  margin-top: -6.5rem;
+}
+
 .tournament-card {
   margin: -1.5rem 0rem 0rem 0rem;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
@@ -91,12 +95,11 @@
   margin: 0.5rem 0rem 1.5rem 0.5rem;
 }
 
-.tournament-body h5{
+.tournament-body h4{
   font-weight: 400;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #eeeeee;
-  margin: 1rem 0rem 0rem 0.5rem;
 }
 .orange{
   color: orange;
@@ -104,14 +107,13 @@
 
 
 .content {
-  max-width: 70%;
-  margin: 1rem 0rem 0rem 7rem;
+  margin-top: 1rem;
 }
 .price{
   font-weight: 600;
   font-size: 2.5rem;
   text-align: center;
-  margin: -1rem 0rem 0rem 0rem;
+  margin: -1rem 1rem 0rem 0rem;
   color: #ddd;
 }
 .value{
@@ -121,18 +123,19 @@
   margin: -1.1rem 0rem 0rem 0rem;
 }
 .text-block1 {
-  margin: 0rem 0rem 0rem 5rem;
+float:right;
+margin-right: 1rem;
 }
 .text-block2 {
-  margin: 0rem 0rem 0rem 0rem;
-  padding: 0rem 5rem 0rem 0rem;
+float: left;
+margin-right: 1rem;
 }
 .all-numbers{
   margin: 2rem 0rem 0rem 0rem;
 }
 .card-hr{
   border: 1px solid #444444;
-  margin: 0rem 4rem 0rem 4rem !important;
+
 }
 
 /* index tournaments card*/
@@ -177,6 +180,65 @@
 }
 
 /* index tournaments button*/
+@media (max-width: 1199.98px){
+  .text-block1 {
+  margin-right: 0rem;
+  }
+  .text-block2 {
+  margin-right: 0rem;
+  }
+  .price{
+    font-size: 2.2rem;
+    margin: -1rem 1rem 0rem 0rem;
+  }
+  .tournament-body h4{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991.98px){
+  .btn-new{
+    width: 80%;
+    margin: 0 10% 0 auto;
+  }
+  .btn-edit-tournament{
+    font-size: 1.1rem;
+  }
+  .btn-destroy-tournament{
+    font-size: 1.1rem;
+  }
+    /* new tournaments form*/
+    .tournament-new {
+      padding: 1rem 2rem 1rem 2rem;
+      margin: 0rem 0rem 0rem 0rem;
+      max-width: 100%
+    }
+
+    .btn-tournament {
+      max-width: 100%;
+      margin-top: 1rem;
+    }
+
+    .top-margin-tournament {
+      margin-top: -0rem;
+    }
+
+    /* new tournaments form*/
+    .text-block1 {
+      margin-right: 0rem;
+    }
+    .text-block2 {
+    margin-right: 0rem;
+    }
+    .price{
+      font-size: 2.5rem;
+      margin: -1rem 1rem 0rem 0rem;
+    }
+    .tournament-body h4{
+      font-size: 1.2rem;
+    }
+
+}
 
 @media (max-width: 575.98px){
 
@@ -190,6 +252,10 @@
   .btn-tournament {
     width: 100%;
     margin-top: 1rem;
+  }
+
+  .top-margin-tournament {
+    margin-top: 0rem;
   }
 
   /* new tournaments form*/
@@ -218,19 +284,21 @@
 
   .price{
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: -0.5rem 0rem 0rem 0rem;
   }
   .text-block1 {
-    margin: 0rem 0rem 0rem 1rem;
+    float: none;
   }
   .text-block2 {
-    margin: 0rem 0rem 0rem 0rem;
-    padding: 0rem 0rem 0rem 0rem;
+    float: none;
+  }
+  .tournament-body h4{
+    font-size: 1.5rem;
   }
 
   .card-text {
-    margin: 0rem 1rem 0rem 0rem;
+    margin: 1.5rem 1rem 0rem 0rem;
   }
   .card-text2 {
     margin: 0.5rem 0rem 0rem 0rem;
@@ -241,8 +309,8 @@
   }
 
   .content {
-    max-width: 70%;
-    margin: 1.5rem 0rem -0.5rem 3.3rem;
+    margin-top:1.5rem;
+    margin-bottom: -0.5rem;
   }
   .all-numbers{
     margin: 2rem 0rem 1rem 0rem;
@@ -253,7 +321,6 @@
   }
   .btn-edit-tournament{
     font-size: 1rem;
-    margin: 0rem 0rem 0rem 10.5rem;
   }
   .btn-destroy-tournament{
     font-size: 1rem;
@@ -266,30 +333,4 @@
     width: 80%;
     margin: 0 10% 0 auto;
   }
-}
-
-@media (max-width: 991.98px){
-  .btn-new{
-    width: 80%;
-    margin: 0 10% 0 auto;
-  }
-  .btn-edit-tournament{
-    font-size: 1.1rem;
-  }
-  .btn-destroy-tournament{
-    font-size: 1.1rem;
-  }
-    /* new tournaments form*/
-    .tournament-new {
-      padding: 1rem 2rem 1rem 2rem;
-      margin: 0rem 0rem 0rem 0rem;
-      max-width: 100%
-    }
-
-    .btn-tournament {
-      max-width: 100%;
-      margin-top: 1rem;
-    }
-
-    /* new tournaments form*/
 }

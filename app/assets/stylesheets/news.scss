@@ -38,7 +38,7 @@ input[type=imput2] {
   border-radius: 0.3rem;
   font-size: 1.5rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  margin: .7rem 5rem 0rem 0rem;
+  margin-top: 1rem;
   text-align: center;
   color: #222222;
   font-weight: 400;
@@ -53,10 +53,12 @@ input[type=imput2] {
 /* new news button*/
 
 /* index news card*/
+.top-margin-news {
+  margin-top: -6.5rem;
+}
 
 .news-card {
   box-sizing: border-box;
-  margin: -1rem 0rem 0rem 0rem;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
   border: thin solid orange;
 }
@@ -81,23 +83,14 @@ input[type=imput2] {
   margin: 0rem 0rem 0.5rem 0rem;
   border: 1px solid #444444;
 }
+
+.trix-content img{
+  max-width: 80%;
+  height: auto;
+}
 /* index news card*/
 
-/* index news button*/
 
-.btn-edit-news {
-  box-sizing: border-box;
-  background-color: orange;
-  border-radius: 0rem;
-  border-bottom-left-radius: 0.6rem;
-  border-bottom-right-radius: 0.6rem;
-  font-size: 1.4rem;
-  padding: 0.3rem 0.8rem 0.4rem 0.8rem;
-  text-align: center;
-  color: #222222;
-  font-weight: 400;
-  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
-}
 
 .btn-news {
   box-sizing: border-box;
@@ -119,27 +112,6 @@ input[type=imput2] {
 
 /* new news form*/
 
-/* new news button*/
-.btn-new-news{
-  box-sizing: border-box;
-  background-color: orange;
-  border-radius: 0.3rem;
-  font-size: 1.5rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  margin: .7rem 5rem 0rem 0rem;
-  text-align: center;
-  color: #222222;
-  font-weight: 400;
-  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
-  float: right;
-  width: 100%;
-}
-
-.btn-new-news:hover{
-  background-color: #dd7d00;
-}
-
-/* new news button*/
 
 /* index news card*/
 
@@ -209,23 +181,6 @@ input[type=imput2] {
   background-color: #ad0600;
 }
 
-.btn-destroy-news {
-  box-sizing: border-box;
-  background-color: orange;
-  border-radius: 0rem;
-  border-bottom-left-radius: 0.6rem;
-  border-bottom-right-radius: 0.6rem;
-  font-size: 1.4rem;
-  padding: 0.3rem 0.8rem 0.4rem 0.8rem;
-  text-align: center;
-  color: #222222;
-  font-weight: 400;
-  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
-}
-
-.btn-destroy-news:hover {
-  background-color: #ad0600;
-}
 
 .btn-group{
   margin-bottom: 4.5rem;
@@ -235,12 +190,15 @@ input[type=imput2] {
 
 @media (max-width: 991.98px){
   .btn-new-news{
-    width: 80%;
-    margin: 0 10% 0 auto;
+    width: 75%;
+    margin: 0 10% 0rem auto;
+  }
+
+  .top-margin-news{
+    margin-top: 0rem;
   }
 
   .news {
-    margin: 0rem;
     width: 100%;
   }
 
@@ -265,6 +223,10 @@ input[type=imput2] {
   .news {
     margin: 0rem;
     width: 100%;
+  }
+
+  .top-margin-news {
+    margin-top: 0rem;
   }
 
   .btn-new-news {

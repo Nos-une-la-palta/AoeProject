@@ -1,5 +1,5 @@
 <div class="row mt-2">
-  <div class="col-lg-2 offset-lg-10 mb-4">
+  <div class="col-lg-4 offset-lg-8 mb-5">
     <% if can? :create, News %>
       <%= link_to 'Nueva Noticia', new_news_path, class:"btn btn-new-news mb-3"%>
     <% end %>
@@ -9,7 +9,7 @@
 <div class="row">
   <div class="col-3">
   </div>
-  <div class="col-lg-6 col-sm-12 col-md-12">
+  <div class="col-lg-6 col-sm-12 col-md-12 top-margin-news">
     <% @news.reverse_each do |news| %>
         <div class="card news-card">
           <img src="https://i.imgur.com/7OO5p0O.png" class="card-img-top" alt="...">
@@ -22,11 +22,13 @@
             </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 offset-lg-8 col-sm-5 offset-sm-7 col-md-4 offset-md-8 btn-group">
-            <% if can? :create, News %>
-             <p><%= link_to 'Editar', edit_news_path(news) , class:"btn btn-edit-news"  %>
-              <%= link_to 'Eliminar', news, method: :delete, data: { confirm: '¿Estas seguro?' }, class:"btn btn-destroy-news"  %></p>
-           <% end %>
+          <div class=" col-sm-5 offset-sm-7 col-md-4 offset-md-8 col-lg-6 offset-lg-6 col-xl-6 offset-xl-6">
+            <div class="btn-group float-right">
+              <% if can? :create, News %>
+               <p><%= link_to 'Editar', edit_news_path(news) , class:"btn btn-edit-news"  %>
+                <%= link_to 'Eliminar', news, method: :delete, data: { confirm: '¿Estas seguro?' }, class:"btn btn-destroy-news"  %></p>
+             <% end %>
+            </div>
           </div>
         </div>
     <% end %>
