@@ -48,11 +48,19 @@
                     <div class="row price">
                       <div class="col-lg-5 text-block1">
                         <h4 class="card-text"><span class="orange"><i class="fas fa-wallet"></i> Precio entrada </span></h4>
-                        <p class="price"><%= number_to_currency(item.value , precision: 0)%></p>
+                          <% if item.free? %>
+                            <p class="price">Gratis!</p>
+                          <% else %>
+                            <p class="price"><%= number_to_currency(item.value , precision: 0)%></p>
+                          <% end %>
                       </div>
                       <div class="col-lg-5 text-block2">
                         <h4 class="card-text"><span class="orange"><i class="fas fa-trophy"></i> Premio a repartir </span></h4>
-                        <p class="price"><%= number_to_currency(item.price , precision: 0)%></p>
+                        <% if item.no_price? %>
+                          <p class="price"> Honor!</p>
+                        <% else %>
+                          <p class="price"><%= number_to_currency(item.price , precision: 0)%></p>
+                        <% end %>
                       </div>
                     </div>
                     <hr class="card-hr">
