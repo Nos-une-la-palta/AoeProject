@@ -83,11 +83,12 @@ input[type=imput4] {
   border-radius: 0.3rem;
   font-size: 1.5rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  margin: 2.7rem 5rem 0rem 0rem;
+  margin-top: 1rem;
   text-align: center;
   color: #222222;
   font-weight: 400;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  float: right;
 }
 
 .btn-new-twitches:hover{
@@ -125,6 +126,10 @@ input[type=imput4] {
   #000 0.3rem,
   #000 0.6rem
   );
+}
+
+.btn-group-twitch{
+  margin-top: -0.5rem;
 }
 /* index twitch video*/
 
@@ -176,30 +181,17 @@ iframe{
 
 
 /* index twitch button*/
-@media (max-width: 575.98px){
-
-  /* new twitches form*/
-  .twitches {
-    width: 100%;
-  }
-  .btn-twitches {
-    width: 100%;
-  }
-
-  /* new twitches form*/
-  iframe{
-    max-width: 100%;
+@media (max-width: 1199.98px){
+  .row-twitch{
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
   .btn-edit-twitch{
-    font-size: 1.1rem;
-    margin-left: 0;
+    font-size: 1.3rem;
+
   }
   .btn-destroy-twitch{
-    font-size: 1.1rem;
-  }
-  .btn-new-twitches{
-    width: 80%;
-    margin: 0 auto 0 10%;
+    font-size: 1.3rem;
   }
 }
 
@@ -207,10 +199,12 @@ iframe{
   .btn-new-twitches{
     width: 80%;
     margin: 0 auto ;
+    float: none;
+    align-items: center;
   }
   .btn-edit-twitch{
     font-size: 1.1rem;
-    margin-left: 0;
+
   }
   .btn-destroy-twitch{
     font-size: 1.1rem;
@@ -226,16 +220,29 @@ iframe{
     height: 400;
   }
 }
-@media (max-width: 1652.98px){
+
+@media (max-width: 575.98px){
+
+  /* new twitches form*/
+  .twitches {
+    width: 100%;
+  }
+  .btn-twitches {
+    width: 100%;
+  }
+
+  /* new twitches form*/
+  iframe{
+    max-width: 100%;
+  }
   .btn-edit-twitch{
-    font-size: 1.1rem;
-    margin-left: 0;
+    font-size: 1rem;
   }
   .btn-destroy-twitch{
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .btn-new-twitches{
-    width: 100%;
-    margin: 0rem;
+    width: 80%;
+    margin: 0 auto 0 10%;
   }
 }

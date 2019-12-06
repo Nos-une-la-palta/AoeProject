@@ -1,14 +1,14 @@
 <div class="row mt-2">
-  <div class="col-lg-2 offset-lg-10 mb-4">
+  <div class="col-lg-4 offset-lg-8 mb-5">
     <% if can? :create, Tournament %>
-      <%= link_to 'Nuevo Torneo', new_tournament_path, class:"btn btn-new mb-3 "%>
+      <%= link_to 'Nuevo Torneo', new_tournament_path, class:"btn btn-new mb-3"%>
     <% end %>
   </div>
 </div>
 <div class="row">
   <div class="col-3">
   </div>
-  <div class="col-lg-6 col-sm-12">
+  <div class="col-lg-6 col-sm-12 top-margin-tournament">
        <% @tournaments.reverse_each do |tournament| %>
         <div class="card tournament-card">
           <img src="https://i.imgur.com/ORoxMvn.png" class="card-img-top" alt="...">
@@ -17,21 +17,26 @@
                 <hr class="card-hr">
                 <div class="all-numbers">
                   <div class="row price">
-                    <div class="col-lg-5 text-block1">
-                      <h4 class="card-text"><span class="orange"><i class="fas fa-wallet"></i> Precio entrada </span></h4>
-                       <% if tournament.free? %>
+                    <div class="col-sx-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="text-block1">
+                        <h4 class="card-text"><span class="orange"><i class="fas fa-wallet"></i> Precio entrada </span></h4>
+                        <% if tournament.free? %>
                          <p class="price">Gratis!</p>
-                       <% else %>
+                        <% else %>
                          <p class="price"><%= number_to_currency(tournament.value , precision: 0)%></p>
                        <% end %>
+                      </div>
+
                     </div>
-                    <div class="col-lg-5 text-block2">
-                      <h4 class="card-text2"><span class="orange"><i class="fas fa-trophy"></i> Premio a repartir </span></h4>
-                       <% if tournament.no_price? %>
-                         <p class="price"> Honor!</p>
-                       <% else %>
-                      <p class="price"><%= number_to_currency(tournament.price , precision: 0)%></p>
-                       <% end %>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="text-block2">
+                        <h4 class="card-text2"><span class="orange"><i class="fas fa-trophy"></i> Premio a repartir </span></h4>
+                        <% if tournament.no_price? %>
+                          <p class="price"> Honor!</p>
+                        <% else %>
+                          <p class="price"><%= number_to_currency(tournament.price , precision: 0)%></p>
+                        <% end %>
+                      </div>
                     </div>
                   </div>
                   <hr class="card-hr">
@@ -45,11 +50,13 @@
             </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 offset-lg-8 col-sm-4 offset-sm-8 col-md-4 offset-md-8 btn-group">
-           <% if can? :create, Tournament %>
-              <p><%= link_to 'Editar', edit_tournament_path(tournament) , class:"btn btn-edit-tournament"  %>
-            <%= link_to 'Eliminar', tournament, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-destroy-tournament"  %></p>
-           <% end %>
+          <div class="col-sm-5 offset-sm-7 col-md-4 offset-md-8 col-lg-6 offset-lg-6 col-xl-6 offset-xl-6">
+            <div class="btn-group float-right">
+              <% if can? :create, Tournament %>
+                 <p><%= link_to 'Editar', edit_tournament_path(tournament) , class:"btn btn-edit-tournament"  %>
+               <%= link_to 'Eliminar', tournament, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-destroy-tournament"  %></p>
+              <% end %>
+            </div>
           </div>
         </div>
     <% end %>

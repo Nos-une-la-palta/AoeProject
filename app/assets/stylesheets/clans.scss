@@ -133,11 +133,12 @@ input[type=imput3] {
   border-radius: 0.3rem;
   font-size: 1.5rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  margin: 2.7rem 5rem 0rem 0rem;
+  margin-top: 1rem;
   text-align: center;
   color: #222222;
   font-weight: 400;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  float: right;
   }
 
 .btn-new-clans:hover{
@@ -145,7 +146,24 @@ input[type=imput3] {
   }
 
 /* new clans button*/
+@media (max-width: 991.98px){
+  .btn-new-clans{
+    width: 80%;
+    margin: 0 10% 0 auto;
+  }
+  .padding-table{
+    margin-left: -2rem;
+    margin-top: -1rem;
+  }
+    /* new clans form*/
+    .clans {
+      width: 100%;
+    }
 
+    .btn-clans {
+       width: 100%;
+    }
+}
 
 @media (max-width: 575.98px){
 
@@ -162,26 +180,7 @@ input[type=imput3] {
     margin: 0 10% 0 auto;
   }
   .padding-table{
-    margin-left: -3rem;
+    margin-left: -2rem;
     margin-top: -1rem;
   }
-}
-
-@media (max-width: 991.98px){
-  .btn-new-clans{
-    width: 80%;
-    margin: 0 10% 0 auto;
-  }
-  .padding-table{
-    margin-left: -3rem;
-    margin-top: -1rem;
-  }
-    /* new clans form*/
-    .clans {
-      width: 100%;
-    }
-
-    .btn-clans {
-       width: 100%;
-    }
 }
