@@ -49,11 +49,11 @@
   <% if @forum_thread.solved? && forum_post.solved? %>
     <div class="card-footer">
       <div class="pull-right">
-        <strong class="text-success"><%= icon("check") %> Solved</strong>
+        <strong class="text-success"><%= icon("check") %> Post guardado!</strong>
 
         <% if is_moderator_or_owner?(@forum_thread) %>
           <small>
-            <%= link_to "Undo", simple_discussion.unsolved_forum_thread_forum_post_path(@forum_thread, forum_post), method: :put %>
+            <%= link_to "Deshacer", simple_discussion.unsolved_forum_thread_forum_post_path(@forum_thread, forum_post), method: :put %>
           </small>
         <% end %>
       </div>
@@ -62,10 +62,10 @@
   <% elsif is_moderator_or_owner?(@forum_thread) %>
     <div class="card-footer">
       <div class="pull-right">
-        <small>
+        <small class="text-success">
           <%= link_to simple_discussion.solved_forum_thread_forum_post_path(@forum_thread, forum_post), method: :put do %>
             <%= icon("check") %>
-            <%= t('this_solved_my_question') %>
+            <%= t('.Guardar_post!') %>
           <% end %>
         </small>
       </div>

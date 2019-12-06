@@ -18,23 +18,18 @@
         <% if user_signed_in? %>
           <div class="menu-items">
            <%= forum_link_to simple_discussion.mine_forum_threads_path do %>
-              <p><%= icon "user-circle-o" %> <%= t('.my_questions') %></p>
+              <p><%= icon "user-circle-o" %> <%= t('.Mis_post') %></p>
             <% end %>
           </div>
           <div class="menu-items">
             <%= forum_link_to simple_discussion.participating_forum_threads_path do %>
-              <p><%= icon "comments-o" %> <%= t('.participating') %></p>
+              <p><%= icon "comments-o" %> <%= t('.Participando') %></p>
             <% end %>
           </div>
         <% end %>
         <div class="menu-items">
           <%= forum_link_to simple_discussion.answered_forum_threads_path do %>
-            <p><%= icon "check" %> <%= t('.answered') %></p>
-          <% end %>
-        </div>
-        <div class="menu-items">
-          <%= forum_link_to simple_discussion.unanswered_forum_threads_path do %>
-            <p><%= icon "question" %> <%= t('.unanswered') %></p>
+            <p><%= icon "check" %> <%= t('.Post_guardados') %></p>
           <% end %>
         </div>
       </div>
