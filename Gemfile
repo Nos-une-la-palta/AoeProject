@@ -31,6 +31,8 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'cancancan'
 #omniauth-facebook
 gem 'omniauth-facebook'
+#æctiveadmin
+gem 'activeadmin'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
