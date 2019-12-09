@@ -1,6 +1,35 @@
 .footer-big{
-    background-color: #333333;
+  background-color: #222;
 }
 .footer-small{
-    background-color: #111111;
+    background-color: black;
+    color: #aaa;
+}
+
+.footer-small a{
+    color: #ccc;
+}
+
+.vl {
+  border-left: 0.05rem solid orange;
+  height: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: -1rem;
+}
+.list-unstyled a{
+  color: white;
+}
+
+.fa-facebook-square, .fa-twitch {
+  font-size: 2rem;
+}
+
+@media (max-width: 575.98px) {
+  .up{
+    margin-top: -0.8rem;
+  }
+  .rrss {
+    margin-top: 1.5rem;
+  }
 }
