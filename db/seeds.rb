@@ -15,7 +15,6 @@ Clan.create(
     avatar: 'https://i.imgur.com/ADrFkRG.jpg',
     name: 'Clan CL',
     link: 'https://cl.voobly.com/'
-
 )
 
 Clan.create(
@@ -52,19 +51,19 @@ Twitch.create(
     url: 'https://www.twitch.tv/chileaoe'
 )
 
-User.create(
-    nick: 'Don Admin',
-    email: 'don@admin.cl',
-    password: '123123',
-    moderator: 'true'
+# User.create(
+#     nick: 'Don Admin',
+#     email: 'don@admin.cl',
+#     password: '123123',
+#     moderator: 'true'
     
-)
+# )
 
-User.first.image.attach(
-    io: File.open('app/assets/images/caca.jpg'),
-    filename: 'caca.jpg',
-    content_type: 'image/jpg'
-)
+# User.first.image.attach(
+#     io: File.open('app/assets/images/caca.jpg'),
+#     filename: 'caca.jpg',
+#     content_type: 'image/jpg'
+# )
 
 ForumCategory.create(
     name: "General",
