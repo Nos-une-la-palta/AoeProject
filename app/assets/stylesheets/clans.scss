@@ -133,7 +133,6 @@ input[type=imput3] {
   border-radius: 0.3rem;
   font-size: 1.5rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  margin-top: 1rem;
   text-align: center;
   color: #222222;
   font-weight: 400;
@@ -144,12 +143,22 @@ input[type=imput3] {
 .btn-new-clans:hover{
   background-color: #dd7d00;
   }
-
+.clans-row {
+  height: 0px;
+}
 /* new clans button*/
+@media (max-width: 1199.98px){
+  .clans-row {
+    height: 30px;
+  }
+}
 @media (max-width: 991.98px){
   .btn-new-clans{
     width: 80%;
     margin: 0 10% 0 auto;
+  }
+  .clans-row {
+    height: 30px;
   }
   .padding-table{
     margin-left: -2rem;
