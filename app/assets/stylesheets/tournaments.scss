@@ -106,9 +106,9 @@
 }
 .price{
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   text-align: center;
-  margin: -1rem 1rem 0rem 0rem;
+  margin: -1rem 0rem 0rem 0rem;
   color: #ddd;
 }
 .value{
@@ -182,9 +182,7 @@ margin-right: 1rem;
   .text-block1 {
   margin-right: 0rem;
   }
-  .tournament-row{
-    height: 80px;
-  }
+
   .text-block2 {
   margin-right: 0rem;
   }
@@ -202,6 +200,9 @@ margin-right: 1rem;
     width: 80%;
     margin: 0 10% 0 auto;
   }
+  .tournament-row{
+    height: 80px;
+  }
   .btn-edit-tournament{
     font-size: 1.1rem;
   }
@@ -209,36 +210,35 @@ margin-right: 1rem;
     font-size: 1.1rem;
   }
     /* new tournaments form*/
-    .tournament-new {
-      padding: 1rem 2rem 1rem 2rem;
-      margin: 0rem 0rem 0rem 0rem;
-      max-width: 100%
-    }
+  .tournament-new {
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 0rem 0rem 0rem 0rem;
+    max-width: 100%
+  }
 
-    .btn-tournament {
-      max-width: 100%;
-      margin-top: 1rem;
-    }
+  .btn-tournament {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
 
-    .top-margin-tournament {
-      margin-top: -0rem;
-    }
+  .top-margin-tournament {
+    margin-top: -0rem;
+  }
 
-    /* new tournaments form*/
-    .text-block1 {
-      margin-right: 0rem;
-    }
-    .text-block2 {
+  /* new tournaments form*/
+  .text-block1 {
     margin-right: 0rem;
-    }
-    .price{
-      font-size: 2.5rem;
-      margin: -1rem 1rem 0rem 0rem;
-    }
-    .tournament-body h4{
-      font-size: 1.2rem;
-    }
-
+  }
+  .text-block2 {
+    margin-right: 0rem;
+  }
+  .price{
+    font-size: 2.2rem;
+    margin: -1rem 0.8rem 0rem 0rem;
+  }
+  .tournament-body h4{
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 575.98px){
@@ -311,7 +311,9 @@ margin-right: 1rem;
 
   .content {
     margin-top:1.5rem;
-    margin-bottom: -0.5rem;
+    margin-bottom: 0rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   .all-numbers{
     margin: 2rem 0rem 1rem 0rem;
