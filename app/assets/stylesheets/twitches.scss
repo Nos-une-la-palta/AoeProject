@@ -30,11 +30,6 @@ input[type=imput4] {
   margin: 0.5rem 0;
 }
 
-.image-twitch-index{
-  max-width: 260px;
-  max-height: 150px;  
-  width: 100%;
-}
 
 .btn-twitches {
   box-sizing: border-box;
@@ -187,20 +182,13 @@ iframe{
 
 
 /* index twitch button*/
-@media (max-width: 1649.98px){
-  .image-twitch-index{
-    width: auto;
-  }
-}
+
 @media (max-width: 1199.98px){
   .row-twitch{
     margin-left: 0rem;
     margin-right: 0rem;
   }
-  .image-twitch-index{
-    width: auto;
-    
-  }
+
 
   .btn-edit-twitch{
     font-size: 1.3rem;

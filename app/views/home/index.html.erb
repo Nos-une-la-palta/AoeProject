@@ -104,8 +104,8 @@
             </div>
             <div class="card card-twitch-home">
                 <% @twitches.each do |twitch| %>
-                    <div class="row mb-4 mt-2" style="position: relative">
-					            <a href="<%= twitch.url %>" target="_blank">
+                    <div class="row mb-4 mt-2 ml-3 mr-3" style="position: relative">
+					            <a href="<%= twitch.url %>" target="_blank" class="d-flex justify-content-center">
 							        <img class="image-twitch-index" src="<%= twitch.image_twitch %>"></a>
                       <div style="position: absolute; top: -0.8rem; margin-left :2.5rem; width: 65%; text-align: center">
                         <span style=" border-radius: 3px; background-color: #3D4148; padding: 3px 6px; border: medium solid #111; color: #E7A70F; font-size: 1.1rem;">

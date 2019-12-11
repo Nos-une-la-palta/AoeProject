@@ -37,6 +37,8 @@
   border-width: thin;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
   box-sizing: border-box;
+  width: 100%;
+
 }
 
 /* twitch-card home*/
@@ -104,13 +106,6 @@
   padding: 1rem 0rem 0.3rem 0.7rem;
 }
 
-.image-twitch-index {
-  border: orange solid;
-  border-width: thin;
-  box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
-  box-sizing: border-box;
-}
-
 .clans-card-head{
   background-color: #000000;
   border-top-left-radius: 0.5rem;
@@ -134,6 +129,7 @@
 }
 
 /* clans-card home*/
+
 
 @media (max-width: 1199.98px){
   .forum-card, .clans-card{
