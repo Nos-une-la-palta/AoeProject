@@ -69,6 +69,6 @@ class TwitchesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def twitch_params
-      params.require(:twitch).permit(:owner, :url)
+      params.require(:twitch).permit(:owner, :url, :image_twitch)
     end
 end

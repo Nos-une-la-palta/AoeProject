@@ -38,17 +38,21 @@ Clan.create(
 
 Twitch.create(
     owner:'karelok0',
-    url: 'https://www.twitch.tv/karelok0'
+    url: 'https://www.twitch.tv/karelok0',
+    image_twitch: 'https://i.imgur.com/C0iBtiL.png'
 )
 
 Twitch.create(
     owner:'wakkoaoc',
-    url: 'https://www.twitch.tv/wakkoaoc'
+    url: 'https://www.twitch.tv/wakkoaoc',
+    image_twitch: 'https://i.imgur.com/CS2dJLa.png'
+    
 )
 
 Twitch.create(
     owner:'chileaoe',
-    url: 'https://www.twitch.tv/chileaoe'
+    url: 'https://www.twitch.tv/chileaoe',
+    image_twitch: 'https://i.imgur.com/dT6EPRu.png'
 )
 
 # User.create(
