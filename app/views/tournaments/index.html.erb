@@ -10,7 +10,7 @@
   <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12 ">
        <% @tournaments.reverse_each do |tournament| %>
         <div class="card tournament-card">
-          <img src="https://i.imgur.com/ORoxMvn.png" class="card-img-top" alt="...">
+        <%= image_tag "tournaments.png", class:"card-img-top" %> 
             <div class="card tournament-body">
                 <h2 class="card-title"> <%= tournament.title %>: <span class="orange"><%= tournament.modality%></span></h2>
                 <hr class="card-hr">

@@ -12,7 +12,7 @@
   <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12">
     <% @news.reverse_each do |news| %>
       <div class="card news-card">
-        <img src="https://i.imgur.com/7OO5p0O.png" class="card-img-top" alt="...">
+        <%=image_tag "news.png", class:"card-img-top" %> 
           <div class="card card-news">
             <h4 class="card-title title-h4"><%= news.title %></h4>
             <hr class="hr-news-cards">
